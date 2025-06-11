@@ -1,0 +1,37 @@
+{
+  "title": "Slavutuch ",
+  "subtitle": "Zakarpattia",
+  "name": "Name",
+  "email": "Email",
+  "checkin": "Check-in Date",
+  "checkout": "Check-out Date",
+  "number": "Phone Number",
+  "people": "Number of People",
+  "book": "Book Now",
+  "success": "Booking successful!",
+  "submit": "Submit",
+  "hero": {
+    "title": "An unforgettable vacation in the",
+    "subtitle": "Carpathians for the whole family"
+  },
+  "nav": {
+    "home": "Home",
+    "rooms": "Rooms",
+    "gallery": "Gallery",
+    "reviews": "Reviews",
+    "contact": "Contact"
+  },
+  "rooms": {
+    "title": "Room",
+    "subtitle": "Types",
+    "luxe-2": "Two-room suite",
+    "luxe-1": "One-room suite",
+    "junior-suite": "Junior Suite",
+    "standart": "Standart",
+    "economy": "Economy"
+  },
+  "gallery": {
+    "title": "Gallery",
+    "description": "Explore our gallery to see the beauty of the hotel and the surrounding landscapes."
+  }
+}
