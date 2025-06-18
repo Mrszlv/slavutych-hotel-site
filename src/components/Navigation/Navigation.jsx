@@ -33,10 +33,11 @@ const Navigation = () => {
           {t("nav.contact")}
         </NavLink>
       </nav>
+
       <button onClick={handleOpenMenu} className={s.openBtn}>
         <IoIosMenu />
       </button>
-      {menuOpen && (
+      {/* {menuOpen && (
         <nav className={s.navMobile}>
           <button onClick={handleOpenMenu} className={s.closeBtn}>
             <IoMdClose />
@@ -57,7 +58,27 @@ const Navigation = () => {
             {t("nav.contact")}
           </NavLink>
         </nav>
-      )}
+      )} */}
+      <nav className={`${s.navMobile} ${menuOpen ? s.navMobileOpen : ""}`}>
+        <button onClick={handleOpenMenu} className={s.closeBtn}>
+          <IoMdClose />
+        </button>
+        <NavLink className={s.linkMob} onClick={handleOpenMenu} to="/">
+          {t("nav.home")}
+        </NavLink>
+        <NavLink className={s.linkMob} onClick={handleOpenMenu} to="/rooms">
+          {t("nav.rooms")}
+        </NavLink>
+        <NavLink className={s.linkMob} onClick={handleOpenMenu} to="/gallery">
+          {t("nav.gallery")}
+        </NavLink>
+        <NavLink className={s.linkMob} onClick={handleOpenMenu} to="/reviews">
+          {t("nav.reviews")}
+        </NavLink>
+        <NavLink className={s.linkMob} onClick={handleOpenMenu} to="/contact">
+          {t("nav.contact")}
+        </NavLink>
+      </nav>
     </>
   );
 };

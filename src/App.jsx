@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
+import Header from "./components/Header/Header";
 import LanguageSwitcher from "./components/LanguageSwitcher/LanguageSwitcher";
 import Navigation from "./components/Navigation/Navigation";
 import HomePage from "./pages/HomePage/HomePage";
@@ -9,26 +10,16 @@ import Gallery from "./pages/Gallery/Gallery";
 import Reviews from "./pages/Reviews/Reviews";
 import Contact from "./pages/Contact/Contact";
 
-import s from "./App.module.css";
 import Hero from "./components/hero/hero";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   const { t } = useTranslation();
   return (
     <Router>
       <div>
-        <header className={s.header}>
-          <div className={s.imgCont}>
-            <h2 className={s.title}>
-              {t("title")}
-              <span className={s.subtitle}>{t("subtitle")}</span>
-            </h2>
-          </div>
-          <LanguageSwitcher />
-          <Navigation />
-        </header>
+        <Header />
         <main>
-          <Hero />
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/rooms" element={<Rooms />} />
@@ -37,6 +28,7 @@ function App() {
             <Route path="/contact" element={<Contact />} />
           </Routes>
         </main>
+        <Footer />
       </div>
     </Router>
   );

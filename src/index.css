@@ -36,6 +36,8 @@ img {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
+  --header-bg: rgba(24, 24, 24, 0.8);
+  --header-color: white;
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
@@ -49,7 +51,9 @@ img {
 
 @media (prefers-color-scheme: light) {
   :root {
-    color: #213547;
+    --header-bg: rgba(255, 255, 255, 0.8);
+    --header-color: black;
+    color: #000;
     background-color: #ffffff;
   }
 }

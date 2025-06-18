@@ -1,18 +1,20 @@
 {
   "title": "Slavutuch ",
   "subtitle": "Zakarpattia",
-  "name": "Name",
   "email": "Email",
-  "checkin": "Check-in Date",
-  "checkout": "Check-out Date",
-  "number": "Phone Number",
-  "people": "Number of People",
-  "book": "Book Now",
   "success": "Booking successful!",
   "submit": "Submit",
   "hero": {
     "title": "An unforgettable vacation in the",
     "subtitle": "Carpathians for the whole family"
+  },
+  "bookingForm": {
+    "name": "Name",
+    "checkin": "Check-in Date",
+    "checkout": "Check-out Date",
+    "number": "Phone Number",
+    "people": "Number of People",
+    "book": "Book Now"
   },
   "nav": {
     "home": "Home",
@@ -24,14 +26,43 @@
   "rooms": {
     "title": "Room",
     "subtitle": "Types",
-    "luxe-2": "Two-room suite",
-    "luxe-1": "One-room suite",
-    "junior-suite": "Junior Suite",
-    "standart": "Standart",
-    "economy": "Economy"
+    "luxe-2-1": "Two-room suite, main building",
+    "description-luxe-2-1": "Two-room suite with all amenities, bathroom and balcony. Wonderful view of the hotel area and mountains. The room has: TV, refrigerator, air conditioning, hairdryer, kettle (if there is no blackout), and much more for your comfort.",
+    "junior-suite-1": "Junior Suite Main Building",
+    "description-junior-suite-1": "Junior suite with all amenities, bathroom and balcony overlooking the hotel grounds and mountains. The room has: TV, refrigerator, air conditioning, hairdryer, kettle (if there is no blackout), and much more for your comfort.",
+    "standart-1-1": "Standard main building",
+    "description-standart-1-1": "Standard superior, double room with bathroom and balcony overlooking the hotel grounds and mountains. The room has: TV, refrigerator, air conditioning, hairdryer, kettle (if there is no blackout), and much more for your comfort.",
+    "economy-1-1": "Economy main building",
+    "description-economy-1-1": "Economy superior with twin beds and a balcony, overlooking the hotel grounds and mountains. The room has: TV, refrigerator, air conditioning, hairdryer, kettle (if there is no blackout), and much more for your comfort.",
+    "luxe-3-9": "Three-room suite building 9",
+    "description-luxe-3-9": "The three-room suite has two bathrooms (showers), a balcony with a magnificent view of the mountains and the area. The room has: TV, refrigerator, air conditioning, hairdryer, kettle (if there is no blackout), and much more for your comfort.",
+    "luxe-2-9": "Two-room suite building 9",
+    "description-luxe-2-9": "Two-room suite with all amenities, bathroom with shower, balcony with a view of the mountains and the area. The room has: TV, refrigerator, air conditioning, hairdryer, kettle (if there is no blackout), and much more for your comfort.",
+    "junior-suite-9": "Junior Suite Building 9",
+    "description-junior-suite-9": "Junior suite with all amenities, bathroom with shower, no balcony with a beautiful view of the mountains. The room has: TV, refrigerator, air conditioning, hairdryer, kettle (if there is no blackout), and much more for your comfort.",
+    "economy-9": "Economy building 9",
+    "description-economy-9": "Economy room with twin beds, bathroom with shower, no balcony with a beautiful view of the mountains. The room has: TV, refrigerator, air conditioning, hairdryer, kettle (if there is no blackout), and much more for your comfort.",
+    "standart-9-a": "Standard building 9-A",
+    "description-standart-9-a": "Standard with a double bed and a folding chair for a child, a bathroom with a bathtub, a small balcony with a beautiful view of the mountains. The room has: TV, refrigerator, air conditioning, hairdryer, kettle (if there is no blackout), and much more for your comfort.",
+    "economy-9-a": "Economy building 9-A",
+    "description-economy-9-a": "Economy room with a double bed, a bathroom with a bathtub, a small balcony with a beautiful view of the mountains. The room has: TV, refrigerator, air conditioning, hairdryer, kettle (if there is no blackout), and much more for your comfort.",
+    "link": "Book"
   },
   "gallery": {
     "title": "Gallery",
     "description": "Explore our gallery to see the beauty of the hotel and the surrounding landscapes."
+  },
+  "footer": {
+    "text": "Hotel Slavutych Zakarpattia",
+    "formOpen": "Request a call back",
+    "formClose": "Close form",
+    "inputName": "Enter name",
+    "inputNumber": "Enter phone number",
+    "inputMessage": "Enter message",
+    "inputSend": "Send",
+    "iziToastSuccessTitle": "Success!",
+    "iziToastSuccessMessage": "Our employee will call you soon!",
+    "iziToastErrorTitle": "Error!",
+    "iziToasrErrorMessage": "Failed to send. Try again!"
   }
 }

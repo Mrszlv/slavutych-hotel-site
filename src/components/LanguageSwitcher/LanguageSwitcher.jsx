@@ -16,13 +16,13 @@ const LanguageSwitcher = () => {
   return (
     <>
       <div className={s.containerDesk}>
-        <button className={s.btn} onClick={() => i18n.changeLanguage("ua")}>
+        <button className={s.btnDesk} onClick={() => i18n.changeLanguage("ua")}>
           UA
         </button>
-        <button className={s.btn} onClick={() => i18n.changeLanguage("ru")}>
+        <button className={s.btnDesk} onClick={() => i18n.changeLanguage("ru")}>
           RU
         </button>
-        <button className={s.btn} onClick={() => i18n.changeLanguage("en")}>
+        <button className={s.btnDesk} onClick={() => i18n.changeLanguage("en")}>
           EN
         </button>
       </div>

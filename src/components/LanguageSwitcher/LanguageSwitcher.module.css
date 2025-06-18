@@ -53,3 +53,26 @@
   width: 12px;
   height: 12px;
 }
+
+@media screen and (min-width: 768px) {
+  .modalMenu {
+    display: none;
+  }
+
+  .containerDesk {
+    display: flex;
+    gap: 10px;
+  }
+  .btnDesk {
+    padding: 5px;
+    font-size: 14px;
+    background-color: transparent;
+    border: 1px solid goldenrod;
+    border-radius: 50%;
+    transition: border-color 0.5s ease, color 0.5s ease;
+  }
+  .btnDesk:hover {
+    border-color: rgb(138, 105, 23);
+    color: rgb(138, 105, 23);
+  }
+}
