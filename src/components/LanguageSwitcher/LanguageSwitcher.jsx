@@ -3,6 +3,7 @@ import { useState } from "react";
 import { IoLanguage } from "react-icons/io5";
 
 import s from "./LanguageSwitcher.module.css";
+import clsx from "clsx";
 
 const LanguageSwitcher = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -16,16 +17,26 @@ const LanguageSwitcher = () => {
   return (
     <>
       <div className={s.containerDesk}>
-        <button className={s.btnDesk} onClick={() => i18n.changeLanguage("ua")}>
+        <button
+          className={clsx(s.btnDesk, i18n.language === "ua" && s.active)}
+          onClick={() => i18n.changeLanguage("ua")}
+        >
           UA
         </button>
-        <button className={s.btnDesk} onClick={() => i18n.changeLanguage("ru")}>
+        <button
+          className={clsx(s.btnDesk, i18n.language === "ru" && s.active)}
+          onClick={() => i18n.changeLanguage("ru")}
+        >
           RU
         </button>
-        <button className={s.btnDesk} onClick={() => i18n.changeLanguage("en")}>
+        <button
+          className={clsx(s.btnDesk, i18n.language === "en" && s.active)}
+          onClick={() => i18n.changeLanguage("en")}
+        >
           EN
         </button>
       </div>
+
       <div className={s.modalMenu}>
         <button onClick={handleOpenMenu} className={s.openBtn}>
           <IoLanguage className={s.icon} />
