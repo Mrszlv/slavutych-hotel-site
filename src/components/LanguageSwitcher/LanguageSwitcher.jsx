@@ -31,13 +31,31 @@ const LanguageSwitcher = () => {
           <IoLanguage className={s.icon} />
         </button>
         <div className={`${s.containerMob} ${menuOpen ? s.open : ""}`}>
-          <button className={s.btn} onClick={() => i18n.changeLanguage("ua")}>
+          <button
+            className={s.btn}
+            onClick={() => {
+              i18n.changeLanguage("ua");
+              setMenuOpen(false);
+            }}
+          >
             UA
           </button>
-          <button className={s.btn} onClick={() => i18n.changeLanguage("ru")}>
+          <button
+            className={s.btn}
+            onClick={() => {
+              i18n.changeLanguage("ru");
+              setMenuOpen(false);
+            }}
+          >
             RU
           </button>
-          <button className={s.btn} onClick={() => i18n.changeLanguage("en")}>
+          <button
+            className={s.btn}
+            onClick={() => {
+              i18n.changeLanguage("en");
+              setMenuOpen(false);
+            }}
+          >
             EN
           </button>
         </div>
