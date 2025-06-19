@@ -1,4 +1,4 @@
-.navDesctop {
+.navDesktop {
   display: none;
 }
 
@@ -62,7 +62,7 @@
     display: none;
   }
 
-  .navDesctop {
+  .navDesktop {
     display: flex;
     gap: 10px;
   }
@@ -82,8 +82,8 @@
 }
 
 @media screen and (min-width: 1440px) {
-  .navDesctop {
-    gap: 20px;
+  .navDesktop {
+    gap: 30px;
   }
   .linkDesk {
     font-size: 20px;

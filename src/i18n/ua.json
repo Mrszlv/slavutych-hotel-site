@@ -9,6 +9,8 @@
     "subtitle": "Карпатах для всієї сімї"
   },
   "bookingForm": {
+    "title": "Форма ",
+    "subtitle": "бронювання",
     "name": "Ім’я",
     "checkin": "Дата заїзду",
     "checkout": "Дата виїзду",

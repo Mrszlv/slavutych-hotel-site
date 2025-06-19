@@ -93,6 +93,9 @@
 }
 
 @media screen and (min-width: 1440px) {
+  .containerDesk {
+    gap: 30px;
+  }
   .btnDesk {
     border: 2px solid;
     padding: 8px;

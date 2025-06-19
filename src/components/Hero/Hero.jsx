@@ -23,7 +23,7 @@ const Hero = () => {
         />
         <img
           className={s.imgThree}
-          src="https://res.cloudinary.com/ddqtzq55a/image/upload/v1750260476/20250617_143453_ul3ixa.jpg"
+          src="https://res.cloudinary.com/ddqtzq55a/image/upload/v1738249381/%D1%82%D0%B5%D1%80%D0%B8%D1%82%D0%BE%D1%80%D1%96%D1%8F-4_sirg77.jpg"
           alt=""
         />
       </div>

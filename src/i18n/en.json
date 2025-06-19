@@ -9,6 +9,8 @@
     "subtitle": "Carpathians for the whole family"
   },
   "bookingForm": {
+    "title": "Booking ",
+    "subtitle": "form",
     "name": "Name",
     "checkin": "Check-in Date",
     "checkout": "Check-out Date",

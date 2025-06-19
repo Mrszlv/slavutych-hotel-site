@@ -22,7 +22,7 @@ const Navigation = () => {
   const { t } = useTranslation();
   return (
     <>
-      <nav className={s.navDesctop}>
+      <nav className={s.navDesktop}>
         <NavLink className={buildLinkClass} to="/">
           {t("nav.home")}
         </NavLink>
