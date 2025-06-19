@@ -86,6 +86,9 @@
     gap: 20px;
     width: 50%;
   }
+  .input {
+    height: 50px;
+  }
 }
 
 @media screen and (min-width: 1440px) {
@@ -101,5 +104,8 @@
   }
   .form {
     gap: 30px;
+  }
+  .input {
+    height: 60px;
   }
 }
