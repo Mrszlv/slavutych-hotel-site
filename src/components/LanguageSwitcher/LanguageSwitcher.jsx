@@ -30,19 +30,18 @@ const LanguageSwitcher = () => {
         <button onClick={handleOpenMenu} className={s.openBtn}>
           <IoLanguage className={s.icon} />
         </button>
-        {menuOpen && (
-          <div className={s.containerMob}>
-            <button className={s.btn} onClick={() => i18n.changeLanguage("ua")}>
-              UA
-            </button>
-            <button className={s.btn} onClick={() => i18n.changeLanguage("ru")}>
-              RU
-            </button>
-            <button className={s.btn} onClick={() => i18n.changeLanguage("en")}>
-              EN
-            </button>
-          </div>
-        )}
+
+        <div className={`${s.containerMob} ${menuOpen ? s.open : ""}`}>
+          <button className={s.btn} onClick={() => i18n.changeLanguage("ua")}>
+            UA
+          </button>
+          <button className={s.btn} onClick={() => i18n.changeLanguage("ru")}>
+            RU
+          </button>
+          <button className={s.btn} onClick={() => i18n.changeLanguage("en")}>
+            EN
+          </button>
+        </div>
       </div>
     </>
   );

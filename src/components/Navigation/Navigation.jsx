@@ -6,6 +6,12 @@ import { IoIosMenu } from "react-icons/io";
 
 import s from "./Navigation.module.css";
 
+import clsx from "clsx";
+
+const buildLinkClass = ({ isActive }) => {
+  return clsx(s.linkDesk, isActive && s.active);
+};
+
 const Navigation = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -17,19 +23,19 @@ const Navigation = () => {
   return (
     <>
       <nav className={s.navDesctop}>
-        <NavLink className={s.linkDesk} to="/">
+        <NavLink className={buildLinkClass} to="/">
           {t("nav.home")}
         </NavLink>
-        <NavLink className={s.linkDesk} to="/rooms">
+        <NavLink className={buildLinkClass} to="/rooms">
           {t("nav.rooms")}
         </NavLink>
-        <NavLink className={s.linkDesk} to="/gallery">
+        <NavLink className={buildLinkClass} to="/gallery">
           {t("nav.gallery")}
         </NavLink>
-        <NavLink className={s.linkDesk} to="/reviews">
+        <NavLink className={buildLinkClass} to="/reviews">
           {t("nav.reviews")}
         </NavLink>
-        <NavLink className={s.linkDesk} to="/contact">
+        <NavLink className={buildLinkClass} to="/contact">
           {t("nav.contact")}
         </NavLink>
       </nav>
@@ -37,28 +43,6 @@ const Navigation = () => {
       <button onClick={handleOpenMenu} className={s.openBtn}>
         <IoIosMenu />
       </button>
-      {/* {menuOpen && (
-        <nav className={s.navMobile}>
-          <button onClick={handleOpenMenu} className={s.closeBtn}>
-            <IoMdClose />
-          </button>
-          <NavLink className={s.linkMob} onClick={handleOpenMenu} to="/">
-            {t("nav.home")}
-          </NavLink>
-          <NavLink className={s.linkMob} onClick={handleOpenMenu} to="/rooms">
-            {t("nav.rooms")}
-          </NavLink>
-          <NavLink className={s.linkMob} onClick={handleOpenMenu} to="/gallery">
-            {t("nav.gallery")}
-          </NavLink>
-          <NavLink className={s.linkMob} onClick={handleOpenMenu} to="/reviews">
-            {t("nav.reviews")}
-          </NavLink>
-          <NavLink className={s.linkMob} onClick={handleOpenMenu} to="/contact">
-            {t("nav.contact")}
-          </NavLink>
-        </nav>
-      )} */}
       <nav className={`${s.navMobile} ${menuOpen ? s.navMobileOpen : ""}`}>
         <button onClick={handleOpenMenu} className={s.closeBtn}>
           <IoMdClose />

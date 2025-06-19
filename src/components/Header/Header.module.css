@@ -44,3 +44,14 @@
     font-weight: 900;
   }
 }
+
+@media screen and (min-width: 1440px) {
+  .logo {
+    width: 40px;
+    height: 40px;
+  }
+
+  .title {
+    font-size: 30px;
+  }
+}
