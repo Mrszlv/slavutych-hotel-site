@@ -54,6 +54,9 @@
     "title": "Gallery",
     "description": "Explore our gallery to see the beauty of the hotel and the surrounding landscapes."
   },
+  "reviews": {
+    "placeholder": "Write a review"
+  },
   "footer": {
     "text": "Hotel Slavutych Zakarpattia",
     "formOpen": "Request a call back",

@@ -34,7 +34,7 @@
 
 @media screen and (min-width: 768px) {
   .header {
-    padding: 10px 20px;
+    padding: 16px 32px;
   }
   .logo {
     display: block;
@@ -50,7 +50,7 @@
 
 @media screen and (min-width: 1440px) {
   .header {
-    padding: 20px 30px;
+    padding: 32px 48px;
   }
 
   .logo {

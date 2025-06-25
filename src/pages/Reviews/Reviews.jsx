@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
+import s from "./Reviews.module.css";
 
 const Reviews = () => {
   const { t } = useTranslation();
@@ -20,19 +21,24 @@ const Reviews = () => {
   };
 
   return (
-    <div>
-      <h2>{t("nav.reviews")}</h2>
-      <form onSubmit={handleSubmit}>
+    <div className={s.container}>
+      <h2 className={s.title}>{t("nav.reviews")}</h2>
+      <form className={s.form} onSubmit={handleSubmit}>
         <textarea
+          className={s.textarea}
           value={text}
           onChange={(e) => setText(e.target.value)}
-          placeholder="Write your review"
+          placeholder={t("reviews.placeholder")}
         />
-        <button type="submit">{t("submit")}</button>
+        <button className={s.btn} type="submit">
+          {t("submit")}
+        </button>
       </form>
-      <ul>
+      <ul className={s.list}>
         {reviews.map((review) => (
-          <li key={review.id}>{review.text}</li>
+          <li className={s.item} key={review.id}>
+            {review.text}
+          </li>
         ))}
       </ul>
     </div>

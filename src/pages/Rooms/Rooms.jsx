@@ -55,10 +55,10 @@ const Rooms = () => {
           <div className={s.contImg}>
             <Swiper
               modules={[Navigation, Pagination]}
-              spaceBetween={10}
+              spaceBetween={20}
               slidesPerView={1}
-              navigation
-              pagination={{ clickable: true }}
+              // navigation
+              // pagination={{ clickable: true }}
               breakpoints={{
                 768: { slidesPerView: 2 },
                 1024: { slidesPerView: 3 },
@@ -71,20 +71,22 @@ const Rooms = () => {
               ))}
             </Swiper>
           </div>
-          <p className={s.itemText}>{t("rooms.description-luxe-2-1")}</p>
-          <NavLink className={s.link} to={"/"}>
-            {t("rooms.link")}
-          </NavLink>
+          <div className={s.descrLink}>
+            <p className={s.itemText}>{t("rooms.description-luxe-2-1")}</p>
+            <NavLink className={s.link} to={"/"}>
+              {t("rooms.link")}
+            </NavLink>
+          </div>
         </li>
         <li className={s.item}>
           <h4 className={s.itemTitle}>{t("rooms.junior-suite-1")}</h4>
           <div className={s.contImg}>
             <Swiper
               modules={[Navigation, Pagination]}
-              spaceBetween={10}
+              spaceBetween={20}
               slidesPerView={1}
-              navigation
-              pagination={{ clickable: true }}
+              // navigation
+              // pagination={{ clickable: true }}
               breakpoints={{
                 768: { slidesPerView: 2 },
                 1024: { slidesPerView: 3 },
@@ -97,20 +99,24 @@ const Rooms = () => {
               ))}
             </Swiper>
           </div>
-          <p className={s.itemText}>{t("rooms.description-junior-suite-1")}</p>
-          <NavLink className={s.link} to={"/"}>
-            {t("rooms.link")}
-          </NavLink>
+          <div className={s.descrLink}>
+            <p className={s.itemText}>
+              {t("rooms.description-junior-suite-1")}
+            </p>
+            <NavLink className={s.link} to={"/"}>
+              {t("rooms.link")}
+            </NavLink>
+          </div>
         </li>
         <li className={s.item}>
           <h4 className={s.itemTitle}>{t("rooms.standart-1-1")}</h4>
           <div className={s.contImg}>
             <Swiper
               modules={[Navigation, Pagination]}
-              spaceBetween={10}
+              spaceBetween={20}
               slidesPerView={1}
-              navigation
-              pagination={{ clickable: true }}
+              // navigation
+              // pagination={{ clickable: true }}
               breakpoints={{
                 768: { slidesPerView: 2 },
                 1024: { slidesPerView: 3 },
@@ -123,20 +129,22 @@ const Rooms = () => {
               ))}
             </Swiper>
           </div>
-          <p className={s.itemText}>{t("rooms.description-standart-1-1")}</p>
-          <NavLink className={s.link} to={"/"}>
-            {t("rooms.link")}
-          </NavLink>
+          <div className={s.descrLink}>
+            <p className={s.itemText}>{t("rooms.description-standart-1-1")}</p>
+            <NavLink className={s.link} to={"/"}>
+              {t("rooms.link")}
+            </NavLink>
+          </div>
         </li>
         <li className={s.item}>
           <h4 className={s.itemTitle}>{t("rooms.economy-1-1")}</h4>
           <div className={s.contImg}>
             <Swiper
               modules={[Navigation, Pagination]}
-              spaceBetween={10}
+              spaceBetween={20}
               slidesPerView={1}
-              navigation
-              pagination={{ clickable: true }}
+              // navigation
+              // pagination={{ clickable: true }}
               breakpoints={{
                 768: { slidesPerView: 2 },
                 1024: { slidesPerView: 3 },
@@ -149,10 +157,12 @@ const Rooms = () => {
               ))}
             </Swiper>
           </div>
-          <p className={s.itemText}>{t("rooms.description-economy-1-1")}</p>
-          <NavLink className={s.link} to={"/"}>
-            {t("rooms.link")}
-          </NavLink>
+          <div className={s.descrLink}>
+            <p className={s.itemText}>{t("rooms.description-economy-1-1")}</p>
+            <NavLink className={s.link} to={"/"}>
+              {t("rooms.link")}
+            </NavLink>
+          </div>
         </li>
         <li className={s.item}>
           <h4 className={s.itemTitle}>{t("rooms.luxe-3-9")}</h4>

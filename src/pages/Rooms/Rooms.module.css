@@ -33,6 +33,9 @@
   height: 300px;
   object-fit: cover;
   border-radius: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.22), 0 2px 2px rgba(0, 0, 0, 0.34),
+    0 4px 4px rgba(0, 0, 0, 0.28), 0 8px 8px rgba(0, 0, 0, 0.22);
 }
 
 .itemText {
@@ -41,6 +44,8 @@
 }
 
 .link {
+  width: 130px;
+  height: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -64,4 +69,59 @@
   outline: none;
   color: black;
   transform: scale(0.95);
+}
+
+.descrLink {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    padding: 16px 32px;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+
+  .itemTitle {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+
+  .descrLink {
+    flex-direction: row;
+    gap: 10px;
+    align-items: last baseline;
+    justify-content: space-between;
+  }
+
+  .itemText {
+    font-size: 16px;
+    max-width: 50%;
+    text-align: justify;
+  }
+  .link {
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    padding: 32px 48px;
+  }
+  .title {
+    font-size: 32px;
+  }
+  .itemTitle {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  .itemText {
+    font-size: 18px;
+    max-width: 60%;
+  }
 }
