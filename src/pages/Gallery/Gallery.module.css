@@ -1,0 +1,152 @@
+.container {
+  padding: 8px 16px;
+  margin-bottom: 100px;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.text {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.contImg {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 100px;
+  align-items: center;
+  justify-content: center;
+}
+
+.img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.22), 0 2px 2px rgba(0, 0, 0, 0.34),
+    0 4px 4px rgba(0, 0, 0, 0.28), 0 8px 8px rgba(0, 0, 0, 0.22);
+}
+
+.regionTitle {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.regionSubtitle {
+  color: goldenrod;
+}
+
+.regionList {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.regionItem {
+  padding: 10px;
+  border-bottom: 1px solid goldenrod;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.22), 0 2px 2px rgba(0, 0, 0, 0.34),
+    0 4px 4px rgba(0, 0, 0, 0.28), 0 8px 8px rgba(0, 0, 0, 0.22);
+}
+
+.regionImg {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  margin-bottom: 5px;
+  border-radius: 10px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.22), 0 2px 2px rgba(0, 0, 0, 0.34),
+    0 4px 4px rgba(0, 0, 0, 0.28), 0 8px 8px rgba(0, 0, 0, 0.22);
+}
+
+.regionText {
+  text-align: justify;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    padding: 16px 32px;
+  }
+
+  .title {
+    font-size: 24px;
+    font-weight: 900;
+  }
+
+  .text {
+    font-size: 16px;
+  }
+
+  .contImg {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .img {
+    width: 49%;
+    height: 400px;
+  }
+
+  .regionTitle {
+    font-size: 24px;
+    font-weight: 900;
+  }
+
+  .regionItem {
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: flex-start;
+  }
+
+  .regionImg {
+    width: 60%;
+    height: 400px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    padding: 32px 48px;
+  }
+
+  .title {
+    font-size: 32px;
+  }
+
+  .text {
+    font-size: 18px;
+  }
+
+  .img {
+    width: 32%;
+    height: 450px;
+  }
+
+  .regionTitle {
+    font-size: 32px;
+    font-weight: 900;
+  }
+
+  .regionText {
+    font-size: 24px;
+  }
+
+  .regionItem {
+    padding: 20px;
+  }
+
+  .regionImg {
+    height: 650px;
+  }
+}

@@ -1,11 +1,11 @@
-import BookingForm from "../../components/BookingForm/BookingForm";
 import Hero from "../../components/hero/hero";
+import Services from "../../components/Services/Services";
 
 const HomePage = () => {
   return (
     <div>
       <Hero />
-      <BookingForm />
+      <Services />
     </div>
   );
 };

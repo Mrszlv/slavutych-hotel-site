@@ -18,6 +18,20 @@
     "people": "Number of People",
     "book": "Book Now"
   },
+  "services": {
+    "title": "Our ",
+    "subtitle": "services:",
+    "text": "While staying at our hotel you can use the following services: ",
+    "wifi": "Free WiFi",
+    "air": "Air conditioners in every room",
+    "camping": "Gazebos on the territory",
+    "grill": "Possibility to use the barbecue",
+    "pool": "10% discount on the pool during the summer months",
+    "bus": "Excursions in Transcarpathia and Europe",
+    "parking": "There is paid parking near the hotel",
+    "rest": "On-site cafe with full-service dining",
+    "shop": "There are many shops and 2 markets near the hotel"
+  },
   "nav": {
     "home": "Home",
     "rooms": "Rooms",
@@ -48,17 +62,50 @@
     "description-standart-9-a": "Standard with a double bed and a folding chair for a child, a bathroom with a bathtub, a small balcony with a beautiful view of the mountains. The room has: TV, refrigerator, air conditioning, hairdryer, kettle (if there is no blackout), and much more for your comfort.",
     "economy-9-a": "Economy building 9-A",
     "description-economy-9-a": "Economy room with a double bed, a bathroom with a bathtub, a small balcony with a beautiful view of the mountains. The room has: TV, refrigerator, air conditioning, hairdryer, kettle (if there is no blackout), and much more for your comfort.",
-    "link": "Book"
+    "link": "Book",
+    "dining": "Our dining room",
+    "dining-descr": "Here you can try dishes of Transcarpathian and European cuisine, as well as order complex dietary meals."
   },
   "gallery": {
     "title": "Gallery",
-    "description": "Explore our gallery to see the beauty of the hotel and the surrounding landscapes."
+    "description": "Explore our gallery to see the beauty of the hotel and the surrounding landscapes.",
+    "title-2": "Interesting places ",
+    "subtitle-2": "our region:",
+    "region-text-1": "In the heart of the Carpathians, at the foot of Mount Gimba, in a beech gorge, is one of the seven natural wonders of Ukraine - the incredibly beautiful cascade waterfall Shypit.",
+    "region-text-2": "The area of ​​the Synevyr National Natural Park is a cosmopolitan little patch of beautiful nature. This is a place of power and a most enigmatic primordial reminder of Western Ukraine. Here itself, hidden in the dense coniferous forests of the Carpathians, there is a natural pearl and one of the hallmarks of the emerald Carpathians - Lake Synevyr, which amazes everyone with its crystal clear and deep waters. Soon thousands of tourists come here to admire the largest Girsky lake in Ukraine and enjoy the marvelous Malovniki landscapes nearby.",
+    "region-text-3": "Not far from Synevyr is another tourist highlight of Transcarpathia. The picturesque Kolochava is one of the longest villages in Ukraine, its length is 15 km. But Kolochava is famous not only because of this. The Carpathian hinterland boasts mineral springs, incredible mountain views and an ancient history, because the first written mention of it dates back to 1463.",
+    "region-text-4": "Among the amazing architectural monuments of Western Ukraine, one can single out the fabulous hunting castle of Schönborn. It has been preserved almost in its original form both inside and outside. Special attention should be paid to the peculiar architecture of the castle. According to astronomical principles, each of the elements of the facade has a special symbolic interpretation. Thus, the castle has exactly 365 windows, which represent the days of the year (in case of a leap year, there is another bricked-up window in the Schönborn Palace), 52 rooms, which symbolize the number of weeks in the year, and 12 entrances for each month of the year.",
+    "region-text-5": "Built in the 15th century as a fortress, Saint Miklos Castle has changed many owners during its existence and witnessed various historical events - heroic, tragic, dramatic and romantic. It has known times of prosperity and experienced a period of decline. Since the 19th century, after the castle was owned by the Counts of Schönborn for two hundred years, Chynadiivka Castle has not been taken care of, it was used for various purposes without proper care, and it gradually fell into disrepair and collapse. In 2001, the family of Transcarpathian artists Jerzy Bartosz and Tetiana Petryczko-Bartosz decided to save the historical monument and rented the castle. They managed to revive a unique historical monument of culture and architecture and attract the attention of tourists to it.",
+    "region-text-6": "Another extremely attractive and very cute tourist attraction of Transcarpathia is located between the villages of Iza and Lypcha near the town of Khust. This is the only farm in Ukraine that keeps spotted deer. It was founded more than 30 years ago. Currently, the farm has more than 300 of these horned beauties, who live in a natural environment on 57 hectares of pastures, forests and artificial ponds.",
+    "region-text-7": "Mukachevo Castle Palanok is a historical and military-architectural monument and one of the best castles in Central Europe. It stands on Zamkova Gora, a volcanic mountain 68 meters high, on the outskirts of the city of Mukachevo. The castle took its name 'Palanok' from the oak palisade - palanka, which once surrounded Zamkova Gora.",
+    "region-text-8": "The village of Iza in the Khust district is known far beyond the borders of the Transcarpathian region. And all thanks to the craft of wickerwork, which the locals have perfected and brought to the level of art.",
+    "region-text-9": "Another village from the Khust district, known throughout Ukraine, is Nyzhne Selishche. It is famous for its real natural cheeses, which have been made using Swiss technology in a local cheese factory since 2002, which has no analogues in Ukraine. No preservatives, harmful additives, flavorings, or dyes are used in the production process. Only real milk is purchased from local villagers. Tourists are given tours of the cheese factory, during which they can see with their own eyes how milk is turned into cheese and taste several types of cheese: “Khust”, “Selyskyi molodyi”, “Selyskyi mature” and “Narcis Karpat”. By the way, making natural cheese is a long process. For example, the Transcarpathian cheese “Narcis Karpat” ripens for six months in the damp and cool basement of the Selyskyi cheese factory.",
+    "region-text-10": "Ostrich farms are located in many corners of Ukraine. They not only breed these exotic birds, but also organize excursions for tourists. There is also an ostrich nursery in the Transcarpathian town of Khust, which has over 30 birds. Tourists can bring bread, cabbage, and apples to feed the ostriches. On the farm, you can buy ostrich eggs and feathers, and you can also take as many beautiful photos as you like as a keepsake. The most popular photos are with an ostrich egg in your hands or standing on it. We recommend helping the little ones hold this accessory for the photo - such an egg weighs from 1 to 2 kg. There are also ponies and 2 goats on the farm, who also like to pose for photos for a small treat.",
+    "region-text-11": "The city of Khust has gathered around itself many historical and simply interesting monuments. Among them is a truly special natural wonder, a real tourist highlight of Transcarpathia - the Valley of Narcissus in the Kireshy tract. This botanical monument has been officially protected since the times when these lands were the property of Austria-Hungary, but now the Valley belongs to the Carpathian Biosphere Reserve, which preserves this valuable ecosystem on the territory of more than 250 hectares of meadows and marshes. The Valley of Narcissus is unique in both size and location. Usually this fragile flower reigns at an altitude of a thousand meters above sea level. Similar natural centers of daffodils are in the Alps, Romania and a little in the Balkans. The Transcarpathian Valley is the largest population of narrow-leaved narcissus in Central Europe at an altitude of only 180-200 meters above sea level. Since 1992, the Valley of Daffodils has been part of the UNESCO international network of biosphere reserves.",
+    "region-text-12": "In Transcarpathia, you can have a good and interesting rest and improve your health by taking baths in thermal springs. This picturesque corner is the leader in Ukraine in terms of the number of balneological resorts, there are more than 50 thermal springs of various mineralization. And the most popular thermal resorts are located in Berehove, Kosino and Velyatino. The village of Dovgy and the city of Mukacheve are also famous for their healing waters. The thermal waters of Transcarpathia are rich in iron, manganese, potassium, silicon, sodium and other trace elements. The thermal resorts of Transcarpathia treat diseases related to the musculoskeletal system, cardiovascular system, peripheral nervous system, peripheral vessels and biliary system.",
+    "region-text-13": "High on the Castle Hill above the historical center of Uzhhorod, the Uzhhorod Castle rises majestically, shrouded in secrets and legends. It is not known for certain when this fortress was built, but since ancient times there has been a defensive structure on this site. The first mention of the castle appeared in written sources of the 9th century, although it is not about a stone, but a wooden fortress of the White Croats. Uzhhorod Castle has repelled many attacks, withstood long sieges and has stood in many battles. This is not an openwork palace, as you can imagine when you hear the word 'castle', but a real battle fortress with formidable square towers, thick walls, gloomy loopholes and carefully thought out and calculated fortifications. During the military operations, both the aristocracy and numerous townspeople hid in the castle, so there are deep dungeons under the castle. There are, in particular, a prison and a torture chamber, which can still be seen today. Currently, the premises of the Uzhhorod Castle house interesting exhibits of the local history museum."
   },
   "reviews": {
     "placeholder": "Write a review"
   },
+  "contact": {
+    "title": "Contact Us:",
+    "text": "Room bookings:",
+    "manager": "Hotel Director:",
+    "map": " View on Map: ",
+    "route": "How to get to Polyana",
+    "automobile": "By car:",
+    "autoDescr": "Via the Kyiv — Lviv — Chop highway (E-50/M-06). When traveling from Lviv, follow the Kyiv-Chop highway to Svalyava. From Svalyava, head towards Polyana.",
+    "bus": "By bus:",
+    "busDescr": "from Lviv, Mukachevo, Uzhhorod, Ivano-Frankivsk by bus or minibus.",
+    "train": "By train:",
+    "trainDescr": "By any train of Uzhhorod direction to Svalyava railway station, then by bus to Polyana",
+    "address": "Our address:",
+    "addressText": "Kurortna-Bichna 1, Polyana village, Mukachevo district, Transcarpathian region."
+  },
   "footer": {
-    "text": "Hotel Slavutych Zakarpattia",
+    "text": "Hotel Slavutych ",
+    "subtext": "Zakarpattia",
     "formOpen": "Request a call back",
     "formClose": "Close form",
     "inputName": "Enter name",

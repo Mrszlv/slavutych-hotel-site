@@ -1,54 +1,67 @@
-import { useState } from "react";
+import s from "./Contact.module.css";
+
+import { useTranslation } from "react-i18next";
+
+import { PiMapPinFill } from "react-icons/pi";
 
 const Contact = () => {
-  const [formData, setFormData] = useState({ name: "", message: "" });
-  const [isSubmitted, setIsSubmitted] = useState(false);
-
-  const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log("Form submitted:", formData);
-    setIsSubmitted(true);
-    setFormData({ name: "", message: "" });
-  };
+  const { t } = useTranslation();
 
   return (
-    <div>
-      <h2>Contact Us</h2>
-      <p>Email: slavutych.zakarpattia@gmail.com</p>
-      <p>Phone:+380 95 137 94 10</p>
-      <iframe
-        title="Map"
-        src="https://www.google.com/maps/embed?q=Slavutych+Hotel,+Mukachevo,+Zakarpattia+Oblast,+Ukraine&output=embed"
-        width="100%"
-        height="300"
-        allowFullScreen=""
-        loading="lazy"
-        referrerPolicy="no-referrer-when-downgrade"
-      ></iframe>
-      <h3>Callback Request</h3>
-      <form onSubmit={handleSubmit}>
-        <input
-          name="name"
-          placeholder="Your name"
-          value={formData.name}
-          onChange={handleChange}
-          required
-        />
-        <textarea
-          name="message"
-          placeholder="Your message"
-          value={formData.message}
-          onChange={handleChange}
-          rows={4}
-          required
-        />
-        <button type="submit">Send</button>
-        {isSubmitted && <p>Message sent successfully</p>}
-      </form>
+    <div className={`${s.container} ${s.photoCont}`}>
+      <h2 className={s.title}>{t("contact.title")}</h2>
+      <address className={s.contactsAddress}>
+        <ul className={s.contactsList}>
+          <li className={s.contactsItem}>
+            <p className={s.contactsText}>{t("contact.text")}</p>
+            <a href="tel:+380951379410" className={s.addText}>
+              <span className={s.span}>Vodafone:</span> +380 (95) 137-94-10
+            </a>
+          </li>
+          <li className={s.contactsItem}>
+            <a href="tel:+380680660303" className={s.addText}>
+              <span className={s.span}>Kyivstar:</span> +380 (68) 066-03-03
+            </a>
+          </li>
+          <li className={s.contactsItem}>
+            <a
+              href="mailto:slavutych.zakarpattia@gmail.com"
+              className={s.addText}
+            >
+              <span className={s.span}>Email:</span>{" "}
+              slavutych.zakarpattia@gmail.com
+            </a>
+          </li>
+          <li className={s.contactsItem}>
+            <p className={s.contactsText}>{t("contact.manager")}</p>
+            <a href="tel:+380951379410" className={s.addText}>
+              <span className={s.span}>Vodafone:</span> +380 (50) 681-54-36
+            </a>
+          </li>
+          <li className={s.contactsItem}>
+            <a href="tel:+380680660303" className={s.addText}>
+              <span className={s.span}>Kyivstar:</span> +380 (97) 338-58-94
+            </a>
+          </li>
+        </ul>
+      </address>
+      <h2 className={s.title}>{t("contact.route")}</h2>
+      <h3 className={s.title}>{t("contact.automobile")}</h3>
+      <p className={s.text}>{t("contact.autoDescr")}</p>
+      <h3 className={s.title}>{t("contact.bus")}</h3>
+      <p className={s.text}>{t("contact.busDescr")}</p>
+      <h3 className={s.title}>{t("contact.train")}</h3>
+      <p className={s.text}>{t("contact.trainDescr")}</p>
+      <h3 className={s.title}>{t("contact.address")}</h3>
+      <p className={s.text}>{t("contact.addressText")} </p>
+      <a
+        rel="noopener noreferrer"
+        target="_blank"
+        href="https://maps.app.goo.gl/nSNpHwuNArrThXgw9"
+        className={s.link}
+      >
+        {t("contact.map")} <PiMapPinFill className={s.icon} />
+      </a>
     </div>
   );
 };

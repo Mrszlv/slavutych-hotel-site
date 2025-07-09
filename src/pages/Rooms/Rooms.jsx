@@ -40,6 +40,55 @@ const imagesFor = [
   "https://res.cloudinary.com/ddqtzq55a/image/upload/v1738249537/IMG_3119_xybw93.jpg",
 ];
 
+const imagesFive = [
+  "https://res.cloudinary.com/ddqtzq55a/image/upload/v1751720313/20250705_144035_tywmz8.jpg",
+  "https://res.cloudinary.com/ddqtzq55a/image/upload/v1751720314/20250705_144048_kcye2l.jpg",
+  "https://res.cloudinary.com/ddqtzq55a/image/upload/v1751720316/20250705_144058_gzodgm.jpg",
+  "https://res.cloudinary.com/ddqtzq55a/image/upload/v1751720318/20250705_144134_bqn18p.jpg",
+  "https://res.cloudinary.com/ddqtzq55a/image/upload/v1751720319/20250705_144148_gscx0c.jpg",
+  "https://res.cloudinary.com/ddqtzq55a/image/upload/v1751720320/20250705_144113_ka2edd.jpg",
+];
+
+const imagesSix = [
+  "https://res.cloudinary.com/ddqtzq55a/image/upload/v1751720367/20250705_144409_samzby.jpg",
+  "https://res.cloudinary.com/ddqtzq55a/image/upload/v1751720368/20250705_144419_sqvyym.jpg",
+  "https://res.cloudinary.com/ddqtzq55a/image/upload/v1751720368/20250705_144430_t9bzdl.jpg",
+  "https://res.cloudinary.com/ddqtzq55a/image/upload/v1751720369/20250705_144443_j88qxr.jpg",
+  "https://res.cloudinary.com/ddqtzq55a/image/upload/v1751720371/20250705_144458_kzdm8a.jpg",
+];
+
+const imagesSeven = [
+  "https://res.cloudinary.com/ddqtzq55a/image/upload/v1751720420/20250705_144245_sa1vhz.jpg",
+  "https://res.cloudinary.com/ddqtzq55a/image/upload/v1751720431/20250705_144252_s5lx5y.jpg",
+  "https://res.cloudinary.com/ddqtzq55a/image/upload/v1751720432/20250705_144301_yagcil.jpg",
+  "https://res.cloudinary.com/ddqtzq55a/image/upload/v1751720428/20250705_144333_crecam.jpg",
+];
+
+const imagesNine = [
+  "https://res.cloudinary.com/ddqtzq55a/image/upload/v1751714060/IMG_4136_z10gjs.jpg",
+  "https://res.cloudinary.com/ddqtzq55a/image/upload/v1751714060/IMG_4138_zjevid.jpg",
+  "https://res.cloudinary.com/ddqtzq55a/image/upload/v1751714061/IMG_4140_euuppt.jpg",
+  "https://res.cloudinary.com/ddqtzq55a/image/upload/v1751714061/IMG_4142_rgc4r2.jpg",
+];
+
+const imagesTen = [
+  "https://res.cloudinary.com/ddqtzq55a/image/upload/v1751713985/IMG_4127_twdyvt.jpg",
+  "https://res.cloudinary.com/ddqtzq55a/image/upload/v1751713986/IMG_4125_wmwdec.jpg",
+  "https://res.cloudinary.com/ddqtzq55a/image/upload/v1751713986/IMG_4133_ptmsm5.jpg",
+  "https://res.cloudinary.com/ddqtzq55a/image/upload/v1751713986/IMG_4129_u0dv6m.jpg",
+  "https://res.cloudinary.com/ddqtzq55a/image/upload/v1751713986/IMG_4146_udlzw6.jpg",
+];
+
+const imagesDining = [
+  "https://res.cloudinary.com/ddqtzq55a/image/upload/v1751722770/20250705_162620_bgi2zm.jpg",
+  "https://res.cloudinary.com/ddqtzq55a/image/upload/v1751722765/20250705_162645_nhfhyy.jpg",
+  "https://res.cloudinary.com/ddqtzq55a/image/upload/v1751722764/20250705_162634_wtyybz.jpg",
+  "https://res.cloudinary.com/ddqtzq55a/image/upload/v1751722768/20250705_162704_s15jol.jpg",
+  "https://res.cloudinary.com/ddqtzq55a/image/upload/v1751722770/20250705_162737_reqyd9.jpg",
+  "https://res.cloudinary.com/ddqtzq55a/image/upload/v1751722764/IMG_20250705_163102_858_yiscpf.jpg",
+  "https://res.cloudinary.com/ddqtzq55a/image/upload/v1751723797/IMG_20250705_165414_570_kaz1zd.jpg",
+];
+
 const Rooms = () => {
   const { t } = useTranslation();
 
@@ -73,7 +122,7 @@ const Rooms = () => {
           </div>
           <div className={s.descrLink}>
             <p className={s.itemText}>{t("rooms.description-luxe-2-1")}</p>
-            <NavLink className={s.link} to={"/"}>
+            <NavLink className={s.link} to={"/contact"}>
               {t("rooms.link")}
             </NavLink>
           </div>
@@ -103,7 +152,7 @@ const Rooms = () => {
             <p className={s.itemText}>
               {t("rooms.description-junior-suite-1")}
             </p>
-            <NavLink className={s.link} to={"/"}>
+            <NavLink className={s.link} to={"/contact"}>
               {t("rooms.link")}
             </NavLink>
           </div>
@@ -131,7 +180,7 @@ const Rooms = () => {
           </div>
           <div className={s.descrLink}>
             <p className={s.itemText}>{t("rooms.description-standart-1-1")}</p>
-            <NavLink className={s.link} to={"/"}>
+            <NavLink className={s.link} to={"/contact"}>
               {t("rooms.link")}
             </NavLink>
           </div>
@@ -159,28 +208,180 @@ const Rooms = () => {
           </div>
           <div className={s.descrLink}>
             <p className={s.itemText}>{t("rooms.description-economy-1-1")}</p>
-            <NavLink className={s.link} to={"/"}>
+            <NavLink className={s.link} to={"/contact"}>
               {t("rooms.link")}
             </NavLink>
           </div>
         </li>
         <li className={s.item}>
           <h4 className={s.itemTitle}>{t("rooms.luxe-3-9")}</h4>
+          <div className={s.contImg}>
+            <Swiper
+              modules={[Navigation, Pagination]}
+              spaceBetween={20}
+              slidesPerView={1}
+              // navigation
+              // pagination={{ clickable: true }}
+              breakpoints={{
+                768: { slidesPerView: 2 },
+                1024: { slidesPerView: 3 },
+              }}
+            >
+              {imagesFive.map((src, i) => (
+                <SwiperSlide key={i}>
+                  <img className={s.imgRoom} src={src} alt="Room image" />
+                </SwiperSlide>
+              ))}
+            </Swiper>
+          </div>
+          <div className={s.descrLink}>
+            <p className={s.itemText}>{t("rooms.description-luxe-3-9")}</p>
+            <NavLink className={s.link} to={"/contact"}>
+              {t("rooms.link")}
+            </NavLink>
+          </div>
         </li>
         <li className={s.item}>
           <h4 className={s.itemTitle}>{t("rooms.luxe-2-9")}</h4>
+          <div className={s.contImg}>
+            <Swiper
+              modules={[Navigation, Pagination]}
+              spaceBetween={20}
+              slidesPerView={1}
+              // navigation
+              // pagination={{ clickable: true }}
+              breakpoints={{
+                768: { slidesPerView: 2 },
+                1024: { slidesPerView: 3 },
+              }}
+            >
+              {imagesSix.map((src, i) => (
+                <SwiperSlide key={i}>
+                  <img className={s.imgRoom} src={src} alt="Room image" />
+                </SwiperSlide>
+              ))}
+            </Swiper>
+          </div>
+          <div className={s.descrLink}>
+            <p className={s.itemText}>{t("rooms.description-luxe-2-9")}</p>
+            <NavLink className={s.link} to={"/contact"}>
+              {t("rooms.link")}
+            </NavLink>
+          </div>
         </li>
         <li className={s.item}>
           <h4 className={s.itemTitle}>{t("rooms.junior-suite-9")}</h4>
+          <div className={s.contImg}>
+            <Swiper
+              modules={[Navigation, Pagination]}
+              spaceBetween={20}
+              slidesPerView={1}
+              // navigation
+              // pagination={{ clickable: true }}
+              breakpoints={{
+                768: { slidesPerView: 2 },
+                1024: { slidesPerView: 3 },
+              }}
+            >
+              {imagesSeven.map((src, i) => (
+                <SwiperSlide key={i}>
+                  <img className={s.imgRoom} src={src} alt="Room image" />
+                </SwiperSlide>
+              ))}
+            </Swiper>
+          </div>
+          <div className={s.descrLink}>
+            <p className={s.itemText}>
+              {t("rooms.description-junior-suite-9")}
+            </p>
+            <NavLink className={s.link} to={"/contact"}>
+              {t("rooms.link")}
+            </NavLink>
+          </div>
         </li>
         <li className={s.item}>
           <h4 className={s.itemTitle}>{t("rooms.economy-9")}</h4>
         </li>
         <li className={s.item}>
           <h4 className={s.itemTitle}>{t("rooms.standart-9-a")}</h4>
+          <div className={s.contImg}>
+            <Swiper
+              modules={[Navigation, Pagination]}
+              spaceBetween={20}
+              slidesPerView={1}
+              // navigation
+              // pagination={{ clickable: true }}
+              breakpoints={{
+                768: { slidesPerView: 2 },
+                1024: { slidesPerView: 3 },
+              }}
+            >
+              {imagesNine.map((src, i) => (
+                <SwiperSlide key={i}>
+                  <img className={s.imgRoom} src={src} alt="Room image" />
+                </SwiperSlide>
+              ))}
+            </Swiper>
+          </div>
+          <div className={s.descrLink}>
+            <p className={s.itemText}>{t("rooms.description-standart-9-a")}</p>
+            <NavLink className={s.link} to={"/contact"}>
+              {t("rooms.link")}
+            </NavLink>
+          </div>
         </li>
         <li className={s.item}>
           <h4 className={s.itemTitle}>{t("rooms.economy-9-a")}</h4>
+          <div className={s.contImg}>
+            <Swiper
+              modules={[Navigation, Pagination]}
+              spaceBetween={20}
+              slidesPerView={1}
+              // navigation
+              // pagination={{ clickable: true }}
+              breakpoints={{
+                768: { slidesPerView: 2 },
+                1024: { slidesPerView: 3 },
+              }}
+            >
+              {imagesTen.map((src, i) => (
+                <SwiperSlide key={i}>
+                  <img className={s.imgRoom} src={src} alt="Room image" />
+                </SwiperSlide>
+              ))}
+            </Swiper>
+          </div>
+          <div className={s.descrLink}>
+            <p className={s.itemText}>{t("rooms.description-economy-9-a")}</p>
+            <NavLink className={s.link} to={"contact"}>
+              {t("rooms.link")}
+            </NavLink>
+          </div>
+        </li>
+        <li className={s.item}>
+          <h4 className={s.itemTitle}>{t("rooms.dining")}</h4>
+          <div className={s.contImg}>
+            <Swiper
+              modules={[Navigation, Pagination]}
+              spaceBetween={20}
+              slidesPerView={1}
+              // navigation
+              // pagination={{ clickable: true }}
+              breakpoints={{
+                768: { slidesPerView: 2 },
+                1024: { slidesPerView: 3 },
+              }}
+            >
+              {imagesDining.map((src, i) => (
+                <SwiperSlide key={i}>
+                  <img className={s.imgRoom} src={src} alt="Room image" />
+                </SwiperSlide>
+              ))}
+            </Swiper>
+          </div>
+          <div className={s.descrLink}>
+            <p className={s.itemText}>{t("rooms.dining-descr")}</p>
+          </div>
         </li>
       </ul>
     </div>
