@@ -22,7 +22,8 @@
   width: 100%;
   height: 160px;
   padding: 10px;
-  border: 1px solid goldenrod;
+  border: none;
+  border-bottom: 1px solid goldenrod;
   border-radius: 10px;
   outline: none;
   background-color: transparent;
@@ -48,12 +49,6 @@
   transform: scale(1.1);
 }
 
-.btn:active {
-  outline: none;
-  color: black;
-  transform: scale(0.95);
-}
-
 .list {
   display: flex;
   flex-direction: column;
@@ -68,7 +63,8 @@
   height: 120px;
   text-align: left;
   overflow-y: auto;
-  border: 1px solid goldenrod;
+  border: none;
+  border-bottom: 1px solid goldenrod;
   border-radius: 10px;
   padding: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 4px 8px rgba(0, 0, 0, 0.05);
@@ -102,16 +98,22 @@
   }
 
   .textarea {
-    font-size: 18px;
+    font-size: 16px;
     width: 70%;
   }
+
+  .btn {
+    padding: 10px 15px;
+    font-size: 16px;
+  }
+
   .list {
     flex-direction: row;
     flex-wrap: wrap;
   }
   .item {
     padding: 10px;
-    font-size: 14px;
+    font-size: 16px;
     width: 32%;
   }
 }
@@ -126,11 +128,15 @@
   }
 
   .textarea {
-    font-size: 30px;
+    font-size: 20px;
+  }
+
+  .btn {
+    font-size: 20px;
   }
 
   .item {
-    font-size: 18px;
+    font-size: 20px;
     width: 24%;
   }
 }

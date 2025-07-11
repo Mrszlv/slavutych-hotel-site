@@ -55,10 +55,10 @@ const Footer = () => {
         <span className={s.span}>{t("footer.subtext")}</span>
       </p>
       <div className={s.formCont}>
-        <h5 className={s.formTitle} onClick={toggleAccordion}>
+        <p className={s.formTitle} onClick={toggleAccordion}>
           {isOpen ? `${t("footer.formClose")}` : `${t("footer.formOpen")}`}{" "}
           <SlCallIn className={s.icon} />
-        </h5>
+        </p>
         <div className={`${s.accordionContent} ${isOpen ? s.open : ""}`}>
           <form ref={form} onSubmit={sendEmail} className={s.form}>
             <input

@@ -29,31 +29,35 @@ const Services = () => {
         </li>
         <li className={s.item}>
           <TbAirConditioning className={s.itemIcon} />{" "}
-          <p>{t("services.air")} </p>
+          <p className={s.itemText}>{t("services.air")} </p>
         </li>
         <li className={s.item}>
           <GiCampingTent className={s.itemIcon} />{" "}
-          <p>{t("services.camping")} </p>
+          <p className={s.itemText}>{t("services.camping")} </p>
         </li>
         <li className={s.item}>
           <MdOutdoorGrill className={s.itemIcon} />{" "}
-          <p>{t("services.grill")} </p>
+          <p className={s.itemText}>{t("services.grill")} </p>
         </li>
         <li className={s.item}>
-          <MdOutlinePool className={s.itemIcon} /> <p>{t("services.pool")} </p>
+          <MdOutlinePool className={s.itemIcon} />{" "}
+          <p className={s.itemText}>{t("services.pool")} </p>
         </li>
         <li className={s.item}>
-          <LuBus className={s.itemIcon} /> <p>{t("services.bus")} </p>
+          <LuBus className={s.itemIcon} />{" "}
+          <p className={s.itemText}>{t("services.bus")} </p>
         </li>
         <li className={s.item}>
           <TbParkingCircle className={s.itemIcon} />{" "}
-          <p>{t("services.parking")} </p>
+          <p className={s.itemText}>{t("services.parking")} </p>
         </li>
         <li className={s.item}>
-          <IoRestaurant className={s.itemIcon} /> <p>{t("services.rest")} </p>
+          <IoRestaurant className={s.itemIcon} />{" "}
+          <p className={s.itemText}>{t("services.rest")} </p>
         </li>
         <li className={s.item}>
-          <FaCartShopping className={s.itemIcon} /> <p>{t("services.shop")} </p>
+          <FaCartShopping className={s.itemIcon} />{" "}
+          <p className={s.itemText}>{t("services.shop")} </p>
         </li>
       </ul>
     </div>

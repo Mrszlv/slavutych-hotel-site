@@ -24,11 +24,13 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border: 1px solid;
+  border: none;
+  border-bottom: 1px solid;
   border-color: goldenrod;
   border-radius: 10px;
   padding: 10px;
   width: 100%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 4px 8px rgba(0, 0, 0, 0.05);
   transition: color 0.5s ease;
 }
 
@@ -125,6 +127,7 @@
 }
 
 .footerLink {
+  text-decoration: none;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -139,16 +142,15 @@
 }
 
 .footerLink:hover {
-  transform: scale(1.03);
+  transform: scale(1.1);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15), 0 4px 8px rgba(0, 0, 0, 0.3),
     0 8px 16px rgba(0, 0, 0, 0.22), 0 16px 32px rgba(0, 0, 0, 0.15);
-  color: black;
 }
 
 .footerIcon {
   color: goldenrod;
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
 }
 
 @media screen and (min-width: 768px) {
@@ -181,7 +183,7 @@
   }
 
   .link {
-    color: whitesmoke;
+    color: inherit;
     font-size: 24px;
     display: flex;
     align-items: center;
@@ -189,8 +191,10 @@
     margin-top: 15px;
     transition: color 0.5s ease;
     text-decoration: none;
-    border: 1px solid goldenrod;
+    border: none;
+    border-bottom: 1px solid goldenrod;
     border-radius: 10px;
     padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 4px 8px rgba(0, 0, 0, 0.05);
   }
 }

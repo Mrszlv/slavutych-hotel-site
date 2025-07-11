@@ -18,6 +18,12 @@
 }
 
 .item {
+  border-bottom: 1px solid;
+  border-color: goldenrod;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.22), 0 2px 2px rgba(0, 0, 0, 0.34),
+    0 4px 4px rgba(0, 0, 0, 0.28), 0 8px 8px rgba(0, 0, 0, 0.22);
 }
 
 .itemTitle {
@@ -25,7 +31,12 @@
   margin-bottom: 10px;
 }
 
-.contImg {
+.priceTitle {
+  margin-bottom: 10px;
+}
+
+.priceSpan {
+  color: goldenrod;
 }
 
 .imgRoom {
@@ -92,6 +103,10 @@
     margin-bottom: 15px;
   }
 
+  .priceTitle {
+    font-size: 18px;
+  }
+
   .descrLink {
     flex-direction: row;
     gap: 10px;
@@ -113,13 +128,20 @@
   .container {
     padding: 32px 48px;
   }
+
   .title {
     font-size: 32px;
   }
+
   .itemTitle {
     font-size: 24px;
     margin-bottom: 20px;
   }
+
+  .priceTitle {
+    font-size: 24px;
+  }
+
   .itemText {
     font-size: 18px;
     max-width: 60%;

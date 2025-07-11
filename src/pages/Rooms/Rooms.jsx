@@ -101,10 +101,13 @@ const Rooms = () => {
       <ul className={s.list}>
         <li className={s.item}>
           <h4 className={s.itemTitle}>{t("rooms.luxe-2-1")}</h4>
+          <h5 className={s.priceTitle}>
+            {t("rooms.price")} <span className={s.priceSpan}>2'860.00₴</span>
+          </h5>
           <div className={s.contImg}>
             <Swiper
               modules={[Navigation, Pagination]}
-              spaceBetween={20}
+              spaceBetween={10}
               slidesPerView={1}
               // navigation
               // pagination={{ clickable: true }}
@@ -129,10 +132,13 @@ const Rooms = () => {
         </li>
         <li className={s.item}>
           <h4 className={s.itemTitle}>{t("rooms.junior-suite-1")}</h4>
+          <h5 className={s.priceTitle}>
+            {t("rooms.price")} <span className={s.priceSpan}>2'385.00₴</span>
+          </h5>
           <div className={s.contImg}>
             <Swiper
               modules={[Navigation, Pagination]}
-              spaceBetween={20}
+              spaceBetween={10}
               slidesPerView={1}
               // navigation
               // pagination={{ clickable: true }}
@@ -159,10 +165,13 @@ const Rooms = () => {
         </li>
         <li className={s.item}>
           <h4 className={s.itemTitle}>{t("rooms.standart-1-1")}</h4>
+          <h5 className={s.priceTitle}>
+            {t("rooms.price")} <span className={s.priceSpan}>1'870.00₴</span>
+          </h5>
           <div className={s.contImg}>
             <Swiper
               modules={[Navigation, Pagination]}
-              spaceBetween={20}
+              spaceBetween={10}
               slidesPerView={1}
               // navigation
               // pagination={{ clickable: true }}
@@ -187,10 +196,13 @@ const Rooms = () => {
         </li>
         <li className={s.item}>
           <h4 className={s.itemTitle}>{t("rooms.economy-1-1")}</h4>
+          <h5 className={s.priceTitle}>
+            {t("rooms.price")} <span className={s.priceSpan}>1'820.00₴</span>
+          </h5>
           <div className={s.contImg}>
             <Swiper
               modules={[Navigation, Pagination]}
-              spaceBetween={20}
+              spaceBetween={10}
               slidesPerView={1}
               // navigation
               // pagination={{ clickable: true }}
@@ -215,10 +227,13 @@ const Rooms = () => {
         </li>
         <li className={s.item}>
           <h4 className={s.itemTitle}>{t("rooms.luxe-3-9")}</h4>
+          <h5 className={s.priceTitle}>
+            {t("rooms.price")} <span className={s.priceSpan}>2'980.00₴</span>
+          </h5>
           <div className={s.contImg}>
             <Swiper
               modules={[Navigation, Pagination]}
-              spaceBetween={20}
+              spaceBetween={10}
               slidesPerView={1}
               // navigation
               // pagination={{ clickable: true }}
@@ -243,10 +258,13 @@ const Rooms = () => {
         </li>
         <li className={s.item}>
           <h4 className={s.itemTitle}>{t("rooms.luxe-2-9")}</h4>
+          <h5 className={s.priceTitle}>
+            {t("rooms.price")} <span className={s.priceSpan}>2'765.00₴</span>
+          </h5>
           <div className={s.contImg}>
             <Swiper
               modules={[Navigation, Pagination]}
-              spaceBetween={20}
+              spaceBetween={10}
               slidesPerView={1}
               // navigation
               // pagination={{ clickable: true }}
@@ -271,10 +289,13 @@ const Rooms = () => {
         </li>
         <li className={s.item}>
           <h4 className={s.itemTitle}>{t("rooms.junior-suite-9")}</h4>
+          <h5 className={s.priceTitle}>
+            {t("rooms.price")} <span className={s.priceSpan}>2'315.00₴</span>
+          </h5>
           <div className={s.contImg}>
             <Swiper
               modules={[Navigation, Pagination]}
-              spaceBetween={20}
+              spaceBetween={10}
               slidesPerView={1}
               // navigation
               // pagination={{ clickable: true }}
@@ -301,13 +322,19 @@ const Rooms = () => {
         </li>
         <li className={s.item}>
           <h4 className={s.itemTitle}>{t("rooms.economy-9")}</h4>
+          <h5 className={s.priceTitle}>
+            {t("rooms.price")} <span className={s.priceSpan}>1'720.00₴</span>
+          </h5>
         </li>
         <li className={s.item}>
           <h4 className={s.itemTitle}>{t("rooms.standart-9-a")}</h4>
+          <h5 className={s.priceTitle}>
+            {t("rooms.price")} <span className={s.priceSpan}>1'820.00₴</span>
+          </h5>
           <div className={s.contImg}>
             <Swiper
               modules={[Navigation, Pagination]}
-              spaceBetween={20}
+              spaceBetween={10}
               slidesPerView={1}
               // navigation
               // pagination={{ clickable: true }}
@@ -332,10 +359,13 @@ const Rooms = () => {
         </li>
         <li className={s.item}>
           <h4 className={s.itemTitle}>{t("rooms.economy-9-a")}</h4>
+          <h5 className={s.priceTitle}>
+            {t("rooms.price")} <span className={s.priceSpan}>1'770.00₴</span>
+          </h5>
           <div className={s.contImg}>
             <Swiper
               modules={[Navigation, Pagination]}
-              spaceBetween={20}
+              spaceBetween={10}
               slidesPerView={1}
               // navigation
               // pagination={{ clickable: true }}
@@ -360,10 +390,14 @@ const Rooms = () => {
         </li>
         <li className={s.item}>
           <h4 className={s.itemTitle}>{t("rooms.dining")}</h4>
+          <h5 className={s.priceTitle}>
+            {t("rooms.price-dining")}{" "}
+            <span className={s.priceSpan}>490.00₴</span>
+          </h5>
           <div className={s.contImg}>
             <Swiper
               modules={[Navigation, Pagination]}
-              spaceBetween={20}
+              spaceBetween={10}
               slidesPerView={1}
               // navigation
               // pagination={{ clickable: true }}

@@ -64,7 +64,9 @@
     "description-economy-9-a": "Economy room with a double bed, a bathroom with a bathtub, a small balcony with a beautiful view of the mountains. The room has: TV, refrigerator, air conditioning, hairdryer, kettle (if there is no blackout), and much more for your comfort.",
     "link": "Book",
     "dining": "Our dining room",
-    "dining-descr": "Here you can try dishes of Transcarpathian and European cuisine, as well as order complex dietary meals."
+    "dining-descr": "Here you can try dishes of Transcarpathian and European cuisine, as well as order complex dietary meals.",
+    "price": "Cost per day: ",
+    "price-dining": "Full board price: "
   },
   "gallery": {
     "title": "Gallery",

@@ -23,8 +23,9 @@
 }
 
 .img {
+  cursor: pointer;
   width: 100%;
-  height: 300px;
+  height: 200px;
   object-fit: cover;
   border-radius: 10px;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.22), 0 2px 2px rgba(0, 0, 0, 0.34),
@@ -69,7 +70,7 @@
 }
 
 .regionText {
-  text-align: justify;
+  text-align: start;
 }
 
 @media screen and (min-width: 768px) {
@@ -92,8 +93,8 @@
   }
 
   .img {
-    width: 49%;
-    height: 400px;
+    width: 32%;
+    height: 200px;
   }
 
   .regionTitle {
@@ -110,8 +111,12 @@
   }
 
   .regionImg {
-    width: 60%;
-    height: 400px;
+    width: 50%;
+    height: 300px;
+  }
+
+  .regionText {
+    font-size: 12px;
   }
 }
 
@@ -130,7 +135,7 @@
 
   .img {
     width: 32%;
-    height: 450px;
+    height: 250px;
   }
 
   .regionTitle {
@@ -139,7 +144,7 @@
   }
 
   .regionText {
-    font-size: 24px;
+    font-size: 20px;
   }
 
   .regionItem {
@@ -147,6 +152,7 @@
   }
 
   .regionImg {
-    height: 650px;
+    width: 40%;
+    height: 450px;
   }
 }

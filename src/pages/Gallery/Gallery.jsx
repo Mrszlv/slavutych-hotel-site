@@ -1,54 +1,105 @@
 import s from "./Gallery.module.css";
 import { useTranslation } from "react-i18next";
 
+import { useState } from "react";
+import Lightbox from "yet-another-react-lightbox";
+import Zoom from "yet-another-react-lightbox/plugins/zoom";
+import Captions from "yet-another-react-lightbox/plugins/captions";
+
+import "yet-another-react-lightbox/styles.css";
+import "yet-another-react-lightbox/plugins/captions.css";
+
+const images = [
+  {
+    src: "https://res.cloudinary.com/ddqtzq55a/image/upload/v1750260476/20250617_143453_ul3ixa.jpg",
+  },
+  {
+    src: "https://res.cloudinary.com/ddqtzq55a/image/upload/v1750260476/20250617_143612_gmendp.jpg",
+  },
+  {
+    src: "https://res.cloudinary.com/ddqtzq55a/image/upload/v1739107757/IMG_6476_1_rb0liy.jpg",
+  },
+  {
+    src: "https://res.cloudinary.com/ddqtzq55a/image/upload/v1738249381/%D1%82%D0%B5%D1%80%D0%B8%D1%82%D0%BE%D1%80%D1%96%D1%8F-2_fqrmyc.jpg",
+  },
+  {
+    src: "https://res.cloudinary.com/ddqtzq55a/image/upload/v1738249379/%D1%82%D0%B5%D1%80%D0%B8%D1%82%D0%BE%D1%80%D1%96%D1%8F-1_t5bkc1.jpg",
+  },
+  {
+    src: "https://res.cloudinary.com/ddqtzq55a/image/upload/v1751889014/20250707_143004_xla84h.jpg",
+  },
+  {
+    src: "https://res.cloudinary.com/ddqtzq55a/image/upload/v1738925137/IMG_1420_btmbth.jpg",
+  },
+  {
+    src: "https://res.cloudinary.com/ddqtzq55a/image/upload/v1738924893/IMG_2479_vatdmv.jpg",
+  },
+  {
+    src: "https://res.cloudinary.com/ddqtzq55a/image/upload/v1751889313/IMG_1431_g7pnld.jpg",
+  },
+  {
+    src: "https://res.cloudinary.com/ddqtzq55a/image/upload/v1752249789/20250711_185333_kfszbx.jpg",
+  },
+  {
+    src: "https://res.cloudinary.com/ddqtzq55a/image/upload/v1752249787/20250711_185420_faklha.jpg",
+  },
+  {
+    src: "https://res.cloudinary.com/ddqtzq55a/image/upload/v1752249786/20250711_185434_wq3kty.jpg",
+  },
+  {
+    src: "https://res.cloudinary.com/ddqtzq55a/image/upload/v1752249787/20250711_185441_wrbjaj.jpg",
+  },
+  {
+    src: "https://res.cloudinary.com/ddqtzq55a/image/upload/v1752249787/20250711_185420_faklha.jpg",
+  },
+  {
+    src: "https://res.cloudinary.com/ddqtzq55a/image/upload/v1752249790/20250711_185850_o2jw6x.jpg",
+  },
+  {
+    src: "https://res.cloudinary.com/ddqtzq55a/image/upload/v1752249787/20250711_185747_hjqgcp.jpg",
+  },
+  {
+    src: "https://res.cloudinary.com/ddqtzq55a/image/upload/v1752249789/20250711_185732_tcarzh.jpg",
+  },
+  {
+    src: "https://res.cloudinary.com/ddqtzq55a/image/upload/v1752249790/20250711_185724_xibnbi.jpg",
+  },
+];
+
 const Gallery = () => {
+  const [open, setOpen] = useState(false);
+  const [index, setIndex] = useState(0);
+
   const { t } = useTranslation();
+
   return (
     <div className={s.container}>
       <h2 className={s.title}>{t("gallery.title")}</h2>
       <p className={s.text}>{t("gallery.description")}</p>
+
       <div className={s.contImg}>
-        <img
-          className={s.img}
-          src="https://res.cloudinary.com/ddqtzq55a/image/upload/v1750260476/20250617_143453_ul3ixa.jpg"
-          alt=""
-        />
-        <img
-          className={s.img}
-          src="https://res.cloudinary.com/ddqtzq55a/image/upload/v1750260476/20250617_143612_gmendp.jpg"
-          alt=""
-        />
-        <img
-          className={s.img}
-          src="https://res.cloudinary.com/ddqtzq55a/image/upload/v1739107757/IMG_6476_1_rb0liy.jpg"
-          alt=""
-        />
-        <img
-          className={s.img}
-          src="https://res.cloudinary.com/ddqtzq55a/image/upload/v1751889014/20250707_143004_xla84h.jpg"
-          alt=""
-        />
-        <img
-          className={s.img}
-          src="https://res.cloudinary.com/ddqtzq55a/image/upload/v1738925137/IMG_1420_btmbth.jpg"
-          alt=""
-        />
-        <img
-          className={s.img}
-          src="https://res.cloudinary.com/ddqtzq55a/image/upload/v1738924893/IMG_2479_vatdmv.jpg"
-          alt=""
-        />
-        <img
-          className={s.img}
-          src="https://res.cloudinary.com/ddqtzq55a/image/upload/v1751889313/IMG_1431_g7pnld.jpg"
-          alt=""
-        />
-        <img
-          className={s.img}
-          src="https://res.cloudinary.com/ddqtzq55a/image/upload/v1738925137/IMG_1420_btmbth.jpg"
-          alt=""
-        />
+        {images.map((img, idx) => (
+          <img
+            key={idx}
+            src={img.src}
+            alt=""
+            onClick={() => {
+              setIndex(idx);
+              setOpen(true);
+            }}
+            className={s.img}
+          />
+        ))}
       </div>
+
+      <Lightbox
+        open={open}
+        close={() => setOpen(false)}
+        index={index}
+        slides={images}
+        plugins={[Zoom, Captions]}
+      />
+
       <div className={s.regionCont}>
         <h2 className={s.regionTitle}>
           {t("gallery.title-2")}
