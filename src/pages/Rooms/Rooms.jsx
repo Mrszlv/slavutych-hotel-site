@@ -1,7 +1,10 @@
 import s from "./Rooms.module.css";
+
 import { useTranslation } from "react-i18next";
+
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper/modules";
+
 import { NavLink } from "react-router-dom";
 
 import "swiper/css";

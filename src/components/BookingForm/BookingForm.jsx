@@ -1,5 +1,7 @@
 import { useForm } from "react-hook-form";
+
 import { useTranslation } from "react-i18next";
+
 import s from "./BookingForm.module.css";
 
 const BookingForm = () => {

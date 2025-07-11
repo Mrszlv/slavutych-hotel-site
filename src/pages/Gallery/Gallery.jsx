@@ -1,7 +1,9 @@
 import s from "./Gallery.module.css";
+
 import { useTranslation } from "react-i18next";
 
 import { useState } from "react";
+
 import Lightbox from "yet-another-react-lightbox";
 import Zoom from "yet-another-react-lightbox/plugins/zoom";
 import Captions from "yet-another-react-lightbox/plugins/captions";

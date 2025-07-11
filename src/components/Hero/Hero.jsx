@@ -1,4 +1,5 @@
 import s from "./Hero.module.css";
+
 import { useTranslation } from "react-i18next";
 
 const Hero = () => {

@@ -1,8 +1,11 @@
 import { useTranslation } from "react-i18next";
+
 import { useState } from "react";
+
 import { IoLanguage } from "react-icons/io5";
 
 import s from "./LanguageSwitcher.module.css";
+
 import clsx from "clsx";
 
 const LanguageSwitcher = () => {

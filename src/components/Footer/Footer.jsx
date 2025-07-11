@@ -8,7 +8,6 @@ import iziToast from "izitoast";
 import "izitoast/dist/css/iziToast.min.css";
 
 import { SlCallIn } from "react-icons/sl";
-
 import { LiaFacebook } from "react-icons/lia";
 import { TbBrandBooking } from "react-icons/tb";
 import { PiMapPinFill } from "react-icons/pi";
