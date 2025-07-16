@@ -91,11 +91,13 @@
     "placeholder": "Write a review"
   },
   "contact": {
-    "title": "Contact Us:",
+    "title": "Contact ",
+    "subtitle": "Us: ",
     "text": "Room bookings:",
     "manager": "Hotel Director:",
     "map": " View on Map: ",
-    "route": "How to get to Polyana",
+    "route": "How to get ",
+    "subroute": "to Polyana",
     "automobile": "By car:",
     "autoDescr": "Via the Kyiv — Lviv — Chop highway (E-50/M-06). When traveling from Lviv, follow the Kyiv-Chop highway to Svalyava. From Svalyava, head towards Polyana.",
     "bus": "By bus:",
