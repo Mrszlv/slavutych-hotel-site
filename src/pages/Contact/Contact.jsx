@@ -2,7 +2,7 @@ import s from "./Contact.module.css";
 
 import { useTranslation } from "react-i18next";
 
-import { PiMapPinFill } from "react-icons/pi";
+import { PiMapPinAreaFill } from "react-icons/pi";
 
 const Contact = () => {
   const { t } = useTranslation();
@@ -31,7 +31,7 @@ const Contact = () => {
               href="mailto:slavutych.zakarpattia@gmail.com"
               className={s.contactLink}
             >
-              Email: slavutych.zakarpattia@gmail.com
+              slavutych.zakarpattia@gmail.com
             </a>
           </li>
           {/* <li className={s.contactsItem}>
@@ -75,7 +75,7 @@ const Contact = () => {
         href="https://maps.app.goo.gl/nSNpHwuNArrThXgw9"
         className={s.linkMap}
       >
-        {t("contact.map")} <PiMapPinFill className={s.icon} />
+        {t("contact.map")} <PiMapPinAreaFill className={s.icon} />
       </a>
     </div>
   );

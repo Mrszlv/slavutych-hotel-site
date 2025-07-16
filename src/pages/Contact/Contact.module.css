@@ -9,16 +9,17 @@
   background-color: #2e2f42;
   background-image: linear-gradient(
       to bottom,
-      rgba(46, 47, 66, 0.8),
-      rgba(46, 47, 66, 0.8)
+      rgba(46, 47, 66, 0.5),
+      rgba(46, 47, 66, 0.5)
     ),
-    url(https://res.cloudinary.com/ddqtzq55a/image/upload/v1738249381/%D1%82%D0%B5%D1%80%D0%B8%D1%82%D0%BE%D1%80%D1%96%D1%8F-4_sirg77.jpg);
+    url(https://res.cloudinary.com/ddqtzq55a/image/upload/v1738249379/%D1%82%D0%B5%D1%80%D0%B8%D1%82%D0%BE%D1%80%D1%96%D1%8F-1_t5bkc1.jpg);
   background-repeat: no-repeat;
   background-position: center, center;
   background-size: cover;
 }
 
 .title {
+  color: ghostwhite;
   text-align: center;
   margin-bottom: 15px;
 }
@@ -28,6 +29,7 @@
 }
 
 .contactText {
+  color: ghostwhite;
   text-align: center;
   margin-bottom: 10px;
 }
@@ -43,7 +45,7 @@
 .contactLink {
   cursor: pointer;
   text-decoration: none;
-  color: inherit;
+  color: ghostwhite;
   transition: color 0.5s ease;
 }
 .contactLink:hover {
@@ -72,10 +74,12 @@
 }
 
 .infoTitle {
+  color: ghostwhite;
   text-align: center;
 }
 
 .infoText {
+  color: ghostwhite;
   text-align: justify;
 }
 
@@ -86,8 +90,9 @@
   margin: 0 auto;
   align-items: center;
   justify-content: center;
+  gap: 15px;
   text-decoration: none;
-  color: inherit;
+  color: ghostwhite;
   margin-bottom: 40px;
   padding: 8px;
   border: none;
@@ -102,9 +107,27 @@
   color: goldenrod;
 }
 
+.icon {
+  color: goldenrod;
+  width: 20px;
+  height: 20px;
+}
+
 @media screen and (min-width: 768px) {
   .container {
     padding: 16px 32px;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+
+  .contactText {
+    font-size: 20px;
+  }
+
+  .contactLink {
+    font-size: 18px;
   }
 
   .infoList {
@@ -115,19 +138,68 @@
 
   .infoItem {
     width: 340px;
-    padding: 8px;
-    border: none;
-    border-bottom: 1px solid goldenrod;
-    border-radius: 10px;
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.22), 0 2px 2px rgba(0, 0, 0, 0.34),
-      0 4px 4px rgba(0, 0, 0, 0.28), 0 8px 8px rgba(0, 0, 0, 0.22);
+  }
+
+  .infoTitle {
+    font-size: 20px;
   }
 
   .infoText {
+    font-size: 18px;
     text-align: start;
   }
 
   .linkMap {
-    width: 340px;
+    font-size: 18px;
+    width: 250px;
+  }
+
+  .icon {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    padding: 32px 48px;
+  }
+
+  .title {
+    font-size: 32px;
+  }
+
+  .contactText {
+    font-size: 24px;
+  }
+
+  .contactLink {
+    font-size: 22px;
+  }
+
+  .infoList {
+    gap: 15px;
+  }
+
+  .infoItem {
+    width: 320px;
+  }
+
+  .infoTitle {
+    font-size: 24px;
+  }
+
+  .infoText {
+    font-size: 22px;
+  }
+
+  .linkMap {
+    font-size: 22px;
+    width: 300px;
+  }
+
+  .icon {
+    width: 30px;
+    height: 30px;
   }
 }

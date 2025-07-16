@@ -10,7 +10,7 @@ import "izitoast/dist/css/iziToast.min.css";
 import { SlCallIn } from "react-icons/sl";
 import { LiaFacebook } from "react-icons/lia";
 import { TbBrandBooking } from "react-icons/tb";
-import { PiMapPinFill } from "react-icons/pi";
+import { PiMapPinAreaFill } from "react-icons/pi";
 
 const Footer = () => {
   const form = useRef();
@@ -95,7 +95,7 @@ const Footer = () => {
         href="https://maps.app.goo.gl/nSNpHwuNArrThXgw9"
         className={s.link}
       >
-        {t("contact.map")} <PiMapPinFill className={s.icon} />
+        {t("contact.map")} <PiMapPinAreaFill className={s.icon} />
       </a>
       <div className={s.footerLinksCont}>
         <a
