@@ -1,10 +1,5 @@
 .container {
-  display: flex;
-  flex-direction: column;
   padding: 8px 16px;
-  margin-bottom: 10px;
-  align-items: center;
-  justify-content: center;
 }
 
 .photoCont {
@@ -25,11 +20,33 @@
 
 .title {
   text-align: center;
-  margin-bottom: 10px;
-  color: whitesmoke;
+  margin-bottom: 15px;
 }
 
 .subtitle {
+  color: goldenrod;
+}
+
+.contactText {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.contactAddress {
+  margin-bottom: 40px;
+}
+
+.contactsList {
+  text-align: center;
+}
+
+.contactLink {
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.5s ease;
+}
+.contactLink:hover {
   color: goldenrod;
 }
 
@@ -37,49 +54,51 @@
   color: goldenrod;
 }
 
-.contactsAddress {
-  margin-bottom: 15px;
+.infoList {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 40px;
 }
 
-.contactsText {
-  color: whitesmoke;
-  font-size: 20px;
+.infoItem {
+  width: 100%;
+  padding: 8px;
+  border: none;
+  border-bottom: 1px solid goldenrod;
+  border-radius: 10px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.22), 0 2px 2px rgba(0, 0, 0, 0.34),
+    0 4px 4px rgba(0, 0, 0, 0.28), 0 8px 8px rgba(0, 0, 0, 0.22);
 }
 
-.text {
-  color: whitesmoke;
+.infoTitle {
+  text-align: center;
+}
+
+.infoText {
   text-align: justify;
 }
 
-.link {
-  color: whitesmoke;
-  font-size: 20px;
+.linkMap {
+  cursor: pointer;
+  width: 100%;
   display: flex;
+  margin: 0 auto;
   align-items: center;
   justify-content: center;
-  margin-top: 15px;
-  transition: color 0.5s ease;
   text-decoration: none;
-  margin-top: 50px;
-  margin-bottom: 30px;
-}
-
-.icon {
-  width: 20px;
-  height: 20px;
-}
-
-.link:hover {
-  color: goldenrod;
-}
-
-.addText {
-  color: whitesmoke;
+  color: inherit;
+  margin-bottom: 40px;
+  padding: 8px;
+  border: none;
+  border-bottom: 1px solid goldenrod;
+  border-radius: 10px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.22), 0 2px 2px rgba(0, 0, 0, 0.34),
+    0 4px 4px rgba(0, 0, 0, 0.28), 0 8px 8px rgba(0, 0, 0, 0.22);
   transition: color 0.5s ease;
-  text-decoration: none;
 }
 
-.addText:hover {
+.linkMap:hover {
   color: goldenrod;
 }
 
@@ -87,46 +106,28 @@
   .container {
     padding: 16px 32px;
   }
-  .title {
-    font-size: 28px;
+
+  .infoList {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
   }
 
-  .contactsText {
-    font-size: 24px;
+  .infoItem {
+    width: 340px;
+    padding: 8px;
+    border: none;
+    border-bottom: 1px solid goldenrod;
+    border-radius: 10px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.22), 0 2px 2px rgba(0, 0, 0, 0.34),
+      0 4px 4px rgba(0, 0, 0, 0.28), 0 8px 8px rgba(0, 0, 0, 0.22);
   }
 
-  .addText {
-    font-size: 20px;
+  .infoText {
+    text-align: start;
   }
 
-  .text {
-    font-size: 18px;
-  }
-
-  .link {
-    font-size: 24px;
-    font-weight: bold;
-  }
-}
-
-@media screen and (min-width: 1440px) {
-  .container {
-    padding: 32px 48px;
-  }
-
-  .title {
-    font-size: 32px;
-  }
-
-  .contactsText {
-    font-size: 28px;
-  }
-
-  .addText {
-    font-size: 24px;
-  }
-
-  .text {
-    font-size: 22px;
+  .linkMap {
+    width: 340px;
   }
 }
