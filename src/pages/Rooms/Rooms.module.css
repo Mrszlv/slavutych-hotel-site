@@ -71,11 +71,11 @@
   background-color: rgb(167, 167, 167);
 }
 
-.table th,
+/* .table th,
 .table td {
-  /* border-bottom: 1px solid goldenrod;
-  border-right: 1px solid goldenrod; */
-}
+  border-bottom: 1px solid goldenrod;
+  border-right: 1px solid goldenrod;
+} */
 
 .imgRoom {
   width: 100%;
