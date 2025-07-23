@@ -101,7 +101,8 @@ const Gallery = () => {
     },
     {
       type: "video",
-      poster: "/public/images/Video.mp4.png",
+      poster:
+        "https://res.cloudinary.com/ddqtzq55a/image/upload/v1753278494/Video.mp4_winkhd.png",
       width: 1280,
       height: 720,
       sources: [
