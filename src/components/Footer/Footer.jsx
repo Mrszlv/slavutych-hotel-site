@@ -49,7 +49,11 @@ const Footer = () => {
 
   return (
     <footer className={s.footer}>
-      <img src="/public/logo/Preview.png" className={s.logo} alt="logo" />
+      <img
+        src="https://res.cloudinary.com/ddqtzq55a/image/upload/v1738248462/My%20Brand/Preview_jomntt.jpg"
+        className={s.logo}
+        alt="logo"
+      />
       {/* <p className={s.text}>
         &copy; {new Date().getFullYear()} {t("footer.text")}
         <span className={s.span}>{t("footer.subtext")}</span>
