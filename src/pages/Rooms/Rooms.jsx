@@ -12,11 +12,13 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 
 const imagesOne = [
-  "https://res.cloudinary.com/ddqtzq55a/image/upload/v1738249275/IMG_3138_ezbnyk.jpg",
-  "https://res.cloudinary.com/ddqtzq55a/image/upload/v1738249276/IMG_3139_hqjdtc.jpg",
-  "https://res.cloudinary.com/ddqtzq55a/image/upload/v1738249276/IMG_3140_yivcpf.jpg",
-  "https://res.cloudinary.com/ddqtzq55a/image/upload/v1738249275/IMG_3136_kk4byv.jpg",
-  "https://res.cloudinary.com/ddqtzq55a/image/upload/v1738249276/IMG_3143_ptsgkr.jpg",
+  "https://res.cloudinary.com/ddqtzq55a/image/upload/v1753109913/IMG_3136_kk4byv_sqyrya.jpg",
+  "https://res.cloudinary.com/ddqtzq55a/image/upload/v1753109913/IMG_3135_ahioxf_jtb13t.jpg",
+  "https://res.cloudinary.com/ddqtzq55a/image/upload/v1753109913/IMG_3134_blc8ln_lfwono.jpg",
+  "https://res.cloudinary.com/ddqtzq55a/image/upload/v1753109914/IMG_3137_affljm_uhpoj4.jpg",
+  "https://res.cloudinary.com/ddqtzq55a/image/upload/v1753109915/IMG_3139_hqjdtc_ix4wiu.jpg",
+  "https://res.cloudinary.com/ddqtzq55a/image/upload/v1753109916/IMG_3140_yivcpf_cnsoic.jpg",
+  "https://res.cloudinary.com/ddqtzq55a/image/upload/v1753109918/IMG_3142_b4njeg_bjgjxm.jpg",
 ];
 
 const imagesTwo = [
