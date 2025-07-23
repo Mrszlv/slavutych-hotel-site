@@ -4,10 +4,13 @@
   "email": "Email",
   "success": "Booking successful!",
   "submit": "Submit",
+
   "hero": {
     "title": "An unforgettable vacation in the",
-    "subtitle": "Carpathians for the whole family"
+    "subtitle": "Carpathians for the whole family",
+    "alt": "Hotel image"
   },
+
   "bookingForm": {
     "title": "Booking ",
     "subtitle": "form",
@@ -18,6 +21,7 @@
     "people": "Number of People",
     "book": "Book Now"
   },
+
   "services": {
     "title": "Our ",
     "subtitle": "services:",
@@ -32,6 +36,7 @@
     "rest": "On-site cafe with full-service dining",
     "shop": "There are many shops and 2 markets near the hotel"
   },
+
   "nav": {
     "home": "Home",
     "rooms": "Rooms",
@@ -39,6 +44,7 @@
     "reviews": "Reviews",
     "contact": "Contact"
   },
+
   "rooms": {
     "title": "Room",
     "subtitle": "Types",
@@ -66,8 +72,10 @@
     "dining": "Our dining room",
     "dining-descr": "Here you can try dishes of Transcarpathian and European cuisine, as well as order complex dietary meals.",
     "price": "Cost per day: ",
-    "price-dining": "Full board price: "
+    "price-dining": "Full board price: ",
+    "alt": "Room image"
   },
+
   "table": {
     "seasons": "Seasons",
     "for": "4 guests",
@@ -75,6 +83,7 @@
     "two": "2 guests",
     "one": "1 guest"
   },
+
   "gallery": {
     "title": "Gallery",
     "description": "Explore our gallery to see the beauty of the hotel and the surrounding landscapes.",
@@ -92,11 +101,22 @@
     "region-text-10": "Ostrich farms are located in many corners of Ukraine. They not only breed these exotic birds, but also organize excursions for tourists. There is also an ostrich nursery in the Transcarpathian town of Khust, which has over 30 birds. Tourists can bring bread, cabbage, and apples to feed the ostriches. On the farm, you can buy ostrich eggs and feathers, and you can also take as many beautiful photos as you like as a keepsake. The most popular photos are with an ostrich egg in your hands or standing on it. We recommend helping the little ones hold this accessory for the photo - such an egg weighs from 1 to 2 kg. There are also ponies and 2 goats on the farm, who also like to pose for photos for a small treat.",
     "region-text-11": "The city of Khust has gathered around itself many historical and simply interesting monuments. Among them is a truly special natural wonder, a real tourist highlight of Transcarpathia - the Valley of Narcissus in the Kireshy tract. This botanical monument has been officially protected since the times when these lands were the property of Austria-Hungary, but now the Valley belongs to the Carpathian Biosphere Reserve, which preserves this valuable ecosystem on the territory of more than 250 hectares of meadows and marshes. The Valley of Narcissus is unique in both size and location. Usually this fragile flower reigns at an altitude of a thousand meters above sea level. Similar natural centers of daffodils are in the Alps, Romania and a little in the Balkans. The Transcarpathian Valley is the largest population of narrow-leaved narcissus in Central Europe at an altitude of only 180-200 meters above sea level. Since 1992, the Valley of Daffodils has been part of the UNESCO international network of biosphere reserves.",
     "region-text-12": "In Transcarpathia, you can have a good and interesting rest and improve your health by taking baths in thermal springs. This picturesque corner is the leader in Ukraine in terms of the number of balneological resorts, there are more than 50 thermal springs of various mineralization. And the most popular thermal resorts are located in Berehove, Kosino and Velyatino. The village of Dovgy and the city of Mukacheve are also famous for their healing waters. The thermal waters of Transcarpathia are rich in iron, manganese, potassium, silicon, sodium and other trace elements. The thermal resorts of Transcarpathia treat diseases related to the musculoskeletal system, cardiovascular system, peripheral nervous system, peripheral vessels and biliary system.",
-    "region-text-13": "High on the Castle Hill above the historical center of Uzhhorod, the Uzhhorod Castle rises majestically, shrouded in secrets and legends. It is not known for certain when this fortress was built, but since ancient times there has been a defensive structure on this site. The first mention of the castle appeared in written sources of the 9th century, although it is not about a stone, but a wooden fortress of the White Croats. Uzhhorod Castle has repelled many attacks, withstood long sieges and has stood in many battles. This is not an openwork palace, as you can imagine when you hear the word 'castle', but a real battle fortress with formidable square towers, thick walls, gloomy loopholes and carefully thought out and calculated fortifications. During the military operations, both the aristocracy and numerous townspeople hid in the castle, so there are deep dungeons under the castle. There are, in particular, a prison and a torture chamber, which can still be seen today. Currently, the premises of the Uzhhorod Castle house interesting exhibits of the local history museum."
+    "region-text-13": "High on the Castle Hill above the historical center of Uzhhorod, the Uzhhorod Castle rises majestically, shrouded in secrets and legends. It is not known for certain when this fortress was built, but since ancient times there has been a defensive structure on this site. The first mention of the castle appeared in written sources of the 9th century, although it is not about a stone, but a wooden fortress of the White Croats. Uzhhorod Castle has repelled many attacks, withstood long sieges and has stood in many battles. This is not an openwork palace, as you can imagine when you hear the word 'castle', but a real battle fortress with formidable square towers, thick walls, gloomy loopholes and carefully thought out and calculated fortifications. During the military operations, both the aristocracy and numerous townspeople hid in the castle, so there are deep dungeons under the castle. There are, in particular, a prison and a torture chamber, which can still be seen today. Currently, the premises of the Uzhhorod Castle house interesting exhibits of the local history museum.",
+    "alt": "Hotel image",
+    "shypit": "Shypit Waterfall",
+    "sinevir": "Lake Synevyr",
+    "kolochava": "Village of ten museums Kolochava",
+    "kastle": "Count Schönborn Castle",
+    "miklosh": "St. Miklos Castle",
+    "farm": "Deer farm",
+    "palanok": "Mukachevo Castle Palanok",
+    "iza": "Vine weaving in the village of Iza"
   },
+
   "reviews": {
     "placeholder": "Write a review"
   },
+
   "contact": {
     "title": "Contact ",
     "subtitle": "Us: ",
@@ -114,6 +134,7 @@
     "address": "Our address:",
     "addressText": "Kurortna-Bichna 1, Polyana village, Mukachevo district, Transcarpathian region."
   },
+
   "footer": {
     "text": "Hotel Slavutych ",
     "subtext": "Zakarpattia",
@@ -127,5 +148,30 @@
     "iziToastSuccessMessage": "Our employee will call you soon!",
     "iziToastErrorTitle": "Error!",
     "iziToasrErrorMessage": "Failed to send. Try again!"
+  },
+
+  "privacy": {
+    "title": "Privacy Policy",
+    "title-1": "PRIVACY AND PERSONAL ",
+    "title-1-1": "DATA PROTECTION POLICY",
+    "text-1": "This site is managed by an individual entrepreneur, registered and operating in accordance with the requirements of the legislation of Ukraine (hereinafter referred to as the Hotel). The Hotel has great respect for the confidential (personal) information of all persons without exception who have visited the Site, as well as those who use the services provided by the Site; in this regard, the Hotel strives to protect the confidentiality of personal data (information or a set of information about an individual who is identified or can be specifically identified), thereby creating and ensuring the most comfortable conditions for using the Site's services for each user.",
+    "subtitle-1": "Information ",
+    "subtitle-1-1": "protection",
+    "subtext-1": "The Hotel uses generally accepted standards of technological and operational protection of information and personal data from loss, misuse, alteration or destruction. However, despite all efforts, the Hotel cannot guarantee absolute protection from any threats arising outside the Hotel's control. The Hotel ensures the application of all relevant confidentiality obligations, as well as technical and organizational security measures to prevent unauthorized or unlawful disclosure or processing of such information and data, their accidental loss, destruction or damage. The Hotel provides access to information and personal data only to authorized employees who have consented to ensuring the confidentiality of such information and data in accordance with the Hotel's requirements. The dissemination of personal data without the consent of the personal data subject or a person authorized by him is permitted in cases specified by law, and only (if necessary) in the interests of national security, economic well-being and human rights.",
+    "subtitle-2": "Collection and use ",
+    "subtitle-2-1": "of personal data",
+    "subtext-2": "When a user uses the Site services, the Hotel processes user data, namely: data provided by the user when filling out the form: - telephone number, personal name.",
+    "subtext-2-1": "Please note: The Hotel is limited to collecting the minimum amount of information necessary solely to fulfill the request of the personal data subject. In any case, when non-mandatory information is requested, the user will be notified at the time of collection of such information.",
+    "subtitle-3": "Other ",
+    "subtitle-3-1": "sites",
+    "subtext-3": "This privacy policy applies only to our website. We do not control the websites that use information from our website or that link to it from our website. These websites may place their own cookies on your computer, collect data, or request personal information from you.",
+    "subtitle-4": "Policy ",
+    "subtitle-4-1": "Change",
+    "subtext-4": "This Policy may be amended and supplemented from time to time and without prior notice to the user, including in the event of changes in legal requirements. Please review the Policy from time to time to be aware of any amendments or supplements."
+  },
+
+  "not-found": {
+    "not-page": "Page not found",
+    "link": "Main page"
   }
 }

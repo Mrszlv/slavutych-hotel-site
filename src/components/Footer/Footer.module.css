@@ -1,16 +1,14 @@
 .footer {
+  position: relative;
   padding: 8px 16px;
   box-shadow: 0 -1px 1px rgba(0, 0, 0, 0.22), 0 -2px 2px rgba(0, 0, 0, 0.34),
     0 -4px 4px rgba(0, 0, 0, 0.28), 0 -8px 8px rgba(0, 0, 0, 0.22);
 }
 
-.text {
-  text-align: center;
-  margin-bottom: 15px;
-}
-
-.span {
-  color: goldenrod;
+.logo {
+  border-radius: 10px;
+  width: 50px;
+  height: 50px;
 }
 
 .formCont {
@@ -106,8 +104,20 @@
   transform: scale(0.95);
 }
 
-.link {
-  display: none;
+.privacyLink {
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 10px;
+  transition: color 0.5s ease;
+}
+
+.privacyLink:hover {
+  color: goldenrod;
 }
 
 .icon {
@@ -159,13 +169,37 @@
     padding: 16px 32px;
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
+    flex-wrap: wrap;
+    align-items: baseline;
     justify-content: space-between;
   }
 
   .formTitle {
+    position: absolute;
+    top: 16px;
+    left: 100px;
     width: 280px;
     font-size: 18px;
+  }
+
+  .accordionContent {
+    position: absolute;
+    top: 70px;
+    left: 100px;
+    width: 280px;
+  }
+
+  .privacyLink {
+    font-size: 18px;
+    position: absolute;
+    top: 26px;
+    left: 400px;
+  }
+
+  .footerLinksCont {
+    position: absolute;
+    top: 16px;
+    right: 32px;
   }
 }
 
@@ -180,8 +214,25 @@
   }
 
   .formTitle {
+    top: 32px;
+    left: 150px;
     width: 320px;
     font-size: 18px;
+  }
+
+  .accordionContent {
+    top: 86px;
+    left: 150px;
+    width: 320px;
+  }
+
+  .privacyLink {
+    top: 42px;
+    left: 650px;
+  }
+
+  .footerLinksCont {
+    top: 32px;
   }
 
   .link {

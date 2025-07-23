@@ -7,6 +7,9 @@ import Gallery from "./pages/Gallery/Gallery";
 import Reviews from "./pages/Reviews/Reviews";
 import Contact from "./pages/Contact/Contact";
 import Footer from "./components/Footer/Footer";
+import NotFoundPage from "./pages/NotFoundPage/NotFoundPage";
+import PrivacyPolicy from "./components/PrivacyPolicy/PrivacyPolicy";
+import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
 
 function App() {
   return (
@@ -20,7 +23,10 @@ function App() {
             <Route path="/gallery" element={<Gallery />} />
             <Route path="/reviews" element={<Reviews />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/privacy" element={<PrivacyPolicy />} />
+            <Route path="*" element={<NotFoundPage />} />
           </Routes>
+          <ScrollToTop />
         </main>
         <Footer />
       </div>

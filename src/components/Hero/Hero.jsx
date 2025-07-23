@@ -14,18 +14,18 @@ const Hero = () => {
       <div className={s.imgCont}>
         <img
           className={s.imgOne}
-          src="https://res.cloudinary.com/ddqtzq55a/image/upload/v1750260476/20250617_143612_gmendp.jpg"
-          alt=""
+          src="https://res.cloudinary.com/ddqtzq55a/image/upload/v1753099424/%D1%82%D0%B5%D1%80%D0%B8%D1%82%D0%BE%D1%80%D1%96%D1%8F-1_t5bkc1_z8seeo.jpg"
+          alt={t("hero.alt")}
         />
         <img
           className={s.imgTwo}
-          src="https://res.cloudinary.com/ddqtzq55a/image/upload/v1750260476/20250617_143449_siwbub.jpg"
-          alt=""
+          src="https://res.cloudinary.com/ddqtzq55a/image/upload/v1753099426/%D1%82%D0%B5%D1%80%D0%B8%D1%82%D0%BE%D1%80%D1%96%D1%8F-4_sirg77_pu0rga.jpg"
+          alt={t("hero.alt")}
         />
         <img
           className={s.imgThree}
-          src="https://res.cloudinary.com/ddqtzq55a/image/upload/v1738249381/%D1%82%D0%B5%D1%80%D0%B8%D1%82%D0%BE%D1%80%D1%96%D1%8F-4_sirg77.jpg"
-          alt=""
+          src="https://res.cloudinary.com/ddqtzq55a/image/upload/v1753099421/20250711_185420_faklha_iiztsf.jpg"
+          alt={t("hero.alt")}
         />
       </div>
     </div>

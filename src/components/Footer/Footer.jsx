@@ -2,6 +2,7 @@ import s from "./Footer.module.css";
 
 import { useTranslation } from "react-i18next";
 import { useState, useRef } from "react";
+import { NavLink } from "react-router-dom";
 
 import emailjs from "@emailjs/browser";
 import iziToast from "izitoast";
@@ -10,7 +11,6 @@ import "izitoast/dist/css/iziToast.min.css";
 import { SlCallIn } from "react-icons/sl";
 import { LiaFacebook } from "react-icons/lia";
 import { TbBrandBooking } from "react-icons/tb";
-import { PiMapPinAreaFill } from "react-icons/pi";
 
 const Footer = () => {
   const form = useRef();
@@ -49,10 +49,11 @@ const Footer = () => {
 
   return (
     <footer className={s.footer}>
-      <p className={s.text}>
+      <img src="/public/logo/Preview.png" className={s.logo} alt="logo" />
+      {/* <p className={s.text}>
         &copy; {new Date().getFullYear()} {t("footer.text")}
         <span className={s.span}>{t("footer.subtext")}</span>
-      </p>
+      </p> */}
       <div className={s.formCont}>
         <p className={s.formTitle} onClick={toggleAccordion}>
           {isOpen ? `${t("footer.formClose")}` : `${t("footer.formOpen")}`}{" "}
@@ -89,14 +90,9 @@ const Footer = () => {
           </form>
         </div>
       </div>
-      <a
-        rel="noopener noreferrer"
-        target="_blank"
-        href="https://maps.app.goo.gl/nSNpHwuNArrThXgw9"
-        className={s.link}
-      >
-        {t("contact.map")} <PiMapPinAreaFill className={s.icon} />
-      </a>
+      <NavLink to={"/privacy"} className={s.privacyLink}>
+        {t("privacy.title")}
+      </NavLink>
       <div className={s.footerLinksCont}>
         <a
           rel="noopener noreferrer"
@@ -115,6 +111,9 @@ const Footer = () => {
           <TbBrandBooking className={s.footerIcon} />
         </a>
       </div>
+      {/* <NavLink to={"/privacy"} className={s.privacyLink}>
+        {t("privacy.title")}
+      </NavLink> */}
     </footer>
   );
 };

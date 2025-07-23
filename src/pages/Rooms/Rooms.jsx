@@ -67,6 +67,14 @@ const imagesSeven = [
   "https://res.cloudinary.com/ddqtzq55a/image/upload/v1751720428/20250705_144333_crecam.jpg",
 ];
 
+const imagesEight = [
+  "https://res.cloudinary.com/ddqtzq55a/image/upload/v1753255450/IMG_0204_izmng2.jpg",
+  "https://res.cloudinary.com/ddqtzq55a/image/upload/v1753255454/IMG_0209_xu2zho.jpg",
+  "https://res.cloudinary.com/ddqtzq55a/image/upload/v1753255453/IMG_0208_mv6ybw.jpg",
+  "https://res.cloudinary.com/ddqtzq55a/image/upload/v1753255451/IMG_0205_xgwrrl.jpg",
+  "https://res.cloudinary.com/ddqtzq55a/image/upload/v1753255452/IMG_0206_xhjvr1.jpg",
+];
+
 const imagesNine = [
   "https://res.cloudinary.com/ddqtzq55a/image/upload/v1751714060/IMG_4136_z10gjs.jpg",
   "https://res.cloudinary.com/ddqtzq55a/image/upload/v1751714060/IMG_4138_zjevid.jpg",
@@ -152,12 +160,12 @@ const Rooms = () => {
               // pagination={{ clickable: true }}
               breakpoints={{
                 768: { slidesPerView: 2 },
-                1024: { slidesPerView: 3 },
+                1440: { slidesPerView: 3 },
               }}
             >
               {imagesOne.map((src, i) => (
                 <SwiperSlide key={i}>
-                  <img className={s.imgRoom} src={src} alt="Room image" />
+                  <img className={s.imgRoom} src={src} alt={t("rooms.alt")} />
                 </SwiperSlide>
               ))}
             </Swiper>
@@ -219,12 +227,12 @@ const Rooms = () => {
               // pagination={{ clickable: true }}
               breakpoints={{
                 768: { slidesPerView: 2 },
-                1024: { slidesPerView: 3 },
+                1440: { slidesPerView: 3 },
               }}
             >
               {imagesTwo.map((src, i) => (
                 <SwiperSlide key={i}>
-                  <img className={s.imgRoom} src={src} alt="Room image" />
+                  <img className={s.imgRoom} src={src} alt={t("rooms.alt")} />
                 </SwiperSlide>
               ))}
             </Swiper>
@@ -288,12 +296,12 @@ const Rooms = () => {
               // pagination={{ clickable: true }}
               breakpoints={{
                 768: { slidesPerView: 2 },
-                1024: { slidesPerView: 3 },
+                1440: { slidesPerView: 3 },
               }}
             >
               {imagesTree.map((src, i) => (
                 <SwiperSlide key={i}>
-                  <img className={s.imgRoom} src={src} alt="Room image" />
+                  <img className={s.imgRoom} src={src} alt={t("rooms.alt")} />
                 </SwiperSlide>
               ))}
             </Swiper>
@@ -355,12 +363,12 @@ const Rooms = () => {
               // pagination={{ clickable: true }}
               breakpoints={{
                 768: { slidesPerView: 2 },
-                1024: { slidesPerView: 3 },
+                1440: { slidesPerView: 3 },
               }}
             >
               {imagesFor.map((src, i) => (
                 <SwiperSlide key={i}>
-                  <img className={s.imgRoom} src={src} alt="Room image" />
+                  <img className={s.imgRoom} src={src} alt={t("rooms.alt")} />
                 </SwiperSlide>
               ))}
             </Swiper>
@@ -422,12 +430,12 @@ const Rooms = () => {
               // pagination={{ clickable: true }}
               breakpoints={{
                 768: { slidesPerView: 2 },
-                1024: { slidesPerView: 3 },
+                1440: { slidesPerView: 3 },
               }}
             >
               {imagesFive.map((src, i) => (
                 <SwiperSlide key={i}>
-                  <img className={s.imgRoom} src={src} alt="Room image" />
+                  <img className={s.imgRoom} src={src} alt={t("rooms.alt")} />
                 </SwiperSlide>
               ))}
             </Swiper>
@@ -489,12 +497,12 @@ const Rooms = () => {
               // pagination={{ clickable: true }}
               breakpoints={{
                 768: { slidesPerView: 2 },
-                1024: { slidesPerView: 3 },
+                1440: { slidesPerView: 3 },
               }}
             >
               {imagesSix.map((src, i) => (
                 <SwiperSlide key={i}>
-                  <img className={s.imgRoom} src={src} alt="Room image" />
+                  <img className={s.imgRoom} src={src} alt={t("rooms.alt")} />
                 </SwiperSlide>
               ))}
             </Swiper>
@@ -556,12 +564,12 @@ const Rooms = () => {
               // pagination={{ clickable: true }}
               breakpoints={{
                 768: { slidesPerView: 2 },
-                1024: { slidesPerView: 3 },
+                1440: { slidesPerView: 3 },
               }}
             >
               {imagesSeven.map((src, i) => (
                 <SwiperSlide key={i}>
-                  <img className={s.imgRoom} src={src} alt="Room image" />
+                  <img className={s.imgRoom} src={src} alt={t("rooms.alt")} />
                 </SwiperSlide>
               ))}
             </Swiper>
@@ -616,6 +624,31 @@ const Rooms = () => {
               </tbody>
             </table>
           </div>
+          <div className={s.contImg}>
+            <Swiper
+              modules={[Navigation, Pagination]}
+              spaceBetween={10}
+              slidesPerView={1}
+              // navigation
+              // pagination={{ clickable: true }}
+              breakpoints={{
+                768: { slidesPerView: 2 },
+                1440: { slidesPerView: 3 },
+              }}
+            >
+              {imagesEight.map((src, i) => (
+                <SwiperSlide key={i}>
+                  <img className={s.imgRoom} src={src} alt={t("rooms.alt")} />
+                </SwiperSlide>
+              ))}
+            </Swiper>
+          </div>
+          <div className={s.descrLink}>
+            <p className={s.itemText}>{t("rooms.description-economy-9")}</p>
+            <NavLink className={s.link} to={"/contact"}>
+              {t("rooms.link")}
+            </NavLink>
+          </div>
         </li>
         <li className={s.item}>
           <h4 className={s.itemTitle}>{t("rooms.standart-9-a")}</h4>
@@ -667,12 +700,12 @@ const Rooms = () => {
               // pagination={{ clickable: true }}
               breakpoints={{
                 768: { slidesPerView: 2 },
-                1024: { slidesPerView: 3 },
+                1440: { slidesPerView: 3 },
               }}
             >
               {imagesNine.map((src, i) => (
                 <SwiperSlide key={i}>
-                  <img className={s.imgRoom} src={src} alt="Room image" />
+                  <img className={s.imgRoom} src={src} alt={t("rooms.alt")} />
                 </SwiperSlide>
               ))}
             </Swiper>
@@ -734,12 +767,12 @@ const Rooms = () => {
               // pagination={{ clickable: true }}
               breakpoints={{
                 768: { slidesPerView: 2 },
-                1024: { slidesPerView: 3 },
+                1440: { slidesPerView: 3 },
               }}
             >
               {imagesTen.map((src, i) => (
                 <SwiperSlide key={i}>
-                  <img className={s.imgRoom} src={src} alt="Room image" />
+                  <img className={s.imgRoom} src={src} alt={t("rooms.alt")} />
                 </SwiperSlide>
               ))}
             </Swiper>
@@ -766,12 +799,12 @@ const Rooms = () => {
               // pagination={{ clickable: true }}
               breakpoints={{
                 768: { slidesPerView: 2 },
-                1024: { slidesPerView: 3 },
+                1440: { slidesPerView: 3 },
               }}
             >
               {imagesDining.map((src, i) => (
                 <SwiperSlide key={i}>
-                  <img className={s.imgRoom} src={src} alt="Room image" />
+                  <img className={s.imgRoom} src={src} alt={t("rooms.alt")} />
                 </SwiperSlide>
               ))}
             </Swiper>
