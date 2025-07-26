@@ -1,3 +1,15 @@
+.container {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(46, 47, 66, 0.9),
+      rgba(46, 47, 66, 0.9)
+    ),
+    url(https://res.cloudinary.com/ddqtzq55a/image/upload/v1753099421/20250711_185420_faklha_iiztsf.jpg);
+  background-repeat: no-repeat;
+  background-position: center, center;
+  background-size: cover;
+}
+
 .bookingFormCont {
   display: flex;
   flex-direction: column;
@@ -32,6 +44,7 @@
   height: 40px;
   border-radius: 10px;
   border: none;
+  border-bottom: 1px solid goldenrod;
   outline: none;
   background-color: transparent;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 4px 8px rgba(0, 0, 0, 0.05);
@@ -63,7 +76,7 @@
   .bookingFormCont {
     flex-direction: row;
     align-items: center;
-
+    justify-content: space-between;
     padding: 16px 32px;
   }
 
@@ -73,7 +86,7 @@
   }
 
   .img {
-    width: 50%;
+    width: 40%;
     height: 400px;
     display: block;
     border-radius: 10px;
