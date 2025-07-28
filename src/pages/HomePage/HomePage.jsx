@@ -6,8 +6,8 @@ const HomePage = () => {
   return (
     <div>
       <Hero />
-      <BookingForm />
       <Services />
+      <BookingForm />
     </div>
   );
 };
