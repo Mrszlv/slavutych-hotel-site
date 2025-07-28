@@ -1,4 +1,4 @@
-.container {
+/* .container {
   background-image: linear-gradient(
       to bottom,
       rgba(46, 47, 66, 0.6),
@@ -8,7 +8,7 @@
   background-repeat: no-repeat;
   background-position: center, center;
   background-size: cover;
-}
+} */
 
 .bookingFormCont {
   display: flex;
@@ -45,8 +45,8 @@
   border-radius: 10px;
   border: none;
   border-bottom: 1px solid goldenrod;
+  background-color: transparent;
   outline: none;
-  background-color: rgba(61, 60, 60, 0.7);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 4px 8px rgba(0, 0, 0, 0.05);
 }
 

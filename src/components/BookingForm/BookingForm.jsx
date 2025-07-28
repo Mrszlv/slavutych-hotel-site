@@ -45,7 +45,7 @@ const BookingForm = () => {
       <div className={s.bookingFormCont}>
         <img
           className={s.img}
-          src="https://res.cloudinary.com/ddqtzq55a/image/upload/v1753099424/20250711_185434_wq3kty_kzl17m.jpg"
+          src="https://res.cloudinary.com/ddqtzq55a/image/upload/v1753534599/20250726_155304_1_azlbul.jpg"
           alt="Booking"
         />
 
