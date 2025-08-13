@@ -1,23 +1,4 @@
-# robots.txt for slavutych-zakarpattia.com.ua
-
-# Дозволяємо індексацію всіх публічних сторінок (у т.ч. /ua, /ru, /en)
 User-agent: *
 Allow: /
 
-# Службові/технічні речі — не індексувати
-Disallow: /api/
-Disallow: /mock-api/
-Disallow: /admin/
-Disallow: /private/
-Disallow: /draft/
-
-# (Опціонально) трішки притормозити «важких» ботів
-User-agent: Bingbot
-Crawl-delay: 5
-
-User-agent: Yandex
-Crawl-delay: 5
-Host: slavutych-zakarpattia.com.ua
-
-# Sitemap з усіма мовами всередині
 Sitemap: https://slavutych-zakarpattia.com.ua/sitemap.xml

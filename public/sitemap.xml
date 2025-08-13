@@ -1,184 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
-  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-  xmlns:xhtml="http://www.w3.org/1999/xhtml"
->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-  <!-- Home (мовні домашні сторінки) -->
   <url>
-    <loc>https://slavutych-zakarpattia.com.ua/uk</loc>
-    <xhtml:link rel="alternate" hreflang="uk" href="https://slavutych-zakarpattia.com.ua/uk"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://slavutych-zakarpattia.com.ua/en"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://slavutych-zakarpattia.com.ua/ru"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://slavutych-zakarpattia.com.ua/uk"/>
+    <loc>https://slavutych-zakarpattia.com.ua</loc>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
-
   <url>
-    <loc>https://slavutych-zakarpattia.com.ua/en</loc>
-    <xhtml:link rel="alternate" hreflang="uk" href="https://slavutych-zakarpattia.com.ua/uk"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://slavutych-zakarpattia.com.ua/en"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://slavutych-zakarpattia.com.ua/ru"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://slavutych-zakarpattia.com.ua/uk"/>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-  </url>
-
-  <url>
-    <loc>https://slavutych-zakarpattia.com.ua/ru</loc>
-    <xhtml:link rel="alternate" hreflang="uk" href="https://slavutych-zakarpattia.com.ua/uk"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://slavutych-zakarpattia.com.ua/en"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://slavutych-zakarpattia.com.ua/ru"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://slavutych-zakarpattia.com.ua/uk"/>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-  </url>
-
-  <!-- Секції: rooms / gallery / reviews / contact / privacy -->
-  <!-- ROOMS -->
-  <url>
-    <loc>https://slavutych-zakarpattia.com.ua/uk/rooms</loc>
-    <xhtml:link rel="alternate" hreflang="uk" href="https://slavutych-zakarpattia.com.ua/uk/rooms"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://slavutych-zakarpattia.com.ua/en/rooms"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://slavutych-zakarpattia.com.ua/ru/rooms"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://slavutych-zakarpattia.com.ua/uk/rooms"/>
+    <loc>https://slavutych-zakarpattia.com.ua/rooms</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://slavutych-zakarpattia.com.ua/en/rooms</loc>
-    <xhtml:link rel="alternate" hreflang="uk" href="https://slavutych-zakarpattia.com.ua/uk/rooms"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://slavutych-zakarpattia.com.ua/en/rooms"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://slavutych-zakarpattia.com.ua/ru/rooms"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://slavutych-zakarpattia.com.ua/uk/rooms"/>
+    <loc>https://slavutych-zakarpattia.com.ua/gallery</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://slavutych-zakarpattia.com.ua/ru/rooms</loc>
-    <xhtml:link rel="alternate" hreflang="uk" href="https://slavutych-zakarpattia.com.ua/uk/rooms"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://slavutych-zakarpattia.com.ua/en/rooms"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://slavutych-zakarpattia.com.ua/ru/rooms"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://slavutych-zakarpattia.com.ua/uk/rooms"/>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- GALLERY -->
-  <url>
-    <loc>https://slavutych-zakarpattia.com.ua/uk/gallery</loc>
-    <xhtml:link rel="alternate" hreflang="uk" href="https://slavutych-zakarpattia.com.ua/uk/gallery"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://slavutych-zakarpattia.com.ua/en/gallery"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://slavutych-zakarpattia.com.ua/ru/gallery"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://slavutych-zakarpattia.com.ua/uk/gallery"/>
+    <loc>https://slavutych-zakarpattia.com.ua/reviews</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://slavutych-zakarpattia.com.ua/en/gallery</loc>
-    <xhtml:link rel="alternate" hreflang="uk" href="https://slavutych-zakarpattia.com.ua/uk/gallery"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://slavutych-zakarpattia.com.ua/en/gallery"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://slavutych-zakarpattia.com.ua/ru/gallery"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://slavutych-zakarpattia.com.ua/uk/gallery"/>
+    <loc>https://slavutych-zakarpattia.com.ua/contact</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://slavutych-zakarpattia.com.ua/ru/gallery</loc>
-    <xhtml:link rel="alternate" hreflang="uk" href="https://slavutych-zakarpattia.com.ua/uk/gallery"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://slavutych-zakarpattia.com.ua/en/gallery"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://slavutych-zakarpattia.com.ua/ru/gallery"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://slavutych-zakarpattia.com.ua/uk/gallery"/>
+    <loc>https://slavutych-zakarpattia.com.ua/privacy</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
-
-  <!-- REVIEWS -->
-  <url>
-    <loc>https://slavutych-zakarpattia.com.ua/uk/reviews</loc>
-    <xhtml:link rel="alternate" hreflang="uk" href="https://slavutych-zakarpattia.com.ua/uk/reviews"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://slavutych-zakarpattia.com.ua/en/reviews"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://slavutych-zakarpattia.com.ua/ru/reviews"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://slavutych-zakarpattia.com.ua/uk/reviews"/>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://slavutych-zakarpattia.com.ua/en/reviews</loc>
-    <xhtml:link rel="alternate" hreflang="uk" href="https://slavutych-zakarpattia.com.ua/uk/reviews"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://slavutych-zakarpattia.com.ua/en/reviews"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://slavutych-zakarpattia.com.ua/ru/reviews"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://slavutych-zakarpattia.com.ua/uk/reviews"/>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://slavutych-zakarpattia.com.ua/ru/reviews</loc>
-    <xhtml:link rel="alternate" hreflang="uk" href="https://slavutych-zakarpattia.com.ua/uk/reviews"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://slavutych-zakarpattia.com.ua/en/reviews"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://slavutych-zakarpattia.com.ua/ru/reviews"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://slavutych-zakarpattia.com.ua/uk/reviews"/>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- CONTACT -->
-  <url>
-    <loc>https://slavutych-zakarpattia.com.ua/uk/contact</loc>
-    <xhtml:link rel="alternate" hreflang="uk" href="https://slavutych-zakarpattia.com.ua/uk/contact"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://slavutych-zakarpattia.com.ua/en/contact"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://slavutych-zakarpattia.com.ua/ru/contact"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://slavutych-zakarpattia.com.ua/uk/contact"/>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://slavutych-zakarpattia.com.ua/en/contact</loc>
-    <xhtml:link rel="alternate" hreflang="uk" href="https://slavutych-zakarpattia.com.ua/uk/contact"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://slavutych-zakarpattia.com.ua/en/contact"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://slavutych-zakarpattia.com.ua/ru/contact"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://slavutych-zakarpattia.com.ua/uk/contact"/>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://slavutych-zakarpattia.com.ua/ru/contact</loc>
-    <xhtml:link rel="alternate" hreflang="uk" href="https://slavutych-zakarpattia.com.ua/uk/contact"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://slavutych-zakarpattia.com.ua/en/contact"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://slavutych-zakarpattia.com.ua/ru/contact"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://slavutych-zakarpattia.com.ua/uk/contact"/>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- PRIVACY -->
-  <url>
-    <loc>https://slavutych-zakarpattia.com.ua/uk/privacy</loc>
-    <xhtml:link rel="alternate" hreflang="uk" href="https://slavutych-zakarpattia.com.ua/uk/privacy"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://slavutych-zakarpattia.com.ua/en/privacy"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://slavutych-zakarpattia.com.ua/ru/privacy"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://slavutych-zakarpattia.com.ua/uk/privacy"/>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://slavutych-zakarpattia.com.ua/en/privacy</loc>
-    <xhtml:link rel="alternate" hreflang="uk" href="https://slavutych-zakarpattia.com.ua/uk/privacy"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://slavutych-zakarpattia.com.ua/en/privacy"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://slavutych-zakarpattia.com.ua/ru/privacy"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://slavutych-zakarpattia.com.ua/uk/privacy"/>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://slavutych-zakarpattia.com.ua/ru/privacy</loc>
-    <xhtml:link rel="alternate" hreflang="uk" href="https://slavutych-zakarpattia.com.ua/uk/privacy"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://slavutych-zakarpattia.com.ua/en/privacy"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://slavutych-zakarpattia.com.ua/ru/privacy"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://slavutych-zakarpattia.com.ua/uk/privacy"/>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
 </urlset>
