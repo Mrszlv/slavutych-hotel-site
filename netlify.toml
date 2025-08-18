@@ -1,26 +1,31 @@
 [build.environment]
   NODE_VERSION = "20"
 
+# HTML — тримаємо нетривалий кеш (10 хв = 600 сек)
 [[headers]]
-  for = "/*.html"
+  for = "/*"                 # важливо: на всі HTML-сторінки
   [headers.values]
-    Cache-Control = "public, max-age=600"
+    Cache-Control = "public, max-age=600, must-revalidate"
 
+# Яваскрипт — довгий кеш + immutable
 [[headers]]
   for = "/*.js"
   [headers.values]
     Cache-Control = "public, max-age=31536000, immutable"
 
+# CSS — довгий кеш + immutable
 [[headers]]
   for = "/*.css"
   [headers.values]
     Cache-Control = "public, max-age=31536000, immutable"
 
+# Зображення — довгий кеш + immutable
 [[headers]]
   for = "/images/*"
   [headers.values]
     Cache-Control = "public, max-age=31536000, immutable"
 
+# Шрифти — довгий кеш + immutable
 [[headers]]
   for = "/fonts/*"
   [headers.values]
