@@ -130,6 +130,7 @@ const Gallery = () => {
               setOpen(true);
             }}
             className={s.img}
+            loading="lazy"
           />
         ))}
       </div>
@@ -153,6 +154,7 @@ const Gallery = () => {
               src="https://kiyavia.com/files/travel-provider/zakarpattya/mesta/Vodopad_Shypit_1200.jpg"
               alt={t("gallery.shypit")}
               className={s.regionImg}
+              loading="lazy"
             />
             <p className={s.regionText}>{t("gallery.region-text-1")}</p>
           </li>
@@ -161,6 +163,7 @@ const Gallery = () => {
               src="https://kiyavia.com/files/travel-provider/zakarpattya/mesta/Ozero_Synevir_1200.jpg"
               alt={t("gallery.sinevir")}
               className={s.regionImg}
+              loading="lazy"
             />
             <p className={s.regionText}>{t("gallery.region-text-2")}</p>
           </li>
@@ -169,6 +172,7 @@ const Gallery = () => {
               src="https://kiyavia.com/files/travel-provider/zakarpattya/mesta/Selo_Kolochava_1200.jpg"
               alt={t("gallery.kolochava")}
               className={s.regionImg}
+              loading="lazy"
             />
             <p className={s.regionText}>{t("gallery.region-text-3")}</p>
           </li>
@@ -177,6 +181,7 @@ const Gallery = () => {
               src="https://kiyavia.com/files/travel-provider/zakarpattya/mesta/Zamok_Shernborna_1200.jpg"
               alt={t("gallery.kastle")}
               className={s.regionImg}
+              loading="lazy"
             />
             <p className={s.regionText}>{t("gallery.region-text-4")}</p>
           </li>
@@ -185,6 +190,7 @@ const Gallery = () => {
               src="https://kiyavia.com/files/travel-provider/zakarpattya/mesta/Zamok_Sent_Mikloch_1200.jpg"
               alt={t("gallery.miklosh")}
               className={s.regionImg}
+              loading="lazy"
             />
             <p className={s.regionText}>{t("gallery.region-text-5")}</p>
           </li>
@@ -193,6 +199,7 @@ const Gallery = () => {
               src="https://kiyavia.com/files/travel-provider/zakarpattya/mesta/Ferma_oleney_1200.jpg"
               alt={t("gallery.farm")}
               className={s.regionImg}
+              loading="lazy"
             />
             <p className={s.regionText}>{t("gallery.region-text-6")}</p>
           </li>
@@ -201,6 +208,7 @@ const Gallery = () => {
               src="https://kiyavia.com/files/travel-provider/zakarpattya/mesta/Zamok_Palanok_1200.jpg"
               alt={t("gallery.palanok")}
               className={s.regionImg}
+              loading="lazy"
             />
             <p className={s.regionText}>{t("gallery.region-text-7")}</p>
           </li>
@@ -209,6 +217,7 @@ const Gallery = () => {
               src="https://kiyavia.com/files/travel-provider/zakarpattya/mesta/Lozopletenie_Zakarpatie_1200.jpg"
               alt={t("gallery.iza")}
               className={s.regionImg}
+              loading="lazy"
             />
             <p className={s.regionText}>{t("gallery.region-text-8")}</p>
           </li>
@@ -217,6 +226,7 @@ const Gallery = () => {
               src="https://kiyavia.com/files/travel-provider/zakarpattya/mesta/Syrovarnya_Zakarpatie.jpg"
               alt="Селиська сироварня в Карпатах"
               className={s.regionImg}
+              loading="lazy"
             />
             <p className={s.regionText}>{t("gallery.region-text-9")}</p>
           </li>
@@ -225,6 +235,7 @@ const Gallery = () => {
               src="https://kiyavia.com/files/travel-provider/zakarpattya/mesta/Ferma_strausov.jpg"
               alt="Страусина ферма в Карпатах"
               className={s.regionImg}
+              loading="lazy"
             />
             <p className={s.regionText}>{t("gallery.region-text-10")}</p>
           </li>
@@ -233,6 +244,7 @@ const Gallery = () => {
               src="https://kiyavia.com/files/travel-provider/zakarpattya/mesta/Dolina_narcyssov_1200.jpg"
               alt="Долина нарцисів у Карпатах"
               className={s.regionImg}
+              loading="lazy"
             />
             <p className={s.regionText}>{t("gallery.region-text-11")}</p>
           </li>
@@ -241,6 +253,7 @@ const Gallery = () => {
               src="https://kiyavia.com/files/travel-provider/zakarpattya/mesta/Termalnie_basseyny.jpg"
               alt="Термальні басейни Закарпаття"
               className={s.regionImg}
+              loading="lazy"
             />
             <p className={s.regionText}>{t("gallery.region-text-12")}</p>
           </li>
@@ -249,6 +262,7 @@ const Gallery = () => {
               src="https://kiyavia.com/files/travel-provider/zakarpattya/mesta/Zamok_Ujgorod_1200.jpg"
               alt="Ужгородський замок"
               className={s.regionImg}
+              loading="lazy"
             />
             <p className={s.regionText}>{t("gallery.region-text-13")}</p>
           </li>

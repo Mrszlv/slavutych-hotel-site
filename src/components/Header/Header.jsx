@@ -14,6 +14,7 @@ const Header = () => {
           src="https://res.cloudinary.com/ddqtzq55a/image/upload/v1738248462/My%20Brand/Preview_jomntt.jpg"
           alt="logo"
           className={s.logo}
+          loading="lazy"
         />
         <h2 className={s.title}>
           {t("title")}

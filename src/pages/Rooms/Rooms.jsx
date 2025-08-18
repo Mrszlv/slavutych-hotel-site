@@ -167,7 +167,12 @@ const Rooms = () => {
             >
               {imagesOne.map((src, i) => (
                 <SwiperSlide key={i}>
-                  <img className={s.imgRoom} src={src} alt={t("rooms.alt")} />
+                  <img
+                    className={s.imgRoom}
+                    src={src}
+                    alt={t("rooms.alt")}
+                    loading="lazy"
+                  />
                 </SwiperSlide>
               ))}
             </Swiper>
@@ -234,7 +239,12 @@ const Rooms = () => {
             >
               {imagesTwo.map((src, i) => (
                 <SwiperSlide key={i}>
-                  <img className={s.imgRoom} src={src} alt={t("rooms.alt")} />
+                  <img
+                    className={s.imgRoom}
+                    src={src}
+                    alt={t("rooms.alt")}
+                    loading="lazy"
+                  />
                 </SwiperSlide>
               ))}
             </Swiper>
@@ -303,7 +313,12 @@ const Rooms = () => {
             >
               {imagesTree.map((src, i) => (
                 <SwiperSlide key={i}>
-                  <img className={s.imgRoom} src={src} alt={t("rooms.alt")} />
+                  <img
+                    className={s.imgRoom}
+                    src={src}
+                    alt={t("rooms.alt")}
+                    loading="lazy"
+                  />
                 </SwiperSlide>
               ))}
             </Swiper>
@@ -370,7 +385,12 @@ const Rooms = () => {
             >
               {imagesFor.map((src, i) => (
                 <SwiperSlide key={i}>
-                  <img className={s.imgRoom} src={src} alt={t("rooms.alt")} />
+                  <img
+                    className={s.imgRoom}
+                    src={src}
+                    alt={t("rooms.alt")}
+                    loading="lazy"
+                  />
                 </SwiperSlide>
               ))}
             </Swiper>
@@ -437,7 +457,12 @@ const Rooms = () => {
             >
               {imagesFive.map((src, i) => (
                 <SwiperSlide key={i}>
-                  <img className={s.imgRoom} src={src} alt={t("rooms.alt")} />
+                  <img
+                    className={s.imgRoom}
+                    src={src}
+                    alt={t("rooms.alt")}
+                    loading="lazy"
+                  />
                 </SwiperSlide>
               ))}
             </Swiper>
@@ -504,7 +529,12 @@ const Rooms = () => {
             >
               {imagesSix.map((src, i) => (
                 <SwiperSlide key={i}>
-                  <img className={s.imgRoom} src={src} alt={t("rooms.alt")} />
+                  <img
+                    className={s.imgRoom}
+                    src={src}
+                    alt={t("rooms.alt")}
+                    loading="lazy"
+                  />
                 </SwiperSlide>
               ))}
             </Swiper>
@@ -571,7 +601,12 @@ const Rooms = () => {
             >
               {imagesSeven.map((src, i) => (
                 <SwiperSlide key={i}>
-                  <img className={s.imgRoom} src={src} alt={t("rooms.alt")} />
+                  <img
+                    className={s.imgRoom}
+                    src={src}
+                    alt={t("rooms.alt")}
+                    loading="lazy"
+                  />
                 </SwiperSlide>
               ))}
             </Swiper>
@@ -640,7 +675,12 @@ const Rooms = () => {
             >
               {imagesEight.map((src, i) => (
                 <SwiperSlide key={i}>
-                  <img className={s.imgRoom} src={src} alt={t("rooms.alt")} />
+                  <img
+                    className={s.imgRoom}
+                    src={src}
+                    alt={t("rooms.alt")}
+                    loading="lazy"
+                  />
                 </SwiperSlide>
               ))}
             </Swiper>
@@ -707,7 +747,12 @@ const Rooms = () => {
             >
               {imagesNine.map((src, i) => (
                 <SwiperSlide key={i}>
-                  <img className={s.imgRoom} src={src} alt={t("rooms.alt")} />
+                  <img
+                    className={s.imgRoom}
+                    src={src}
+                    alt={t("rooms.alt")}
+                    loading="lazy"
+                  />
                 </SwiperSlide>
               ))}
             </Swiper>
@@ -774,7 +819,12 @@ const Rooms = () => {
             >
               {imagesTen.map((src, i) => (
                 <SwiperSlide key={i}>
-                  <img className={s.imgRoom} src={src} alt={t("rooms.alt")} />
+                  <img
+                    className={s.imgRoom}
+                    src={src}
+                    alt={t("rooms.alt")}
+                    loading="lazy"
+                  />
                 </SwiperSlide>
               ))}
             </Swiper>

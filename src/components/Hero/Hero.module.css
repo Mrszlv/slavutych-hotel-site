@@ -16,7 +16,7 @@
       rgba(46, 47, 66, 0.4),
       rgba(46, 47, 66, 0.4)
     ),
-    url("../../../public/images/hero.jpg");
+    url("/images/hero.jpg");
   background-repeat: no-repeat;
   background-position: center, center;
   background-size: cover;
@@ -30,7 +30,6 @@
   font-size: 30px;
   font-weight: 900;
   text-align: center;
-  text-justify: auto;
 }
 
 .subtitle {
