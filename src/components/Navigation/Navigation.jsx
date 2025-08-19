@@ -48,7 +48,7 @@ const Navigation = () => {
       </button>
       <nav className={`${s.navMobile} ${menuOpen ? s.navMobileOpen : ""}`}>
         <button onClick={handleOpenMenu} className={s.closeBtn}>
-          <IoMdClose />
+          <IoMdClose className={s.ioClose} />
         </button>
         <NavLink className={s.linkMob} onClick={handleOpenMenu} to="/">
           {t("nav.home")}
