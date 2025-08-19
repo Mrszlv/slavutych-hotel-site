@@ -85,7 +85,13 @@ const BookingForm = () => {
             required
           />
 
-          <button className={s.btn} type="submit">
+          <button
+            className={s.btn}
+            type="submit"
+            aria-label="send form"
+            aria-controls="form"
+            aria-expanded={onSubmit}
+          >
             {t("bookingForm.book")}
           </button>
         </form>

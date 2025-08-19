@@ -89,6 +89,7 @@ const Footer = () => {
               className={`${s.input} ${s.textarea}`}
             />
             <input
+              aria-label="send form"
               type="submit"
               value={t("footer.inputSend")}
               className={s.btn}

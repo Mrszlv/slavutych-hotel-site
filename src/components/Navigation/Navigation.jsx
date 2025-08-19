@@ -43,11 +43,24 @@ const Navigation = () => {
         </NavLink>
       </nav>
 
-      <button onClick={handleOpenMenu} className={s.openBtn}>
+      <button
+        type="button"
+        onClick={handleOpenMenu}
+        className={s.openBtn}
+        aria-label="open menu"
+        aria-controls="nav mobile"
+        aria-expanded={handleOpenMenu}
+      >
         <IoIosMenu />
       </button>
       <nav className={`${s.navMobile} ${menuOpen ? s.navMobileOpen : ""}`}>
-        <button onClick={handleOpenMenu} className={s.closeBtn}>
+        <button
+          type="button"
+          onClick={handleOpenMenu}
+          className={s.closeBtn}
+          aria-label="close menu"
+          aria-controls="close nav mobile"
+        >
           <IoMdClose className={s.ioClose} />
         </button>
         <NavLink className={s.linkMob} onClick={handleOpenMenu} to="/">
