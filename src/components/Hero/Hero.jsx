@@ -1,5 +1,4 @@
 import s from "./Hero.module.css";
-
 import { useTranslation } from "react-i18next";
 
 const Hero = () => {
@@ -8,12 +7,38 @@ const Hero = () => {
   return (
     <section className={s.container}>
       <picture className={s.heroMedia}>
-        {/* якщо є тільки hero.jpg — лиши тільки <img> */}
-        {/* <source type="image/avif" srcSet="/images/hero.avif" /> */}
-        {/* <source type="image/webp" srcSet="/images/hero.webp" /> */}
+        {/* 1) AVIF */}
+        <source
+          type="image/avif"
+          srcSet="/images/hero-768.avif 768w,
+                  /images/hero-1280.avif 1280w,
+                  /images/hero-1920.avif 1920w"
+          sizes="(max-width: 768px) 100vw,
+                 (max-width: 1280px) 100vw,
+                 100vw"
+        />
+
+        {/* 2) WebP */}
+        <source
+          type="image/webp"
+          srcSet="/images/hero-768.webp 768w,
+                  /images/hero-1280.webp 1280w,
+                  /images/hero-1920.webp 1920w"
+          sizes="(max-width: 768px) 100vw,
+                 (max-width: 1280px) 100vw,
+                 100vw"
+        />
+
+        {/* 3) Fallback JPEG */}
         <img
           className={s.heroImg}
-          src="/images/hero.jpg"
+          src="/images/hero-1280.jpg"
+          srcSet="/images/hero-768.jpg 768w,
+                  /images/hero-1280.jpg 1280w,
+                  /images/hero-1920.jpg 1920w"
+          sizes="(max-width: 768px) 100vw,
+                 (max-width: 1280px) 100vw,
+                 100vw"
           alt={t("hero.alt")}
           width="1280"
           height="720"
@@ -23,6 +48,7 @@ const Hero = () => {
         />
       </picture>
 
+      {/* Overlay */}
       <div className={s.overlay} aria-hidden="true" />
 
       <h1 className={s.title}>
@@ -30,6 +56,7 @@ const Hero = () => {
         <span className={s.subtitle}>{t("hero.subtitle")}</span>
       </h1>
 
+      {/* Додаткові зображення */}
       <div className={s.imgCont}>
         <img
           className={s.imgOne}
