@@ -14,6 +14,7 @@ import "yet-another-react-lightbox/plugins/captions.css";
 
 const Gallery = () => {
   const [open, setOpen] = useState(false);
+
   const [index, setIndex] = useState(0);
 
   const { t } = useTranslation();
