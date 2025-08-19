@@ -24,44 +24,30 @@ const Hero = () => {
   return (
     <section className={s.container}>
       <picture className={s.heroMedia}>
-        {/* 1) AVIF */}
         <source
+          srcSet="/images/hero-480.avif 480w,
+            /images/hero-768.avif 768w,
+            /images/hero-1280.avif 1280w"
           type="image/avif"
-          srcSet="/images/hero-768.avif 768w,
-                  /images/hero-1280.avif 1280w,
-                  /images/hero-1920.avif 1920w"
-          sizes="(max-width: 768px) 100vw,
-                 (max-width: 1280px) 100vw,
-                 100vw"
         />
-
-        {/* 2) WebP */}
         <source
+          srcSet="/images/hero-480.webp 480w,
+            /images/hero-768.webp 768w,
+            /images/hero-1280.webp 1280w"
           type="image/webp"
-          srcSet="/images/hero-768.webp 768w,
-                  /images/hero-1280.webp 1280w,
-                  /images/hero-1920.webp 1920w"
-          sizes="(max-width: 768px) 100vw,
-                 (max-width: 1280px) 100vw,
-                 100vw"
         />
-
-        {/* 3) Fallback JPEG */}
         <img
           className={s.heroImg}
-          src="/images/hero-1280.jpg"
-          srcSet="/images/hero-768.jpg 768w,
-                  /images/hero-1280.jpg 1280w,
-                  /images/hero-1920.jpg 1920w"
-          sizes="(max-width: 768px) 100vw,
-                 (max-width: 1280px) 100vw,
-                 100vw"
+          src="/images/hero-768.jpg"
           alt={t("hero.alt")}
-          width="1280"
-          height="720"
+          width="768"
+          height="432"
           loading="eager"
           fetchPriority="high"
           decoding="async"
+          sizes="(max-width: 480px) 100vw,
+           (max-width: 768px) 100vw,
+           1280px"
         />
       </picture>
 
