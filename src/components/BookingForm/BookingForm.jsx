@@ -51,7 +51,7 @@ const BookingForm = () => {
           decoding="async"
         />
 
-        <form ref={form} className={s.form} onSubmit={onSubmit}>
+        <form id="form" ref={form} className={s.form} onSubmit={onSubmit}>
           <input
             className={s.input}
             type="text"
