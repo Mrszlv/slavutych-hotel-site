@@ -14,6 +14,7 @@ const NotFoundPage = () => {
         src="https://www.dpmarketingcommunications.com/wp-content/uploads/2016/11/404-Page-Featured-Image.png"
         alt="404"
         loading="lazy"
+        decoding="async"
       />
       <p className={s.text}>{t("not-found.not-page")}</p>
       <NavLink className={s.link} to={"/"}>

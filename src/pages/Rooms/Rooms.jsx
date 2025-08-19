@@ -172,6 +172,7 @@ const Rooms = () => {
                     src={src}
                     alt={t("rooms.alt")}
                     loading="lazy"
+                    decoding="async"
                   />
                 </SwiperSlide>
               ))}
@@ -244,6 +245,7 @@ const Rooms = () => {
                     src={src}
                     alt={t("rooms.alt")}
                     loading="lazy"
+                    decoding="async"
                   />
                 </SwiperSlide>
               ))}
@@ -318,6 +320,7 @@ const Rooms = () => {
                     src={src}
                     alt={t("rooms.alt")}
                     loading="lazy"
+                    decoding="async"
                   />
                 </SwiperSlide>
               ))}
@@ -390,6 +393,7 @@ const Rooms = () => {
                     src={src}
                     alt={t("rooms.alt")}
                     loading="lazy"
+                    decoding="async"
                   />
                 </SwiperSlide>
               ))}
@@ -462,6 +466,7 @@ const Rooms = () => {
                     src={src}
                     alt={t("rooms.alt")}
                     loading="lazy"
+                    decoding="async"
                   />
                 </SwiperSlide>
               ))}
@@ -534,6 +539,7 @@ const Rooms = () => {
                     src={src}
                     alt={t("rooms.alt")}
                     loading="lazy"
+                    decoding="async"
                   />
                 </SwiperSlide>
               ))}
@@ -606,6 +612,7 @@ const Rooms = () => {
                     src={src}
                     alt={t("rooms.alt")}
                     loading="lazy"
+                    decoding="async"
                   />
                 </SwiperSlide>
               ))}
@@ -680,6 +687,7 @@ const Rooms = () => {
                     src={src}
                     alt={t("rooms.alt")}
                     loading="lazy"
+                    decoding="async"
                   />
                 </SwiperSlide>
               ))}
@@ -752,6 +760,7 @@ const Rooms = () => {
                     src={src}
                     alt={t("rooms.alt")}
                     loading="lazy"
+                    decoding="async"
                   />
                 </SwiperSlide>
               ))}
@@ -824,6 +833,7 @@ const Rooms = () => {
                     src={src}
                     alt={t("rooms.alt")}
                     loading="lazy"
+                    decoding="async"
                   />
                 </SwiperSlide>
               ))}
@@ -856,7 +866,13 @@ const Rooms = () => {
             >
               {imagesDining.map((src, i) => (
                 <SwiperSlide key={i}>
-                  <img className={s.imgRoom} src={src} alt={t("rooms.alt")} />
+                  <img
+                    className={s.imgRoom}
+                    src={src}
+                    alt={t("rooms.alt")}
+                    loading="lazy"
+                    decoding="async"
+                  />
                 </SwiperSlide>
               ))}
             </Swiper>

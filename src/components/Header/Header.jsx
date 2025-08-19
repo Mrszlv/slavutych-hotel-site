@@ -15,6 +15,7 @@ const Header = () => {
           alt="logo"
           className={s.logo}
           loading="lazy"
+          decoding="async"
         />
         <h2 className={s.title}>
           {t("title")}

@@ -54,6 +54,7 @@ const Footer = () => {
         className={s.logo}
         alt="logo"
         loading="lazy"
+        decoding="async"
       />
       {/* <p className={s.text}>
         &copy; {new Date().getFullYear()} {t("footer.text")}

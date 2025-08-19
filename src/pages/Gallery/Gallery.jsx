@@ -131,6 +131,7 @@ const Gallery = () => {
             }}
             className={s.img}
             loading="lazy"
+            decoding="async"
           />
         ))}
       </div>
@@ -155,6 +156,7 @@ const Gallery = () => {
               alt={t("gallery.shypit")}
               className={s.regionImg}
               loading="lazy"
+              decoding="async"
             />
             <p className={s.regionText}>{t("gallery.region-text-1")}</p>
           </li>
@@ -164,6 +166,7 @@ const Gallery = () => {
               alt={t("gallery.sinevir")}
               className={s.regionImg}
               loading="lazy"
+              decoding="async"
             />
             <p className={s.regionText}>{t("gallery.region-text-2")}</p>
           </li>
@@ -173,6 +176,7 @@ const Gallery = () => {
               alt={t("gallery.kolochava")}
               className={s.regionImg}
               loading="lazy"
+              decoding="async"
             />
             <p className={s.regionText}>{t("gallery.region-text-3")}</p>
           </li>
@@ -182,6 +186,7 @@ const Gallery = () => {
               alt={t("gallery.kastle")}
               className={s.regionImg}
               loading="lazy"
+              decoding="async"
             />
             <p className={s.regionText}>{t("gallery.region-text-4")}</p>
           </li>
@@ -191,6 +196,7 @@ const Gallery = () => {
               alt={t("gallery.miklosh")}
               className={s.regionImg}
               loading="lazy"
+              decoding="async"
             />
             <p className={s.regionText}>{t("gallery.region-text-5")}</p>
           </li>
@@ -200,6 +206,7 @@ const Gallery = () => {
               alt={t("gallery.farm")}
               className={s.regionImg}
               loading="lazy"
+              decoding="async"
             />
             <p className={s.regionText}>{t("gallery.region-text-6")}</p>
           </li>
@@ -209,6 +216,7 @@ const Gallery = () => {
               alt={t("gallery.palanok")}
               className={s.regionImg}
               loading="lazy"
+              decoding="async"
             />
             <p className={s.regionText}>{t("gallery.region-text-7")}</p>
           </li>
@@ -218,6 +226,7 @@ const Gallery = () => {
               alt={t("gallery.iza")}
               className={s.regionImg}
               loading="lazy"
+              decoding="async"
             />
             <p className={s.regionText}>{t("gallery.region-text-8")}</p>
           </li>
@@ -227,6 +236,7 @@ const Gallery = () => {
               alt="Селиська сироварня в Карпатах"
               className={s.regionImg}
               loading="lazy"
+              decoding="async"
             />
             <p className={s.regionText}>{t("gallery.region-text-9")}</p>
           </li>
@@ -236,6 +246,7 @@ const Gallery = () => {
               alt="Страусина ферма в Карпатах"
               className={s.regionImg}
               loading="lazy"
+              decoding="async"
             />
             <p className={s.regionText}>{t("gallery.region-text-10")}</p>
           </li>
@@ -245,6 +256,7 @@ const Gallery = () => {
               alt="Долина нарцисів у Карпатах"
               className={s.regionImg}
               loading="lazy"
+              decoding="async"
             />
             <p className={s.regionText}>{t("gallery.region-text-11")}</p>
           </li>
@@ -254,6 +266,7 @@ const Gallery = () => {
               alt="Термальні басейни Закарпаття"
               className={s.regionImg}
               loading="lazy"
+              decoding="async"
             />
             <p className={s.regionText}>{t("gallery.region-text-12")}</p>
           </li>
@@ -263,6 +276,7 @@ const Gallery = () => {
               alt="Ужгородський замок"
               className={s.regionImg}
               loading="lazy"
+              decoding="async"
             />
             <p className={s.regionText}>{t("gallery.region-text-13")}</p>
           </li>

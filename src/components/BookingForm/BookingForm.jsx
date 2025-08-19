@@ -48,6 +48,7 @@ const BookingForm = () => {
           src="https://res.cloudinary.com/ddqtzq55a/image/upload/v1753534599/20250726_155304_1_azlbul.jpg"
           alt="Booking"
           loading="lazy"
+          decoding="async"
         />
 
         <form ref={form} className={s.form} onSubmit={onSubmit}>
