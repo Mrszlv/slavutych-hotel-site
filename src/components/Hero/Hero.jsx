@@ -64,14 +64,16 @@ const Hero = () => {
           decoding="async"
         />
       </picture>
+
       {/* Overlay */}
       <div className={s.overlay} aria-hidden="true" />
+
       <h1 className={s.title}>
         {t("hero.title")} <br />
         <span className={s.subtitle}>{t("hero.subtitle")}</span>
       </h1>
+
       {/* Додаткові зображення */}
-      // усередині Hero.jsx, заміни блок .imgCont
       <div className={s.imgCont}>
         <img
           className={s.imgOne}
