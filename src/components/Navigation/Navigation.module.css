@@ -81,10 +81,11 @@
     transition: color 0.5s ease;
   }
   .linkDesk:hover {
-    color: rgb(138, 105, 23);
+    color: goldenrod;
   }
   .active {
-    color: rgb(138, 105, 23);
+    color: goldenrod;
+    text-decoration: overline;
   }
 }
 

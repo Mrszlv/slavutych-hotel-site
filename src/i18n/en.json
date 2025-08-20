@@ -15,11 +15,15 @@
     "title": "Booking ",
     "subtitle": "form",
     "name": "Name",
-    "checkin": "Check-in Date",
-    "checkout": "Check-out Date",
-    "number": "Phone Number",
-    "people": "Number of People",
-    "book": "Book Now"
+    "enter-name": "Enter name",
+    "check-in": "Arrival date",
+    "check-out": "Departure date",
+    "number": "Phone number",
+    "enter-number": "Enter phone number",
+    "people": "Number of people",
+    "enter-people": "Select the number of people",
+    "book": "Book Now",
+    "legend": "Booking details"
   },
 
   "services": {

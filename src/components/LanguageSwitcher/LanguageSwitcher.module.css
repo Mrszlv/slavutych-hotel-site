@@ -81,17 +81,16 @@
     padding: 5px;
     font-size: 14px;
     background-color: transparent;
-    border: 1px solid goldenrod;
     border-radius: 50%;
     transition: border-color 0.5s ease, color 0.5s ease;
   }
   .btnDesk:hover {
-    border-color: rgb(138, 105, 23);
-    color: rgb(138, 105, 23);
+    border-color: goldenrod;
+    color: goldenrod;
   }
   .active {
-    border-color: rgb(138, 105, 23);
-    color: rgb(138, 105, 23);
+    border-color: goldenrod;
+    color: goldenrod;
   }
 }
 
