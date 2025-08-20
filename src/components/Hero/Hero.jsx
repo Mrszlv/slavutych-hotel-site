@@ -1,6 +1,7 @@
 import s from "./Hero.module.css";
 import { useTranslation } from "react-i18next";
 
+// Helpers для Cloudinary
 const cldT = (url, tr) => url.replace("/upload/", `/upload/${tr}/`);
 const srcset = (url, widths) =>
   widths
@@ -24,30 +25,29 @@ const Hero = () => {
   return (
     <section className={s.container}>
       <picture className={s.heroMedia}>
+        {/* AVIF / WebP джерела з правильними дескрипторами ширини */}
         <source
-          srcSet="/images/hero-480.avif 480w,
-            /images/hero-768.avif 768w,
-            /images/hero-1280.avif 1280w"
           type="image/avif"
+          srcSet="/images/hero-480.avif 480w, /images/hero-768.avif 768w, /images/hero-1280.avif 1280w"
+          sizes="100vw"
         />
         <source
-          srcSet="/images/hero-480.webp 480w,
-            /images/hero-768.webp 768w,
-            /images/hero-1280.webp 1280w"
           type="image/webp"
+          srcSet="/images/hero-480.webp 480w, /images/hero-768.webp 768w, /images/hero-1280.webp 1280w"
+          sizes="100vw"
         />
+        {/* ВАЖЛИВО: базовий src = найбільший JPG, width/height під нього */}
         <img
           className={s.heroImg}
-          src="/images/hero-768.jpg"
+          src="/images/hero-1280.jpg"
+          srcSet="/images/hero-480.jpg 480w, /images/hero-768.jpg 768w, /images/hero-1280.jpg 1280w"
+          sizes="100vw"
           alt={t("hero.alt")}
-          width="768"
-          height="432"
+          width="1280"
+          height="720"
           loading="eager"
           fetchPriority="high"
-          decoding="async"
-          sizes="(max-width: 480px) 100vw,
-           (max-width: 768px) 100vw,
-           1280px"
+          /* decoding не ставимо на LCP */
         />
       </picture>
 
@@ -59,7 +59,7 @@ const Hero = () => {
         <span className={s.subtitle}>{t("hero.subtitle")}</span>
       </h1>
 
-      {/* Додаткові зображення */}
+      {/* Додаткові зображення (Cloudinary) */}
       <div className={s.imgCont}>
         <img
           className={s.imgOne}
@@ -72,7 +72,6 @@ const Hero = () => {
           loading="lazy"
           decoding="async"
         />
-
         <img
           className={s.imgTwo}
           src={cldT(URL2, "f_auto,q_auto,dpr_auto,w_600,c_fill,g_auto")}
@@ -84,7 +83,6 @@ const Hero = () => {
           loading="lazy"
           decoding="async"
         />
-
         <img
           className={s.imgThree}
           src={cldT(URL3, "f_auto,q_auto,dpr_auto,w_600,c_fill,g_auto")}
