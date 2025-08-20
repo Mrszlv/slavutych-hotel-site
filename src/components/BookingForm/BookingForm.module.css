@@ -1,15 +1,3 @@
-/* .container {
-  background-image: linear-gradient(
-      to bottom,
-      rgba(46, 47, 66, 0.6),
-      rgba(46, 47, 66, 0.6)
-    ),
-    url(https://res.cloudinary.com/ddqtzq55a/image/upload/v1753534599/20250726_155304_1_azlbul.jpg);
-  background-repeat: no-repeat;
-  background-position: center, center;
-  background-size: cover;
-} */
-
 .bookingFormCont {
   display: flex;
   flex-direction: column;

@@ -28,6 +28,7 @@ const LanguageSwitcher = () => {
         >
           UA
         </button>
+
         <button
           className={clsx(s.btnDesk, i18n.language === "ru" && s.active)}
           onClick={() => i18n.changeLanguage("ru")}
@@ -35,6 +36,7 @@ const LanguageSwitcher = () => {
         >
           RU
         </button>
+
         <button
           className={clsx(s.btnDesk, i18n.language === "en" && s.active)}
           onClick={() => i18n.changeLanguage("en")}
@@ -54,6 +56,7 @@ const LanguageSwitcher = () => {
         >
           <IoLanguage className={s.icon} />
         </button>
+
         <div
           id="langMenu"
           className={`${s.containerMob} ${menuOpen ? s.open : ""}`}
@@ -68,6 +71,7 @@ const LanguageSwitcher = () => {
           >
             UA
           </button>
+
           <button
             aria-label="language selection ru"
             className={s.btn}
@@ -78,6 +82,7 @@ const LanguageSwitcher = () => {
           >
             RU
           </button>
+
           <button
             aria-label="language selection en"
             className={s.btn}

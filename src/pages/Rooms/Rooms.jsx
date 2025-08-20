@@ -111,10 +111,12 @@ const Rooms = () => {
         {t("rooms.title")}{" "}
         <span className={s.subtitle}>{t("rooms.subtitle")}</span>
       </h2>
+
       <ul className={s.list}>
         <li className={s.item}>
           <h4 className={s.itemTitle}>{t("rooms.luxe-2-1")}</h4>
           <h5 className={s.priceTitle}>{t("rooms.price")}</h5>
+
           <div className={s.tableContainer}>
             <table border={1} className={s.table}>
               <thead>
@@ -125,6 +127,7 @@ const Rooms = () => {
                   <th>{t("table.two")} </th>
                 </tr>
               </thead>
+
               <tbody>
                 <tr>
                   <td>01.06-31.10</td>
@@ -132,18 +135,21 @@ const Rooms = () => {
                   <td>2'565.00₴</td>
                   <td>2'455.00₴</td>
                 </tr>
+
                 <tr>
                   <td>01.11-24.12</td>
                   <td></td>
                   <td></td>
                   <td></td>
                 </tr>
+
                 <tr>
                   <td>25.12-10.01</td>
                   <td></td>
                   <td></td>
                   <td></td>
                 </tr>
+
                 <tr>
                   <td>11.01-30.04</td>
                   <td></td>
@@ -153,6 +159,7 @@ const Rooms = () => {
               </tbody>
             </table>
           </div>
+
           <div className={s.contImg}>
             <Swiper
               modules={[Navigation, Pagination]}
@@ -178,6 +185,7 @@ const Rooms = () => {
               ))}
             </Swiper>
           </div>
+
           <div className={s.descrLink}>
             <p className={s.itemText}>{t("rooms.description-luxe-2-1")}</p>
             <NavLink className={s.link} to={"/contact"}>
@@ -185,9 +193,11 @@ const Rooms = () => {
             </NavLink>
           </div>
         </li>
+
         <li className={s.item}>
           <h4 className={s.itemTitle}>{t("rooms.junior-suite-1")}</h4>
           <h5 className={s.priceTitle}>{t("rooms.price")}</h5>
+
           <div className={s.tableContainer}>
             <table border={1} className={s.table}>
               <thead>
@@ -198,6 +208,7 @@ const Rooms = () => {
                   <th>{t("table.one")} </th>
                 </tr>
               </thead>
+
               <tbody>
                 <tr>
                   <td>01.06-31.10</td>
@@ -205,18 +216,21 @@ const Rooms = () => {
                   <td>2'755.00₴</td>
                   <td>2'165.00₴</td>
                 </tr>
+
                 <tr>
                   <td>01.11-24.12</td>
                   <td></td>
                   <td></td>
                   <td></td>
                 </tr>
+
                 <tr>
                   <td>25.12-10.01</td>
                   <td></td>
                   <td></td>
                   <td></td>
                 </tr>
+
                 <tr>
                   <td>11.01-30.04</td>
                   <td></td>
@@ -226,6 +240,7 @@ const Rooms = () => {
               </tbody>
             </table>
           </div>
+
           <div className={s.contImg}>
             <Swiper
               modules={[Navigation, Pagination]}
@@ -251,6 +266,7 @@ const Rooms = () => {
               ))}
             </Swiper>
           </div>
+
           <div className={s.descrLink}>
             <p className={s.itemText}>
               {t("rooms.description-junior-suite-1")}
@@ -260,9 +276,11 @@ const Rooms = () => {
             </NavLink>
           </div>
         </li>
+
         <li className={s.item}>
           <h4 className={s.itemTitle}>{t("rooms.standart-1-1")}</h4>
           <h5 className={s.priceTitle}>{t("rooms.price")}</h5>
+
           <div className={s.tableContainer}>
             <table border={1} className={s.table}>
               <thead>
@@ -273,6 +291,7 @@ const Rooms = () => {
                   <th>{t("table.one")} </th>
                 </tr>
               </thead>
+
               <tbody>
                 <tr>
                   <td>01.06-31.10</td>
@@ -280,18 +299,21 @@ const Rooms = () => {
                   <td>1'870.00₴</td>
                   <td>1'760.00₴</td>
                 </tr>
+
                 <tr>
                   <td>01.11-24.12</td>
                   <td></td>
                   <td></td>
                   <td></td>
                 </tr>
+
                 <tr>
                   <td>25.12-10.01</td>
                   <td></td>
                   <td></td>
                   <td></td>
                 </tr>
+
                 <tr>
                   <td>11.01-30.04</td>
                   <td></td>
@@ -326,6 +348,7 @@ const Rooms = () => {
               ))}
             </Swiper>
           </div>
+
           <div className={s.descrLink}>
             <p className={s.itemText}>{t("rooms.description-standart-1-1")}</p>
             <NavLink className={s.link} to={"/contact"}>
@@ -333,9 +356,11 @@ const Rooms = () => {
             </NavLink>
           </div>
         </li>
+
         <li className={s.item}>
           <h4 className={s.itemTitle}>{t("rooms.economy-1-1")}</h4>
           <h5 className={s.priceTitle}>{t("rooms.price")}</h5>
+
           <div className={s.tableContainer}>
             <table border={1} className={s.table}>
               <thead>
@@ -346,6 +371,7 @@ const Rooms = () => {
                   <th>{t("table.one")} </th>
                 </tr>
               </thead>
+
               <tbody>
                 <tr>
                   <td>01.06-31.10</td>
@@ -353,18 +379,21 @@ const Rooms = () => {
                   <td>1'820.00₴</td>
                   <td>1'710.00₴</td>
                 </tr>
+
                 <tr>
                   <td>01.11-24.12</td>
                   <td></td>
                   <td></td>
                   <td></td>
                 </tr>
+
                 <tr>
                   <td>25.12-10.01</td>
                   <td></td>
                   <td></td>
                   <td></td>
                 </tr>
+
                 <tr>
                   <td>11.01-30.04</td>
                   <td></td>
@@ -374,6 +403,7 @@ const Rooms = () => {
               </tbody>
             </table>
           </div>
+
           <div className={s.contImg}>
             <Swiper
               modules={[Navigation, Pagination]}
@@ -399,6 +429,7 @@ const Rooms = () => {
               ))}
             </Swiper>
           </div>
+
           <div className={s.descrLink}>
             <p className={s.itemText}>{t("rooms.description-economy-1-1")}</p>
             <NavLink className={s.link} to={"/contact"}>
@@ -406,9 +437,11 @@ const Rooms = () => {
             </NavLink>
           </div>
         </li>
+
         <li className={s.item}>
           <h4 className={s.itemTitle}>{t("rooms.luxe-3-9")}</h4>
           <h5 className={s.priceTitle}>{t("rooms.price")}</h5>
+
           <div className={s.tableContainer}>
             <table border={1} className={s.table}>
               <thead>
@@ -419,6 +452,7 @@ const Rooms = () => {
                   <th>{t("table.two")} </th>
                 </tr>
               </thead>
+
               <tbody>
                 <tr>
                   <td>01.06-31.10</td>
@@ -426,18 +460,21 @@ const Rooms = () => {
                   <td>2'870.00₴</td>
                   <td>2'760.00₴</td>
                 </tr>
+
                 <tr>
                   <td>01.11-24.12</td>
                   <td></td>
                   <td></td>
                   <td></td>
                 </tr>
+
                 <tr>
                   <td>25.12-10.01</td>
                   <td></td>
                   <td></td>
                   <td></td>
                 </tr>
+
                 <tr>
                   <td>11.01-30.04</td>
                   <td></td>
@@ -447,6 +484,7 @@ const Rooms = () => {
               </tbody>
             </table>
           </div>
+
           <div className={s.contImg}>
             <Swiper
               modules={[Navigation, Pagination]}
@@ -472,6 +510,7 @@ const Rooms = () => {
               ))}
             </Swiper>
           </div>
+
           <div className={s.descrLink}>
             <p className={s.itemText}>{t("rooms.description-luxe-3-9")}</p>
             <NavLink className={s.link} to={"/contact"}>
@@ -479,9 +518,11 @@ const Rooms = () => {
             </NavLink>
           </div>
         </li>
+
         <li className={s.item}>
           <h4 className={s.itemTitle}>{t("rooms.luxe-2-9")}</h4>
           <h5 className={s.priceTitle}>{t("rooms.price")}</h5>
+
           <div className={s.tableContainer}>
             <table border={1} className={s.table}>
               <thead>
@@ -492,6 +533,7 @@ const Rooms = () => {
                   <th>{t("table.two")} </th>
                 </tr>
               </thead>
+
               <tbody>
                 <tr>
                   <td>01.06-31.10</td>
@@ -499,18 +541,21 @@ const Rooms = () => {
                   <td>2'505.00₴</td>
                   <td>2'395.00₴</td>
                 </tr>
+
                 <tr>
                   <td>01.11-24.12</td>
                   <td></td>
                   <td></td>
                   <td></td>
                 </tr>
+
                 <tr>
                   <td>25.12-10.01</td>
                   <td></td>
                   <td></td>
                   <td></td>
                 </tr>
+
                 <tr>
                   <td>11.01-30.04</td>
                   <td></td>
@@ -520,6 +565,7 @@ const Rooms = () => {
               </tbody>
             </table>
           </div>
+
           <div className={s.contImg}>
             <Swiper
               modules={[Navigation, Pagination]}
@@ -545,6 +591,7 @@ const Rooms = () => {
               ))}
             </Swiper>
           </div>
+
           <div className={s.descrLink}>
             <p className={s.itemText}>{t("rooms.description-luxe-2-9")}</p>
             <NavLink className={s.link} to={"/contact"}>
@@ -552,6 +599,7 @@ const Rooms = () => {
             </NavLink>
           </div>
         </li>
+
         <li className={s.item}>
           <h4 className={s.itemTitle}>{t("rooms.junior-suite-9")}</h4>
           <h5 className={s.priceTitle}>{t("rooms.price")}</h5>
@@ -565,6 +613,7 @@ const Rooms = () => {
                   <th>{t("table.one")} </th>
                 </tr>
               </thead>
+
               <tbody>
                 <tr>
                   <td>01.06-31.10</td>
@@ -572,18 +621,21 @@ const Rooms = () => {
                   <td>2'205.00₴</td>
                   <td>2'095.00₴</td>
                 </tr>
+
                 <tr>
                   <td>01.11-24.12</td>
                   <td></td>
                   <td></td>
                   <td></td>
                 </tr>
+
                 <tr>
                   <td>25.12-10.01</td>
                   <td></td>
                   <td></td>
                   <td></td>
                 </tr>
+
                 <tr>
                   <td>11.01-30.04</td>
                   <td></td>
@@ -593,6 +645,7 @@ const Rooms = () => {
               </tbody>
             </table>
           </div>
+
           <div className={s.contImg}>
             <Swiper
               modules={[Navigation, Pagination]}
@@ -618,6 +671,7 @@ const Rooms = () => {
               ))}
             </Swiper>
           </div>
+
           <div className={s.descrLink}>
             <p className={s.itemText}>
               {t("rooms.description-junior-suite-9")}
@@ -627,9 +681,11 @@ const Rooms = () => {
             </NavLink>
           </div>
         </li>
+
         <li className={s.item}>
           <h4 className={s.itemTitle}>{t("rooms.economy-9")}</h4>
           <h5 className={s.priceTitle}>{t("rooms.price")}</h5>
+
           <div className={s.tableContainer}>
             <table border={1} className={s.table}>
               <thead>
@@ -640,6 +696,7 @@ const Rooms = () => {
                   <th>{t("table.one")} </th>
                 </tr>
               </thead>
+
               <tbody>
                 <tr>
                   <td>01.06-31.10</td>
@@ -647,18 +704,21 @@ const Rooms = () => {
                   <td>1'720.00₴</td>
                   <td>1'610.00₴</td>
                 </tr>
+
                 <tr>
                   <td>01.11-24.12</td>
                   <td></td>
                   <td></td>
                   <td></td>
                 </tr>
+
                 <tr>
                   <td>25.12-10.01</td>
                   <td></td>
                   <td></td>
                   <td></td>
                 </tr>
+
                 <tr>
                   <td>11.01-30.04</td>
                   <td></td>
@@ -668,6 +728,7 @@ const Rooms = () => {
               </tbody>
             </table>
           </div>
+
           <div className={s.contImg}>
             <Swiper
               modules={[Navigation, Pagination]}
@@ -693,6 +754,7 @@ const Rooms = () => {
               ))}
             </Swiper>
           </div>
+
           <div className={s.descrLink}>
             <p className={s.itemText}>{t("rooms.description-economy-9")}</p>
             <NavLink className={s.link} to={"/contact"}>
@@ -700,9 +762,11 @@ const Rooms = () => {
             </NavLink>
           </div>
         </li>
+
         <li className={s.item}>
           <h4 className={s.itemTitle}>{t("rooms.standart-9-a")}</h4>
           <h5 className={s.priceTitle}>{t("rooms.price")}</h5>
+
           <div className={s.tableContainer}>
             <table border={1} className={s.table}>
               <thead>
@@ -713,6 +777,7 @@ const Rooms = () => {
                   <th>{t("table.one")} </th>
                 </tr>
               </thead>
+
               <tbody>
                 <tr>
                   <td>01.06-31.10</td>
@@ -720,18 +785,21 @@ const Rooms = () => {
                   <td>1'820.00₴</td>
                   <td>1'710.00₴</td>
                 </tr>
+
                 <tr>
                   <td>01.11-24.12</td>
                   <td></td>
                   <td></td>
                   <td></td>
                 </tr>
+
                 <tr>
                   <td>25.12-10.01</td>
                   <td></td>
                   <td></td>
                   <td></td>
                 </tr>
+
                 <tr>
                   <td>11.01-30.04</td>
                   <td></td>
@@ -741,6 +809,7 @@ const Rooms = () => {
               </tbody>
             </table>
           </div>
+
           <div className={s.contImg}>
             <Swiper
               modules={[Navigation, Pagination]}
@@ -766,6 +835,7 @@ const Rooms = () => {
               ))}
             </Swiper>
           </div>
+
           <div className={s.descrLink}>
             <p className={s.itemText}>{t("rooms.description-standart-9-a")}</p>
             <NavLink className={s.link} to={"/contact"}>
@@ -773,9 +843,11 @@ const Rooms = () => {
             </NavLink>
           </div>
         </li>
+
         <li className={s.item}>
           <h4 className={s.itemTitle}>{t("rooms.economy-9-a")}</h4>
           <h5 className={s.priceTitle}>{t("rooms.price")}</h5>
+
           <div className={s.tableContainer}>
             <table border={1} className={s.table}>
               <thead>
@@ -786,6 +858,7 @@ const Rooms = () => {
                   <th>{t("table.one")} </th>
                 </tr>
               </thead>
+
               <tbody>
                 <tr>
                   <td>01.06-31.10</td>
@@ -793,18 +866,21 @@ const Rooms = () => {
                   <td>1'770.00₴</td>
                   <td>1'660.00₴</td>
                 </tr>
+
                 <tr>
                   <td>01.11-24.12</td>
                   <td></td>
                   <td></td>
                   <td></td>
                 </tr>
+
                 <tr>
                   <td>25.12-10.01</td>
                   <td></td>
                   <td></td>
                   <td></td>
                 </tr>
+
                 <tr>
                   <td>11.01-30.04</td>
                   <td></td>
@@ -814,6 +890,7 @@ const Rooms = () => {
               </tbody>
             </table>
           </div>
+
           <div className={s.contImg}>
             <Swiper
               modules={[Navigation, Pagination]}
@@ -839,6 +916,7 @@ const Rooms = () => {
               ))}
             </Swiper>
           </div>
+
           <div className={s.descrLink}>
             <p className={s.itemText}>{t("rooms.description-economy-9-a")}</p>
             <NavLink className={s.link} to={"contact"}>
@@ -846,12 +924,14 @@ const Rooms = () => {
             </NavLink>
           </div>
         </li>
+
         <li className={s.item}>
           <h4 className={s.itemTitle}>{t("rooms.dining")}</h4>
           <h5 className={s.priceTitle}>
             {t("rooms.price-dining")}{" "}
             <span className={s.priceSpan}>490.00₴</span>
           </h5>
+
           <div className={s.contImg}>
             <Swiper
               modules={[Navigation, Pagination]}
@@ -877,6 +957,7 @@ const Rooms = () => {
               ))}
             </Swiper>
           </div>
+
           <div className={s.descrLink}>
             <p className={s.itemText}>{t("rooms.dining-descr")}</p>
           </div>

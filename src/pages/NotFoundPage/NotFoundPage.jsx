@@ -16,7 +16,9 @@ const NotFoundPage = () => {
         loading="lazy"
         decoding="async"
       />
+
       <p className={s.text}>{t("not-found.not-page")}</p>
+
       <NavLink className={s.link} to={"/"}>
         {t("not-found.link")}
       </NavLink>

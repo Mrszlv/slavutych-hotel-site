@@ -11,6 +11,7 @@ const Reviews = () => {
     const savedReviews = localStorage.getItem("reviews");
     return savedReviews ? JSON.parse(savedReviews) : [];
   });
+
   const [text, setText] = useState("");
 
   const handleSubmit = (e) => {
@@ -25,6 +26,7 @@ const Reviews = () => {
   return (
     <div className={s.container}>
       <h2 className={s.title}>{t("nav.reviews")}</h2>
+
       <form className={s.form} onSubmit={handleSubmit}>
         <textarea
           className={s.textarea}
@@ -32,10 +34,12 @@ const Reviews = () => {
           onChange={(e) => setText(e.target.value)}
           placeholder={t("reviews.placeholder")}
         />
+
         <button className={s.btn} type="submit">
           {t("submit")}
         </button>
       </form>
+
       <ul className={s.list}>
         {reviews.map((review) => (
           <li className={s.item} key={review.id}>

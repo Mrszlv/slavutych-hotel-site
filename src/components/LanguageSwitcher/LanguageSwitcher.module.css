@@ -6,7 +6,6 @@
   display: flex;
   flex-direction: row;
   gap: 5px;
-
   opacity: 0;
   transform: translateX(-10px);
   pointer-events: none;

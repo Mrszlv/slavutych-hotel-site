@@ -1,4 +1,3 @@
-// tools/build-images.mjs
 import fg from "fast-glob";
 import path from "node:path";
 import { promises as fs } from "node:fs";
@@ -12,15 +11,12 @@ import imageminPngquant from "imagemin-pngquant";
 const SRC_DIR = "public/images-src";
 const OUT_DIR = "public/images";
 
-// які розміри робимо (підключатимеш як 768 / 1280 / 1920)
 const SIZES = [768, 1280, 1920];
 
-// які розширення брати з каталогу з оригіналами
 const PATTERN = `${SRC_DIR}/**/*.{jpg,jpeg,png}`;
 
 await fs.mkdir(OUT_DIR, { recursive: true });
 
-/** Компресія "оригіналу" (jpeg/png) після ресайзу */
 async function compressOriginal(inputPath, width) {
   const ext = path.extname(inputPath).toLowerCase();
   const base = path.basename(inputPath, ext);
@@ -46,7 +42,6 @@ async function compressOriginal(inputPath, width) {
   return outPath;
 }
 
-/** Створення WebP */
 async function toWebp(inputPath, width) {
   const base = path.basename(inputPath, path.extname(inputPath));
   const outPath = path.join(OUT_DIR, `${base}-${width}.webp`);
@@ -61,7 +56,6 @@ async function toWebp(inputPath, width) {
   return outPath;
 }
 
-/** Створення AVIF */
 async function toAvif(inputPath, width) {
   const base = path.basename(inputPath, path.extname(inputPath));
   const outPath = path.join(OUT_DIR, `${base}-${width}.avif`);

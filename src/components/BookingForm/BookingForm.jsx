@@ -1,6 +1,7 @@
 import { useTranslation } from "react-i18next";
 import iziToast from "izitoast";
 import emailjs from "@emailjs/browser";
+
 import { useRef } from "react";
 
 import s from "./BookingForm.module.css";
@@ -15,6 +16,7 @@ export default function BookingForm() {
       .sendForm("service_tglaf38", "template_gtmgywa", form.current, {
         publicKey: "5HJiJxVQzx39CK539",
       })
+
       .then(
         () => {
           iziToast.success({
@@ -24,6 +26,7 @@ export default function BookingForm() {
           });
           form.current?.reset();
         },
+
         (error) => {
           iziToast.error({
             title: t("footer.iziToastErrorTitle"),
@@ -91,9 +94,7 @@ export default function BookingForm() {
                 required
               />
               <small id="bf-phone-hint" className="sr-only">
-                {t("bookingForm.phoneHint", {
-                  defaultValue: "Введіть номер телефону",
-                })}
+                {t("bookingForm.phoneHint")}
               </small>
             </div>
 
@@ -115,7 +116,7 @@ export default function BookingForm() {
 
             <div className={s.field}>
               <label htmlFor="bf-checkin" className={s.label}>
-                {t("bookingForm.check-in", { defaultValue: "Дата заїзду" })}
+                {t("bookingForm.check-in")}
               </label>
               <input
                 id="bf-checkin"
@@ -130,7 +131,7 @@ export default function BookingForm() {
 
             <div className={s.field}>
               <label htmlFor="bf-checkout" className={s.label}>
-                {t("bookingForm.check-out", { defaultValue: "Дата виїзду" })}
+                {t("bookingForm.check-out")}
               </label>
               <input
                 id="bf-checkout"

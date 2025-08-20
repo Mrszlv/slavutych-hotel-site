@@ -10,10 +10,10 @@ const Rooms = lazy(() => import("./pages/Rooms/Rooms"));
 const Gallery = lazy(() => import("./pages/Gallery/Gallery"));
 const Reviews = lazy(() => import("./pages/Reviews/Reviews"));
 const Contact = lazy(() => import("./pages/Contact/Contact"));
+const NotFoundPage = lazy(() => import("./pages/NotFoundPage/NotFoundPage"));
 const PrivacyPolicy = lazy(() =>
   import("./components/PrivacyPolicy/PrivacyPolicy")
 );
-const NotFoundPage = lazy(() => import("./pages/NotFoundPage/NotFoundPage"));
 
 function App() {
   return (

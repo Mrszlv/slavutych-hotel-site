@@ -27,6 +27,7 @@ const Footer = () => {
       .sendForm("service_tglaf38", "template_aju5n74", form.current, {
         publicKey: "5HJiJxVQzx39CK539",
       })
+
       .then(
         () => {
           iziToast.success({
@@ -36,6 +37,7 @@ const Footer = () => {
           });
           form.current.reset();
         },
+
         (error) => {
           iziToast.error({
             title: `${t("footer.iziToastErrorTitle")}`,
@@ -56,15 +58,13 @@ const Footer = () => {
         loading="lazy"
         decoding="async"
       />
-      {/* <p className={s.text}>
-        &copy; {new Date().getFullYear()} {t("footer.text")}
-        <span className={s.span}>{t("footer.subtext")}</span>
-      </p> */}
+
       <div className={s.formCont}>
         <p className={s.formTitle} onClick={toggleAccordion}>
           {isOpen ? `${t("footer.formClose")}` : `${t("footer.formOpen")}`}{" "}
           <SlCallIn className={s.icon} />
         </p>
+
         <div className={`${s.accordionContent} ${isOpen ? s.open : ""}`}>
           <form ref={form} onSubmit={sendEmail} className={s.form}>
             <input
@@ -88,6 +88,7 @@ const Footer = () => {
               placeholder={t("footer.inputMessage")}
               className={`${s.input} ${s.textarea}`}
             />
+
             <input
               aria-label="send form"
               type="submit"
@@ -97,9 +98,11 @@ const Footer = () => {
           </form>
         </div>
       </div>
+
       <NavLink to={"/privacy"} className={s.privacyLink}>
         {t("privacy.title")}
       </NavLink>
+
       <div className={s.footerLinksCont}>
         <a
           rel="noopener noreferrer"
@@ -109,6 +112,7 @@ const Footer = () => {
         >
           <LiaFacebook className={s.footerIcon} />
         </a>
+
         <a
           rel="noopener noreferrer"
           target="_blank"
@@ -118,9 +122,6 @@ const Footer = () => {
           <TbBrandBooking className={s.footerIcon} />
         </a>
       </div>
-      {/* <NavLink to={"/privacy"} className={s.privacyLink}>
-        {t("privacy.title")}
-      </NavLink> */}
     </footer>
   );
 };

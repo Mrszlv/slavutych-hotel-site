@@ -23,57 +23,75 @@ const Gallery = () => {
     {
       src: "https://res.cloudinary.com/ddqtzq55a/image/upload/v1753099426/%D1%82%D0%B5%D1%80%D0%B8%D1%82%D0%BE%D1%80%D1%96%D1%8F-3_yzcbm0_mjishp.jpg",
     },
+
     {
       src: "https://res.cloudinary.com/ddqtzq55a/image/upload/v1753099426/%D1%82%D0%B5%D1%80%D0%B8%D1%82%D0%BE%D1%80%D1%96%D1%8F-4_sirg77_pu0rga.jpg",
     },
+
     {
       src: "https://res.cloudinary.com/ddqtzq55a/image/upload/v1753099425/%D1%82%D0%B5%D1%80%D0%B8%D1%82%D0%BE%D1%80%D1%96%D1%8F-2_fqrmyc_vn3o10.jpg",
     },
+
     {
       src: "https://res.cloudinary.com/ddqtzq55a/image/upload/v1753099424/IMG_6476_1_rb0liy_lhpj1j.jpg",
     },
+
     {
       src: "https://res.cloudinary.com/ddqtzq55a/image/upload/v1753099424/20250711_185434_wq3kty_kzl17m.jpg",
     },
+
     {
       src: "https://res.cloudinary.com/ddqtzq55a/image/upload/v1753099424/%D1%82%D0%B5%D1%80%D0%B8%D1%82%D0%BE%D1%80%D1%96%D1%8F-1_t5bkc1_z8seeo.jpg",
     },
+
     {
       src: "https://res.cloudinary.com/ddqtzq55a/image/upload/v1753099421/20250711_185441_wrbjaj_p7aef7.jpg",
     },
+
     {
       src: "https://res.cloudinary.com/ddqtzq55a/image/upload/v1753099421/20250711_185420_faklha_iiztsf.jpg",
     },
+
     {
       src: "https://res.cloudinary.com/ddqtzq55a/image/upload/v1753099420/20250707_143004_xla84h_it8vjd.jpg",
     },
+
     {
       src: "https://res.cloudinary.com/ddqtzq55a/image/upload/v1753099419/20250617_143612_gmendp_suieph.jpg",
     },
+
     {
       src: "https://res.cloudinary.com/ddqtzq55a/image/upload/v1753099419/20250617_143449_siwbub_dm7mhh.jpg",
     },
+
     {
       src: "https://res.cloudinary.com/ddqtzq55a/image/upload/v1753099423/20250711_185850_o2jw6x_vlutdo.jpg",
     },
+
     {
       src: "https://res.cloudinary.com/ddqtzq55a/image/upload/v1753099422/20250711_185747_hjqgcp_vyri3r.jpg",
     },
+
     {
       src: "https://res.cloudinary.com/ddqtzq55a/image/upload/v1753099422/20250711_185732_tcarzh_e1spqt.jpg",
     },
+
     {
       src: "https://res.cloudinary.com/ddqtzq55a/image/upload/v1753099421/20250711_185724_xibnbi_x4khbl.jpg",
     },
+
     {
       src: "https://res.cloudinary.com/ddqtzq55a/image/upload/v1753099424/IMG_2479_vatdmv_vcsbsj.jpg",
     },
+
     {
       src: "https://res.cloudinary.com/ddqtzq55a/image/upload/v1753099642/IMG_1431_g7pnld_pukcio.jpg",
     },
+
     {
       src: "https://res.cloudinary.com/ddqtzq55a/image/upload/v1753099420/20250711_185333_kfszbx_w6zulf.jpg",
     },
+
     {
       type: "video",
       poster:
@@ -87,6 +105,7 @@ const Gallery = () => {
         },
       ],
     },
+
     {
       type: "video",
       poster:
@@ -100,6 +119,7 @@ const Gallery = () => {
         },
       ],
     },
+
     {
       type: "video",
       poster:
@@ -150,6 +170,7 @@ const Gallery = () => {
           {t("gallery.title-2")}
           <span className={s.regionSubtitle}>{t("gallery.subtitle-2")}</span>
         </h2>
+
         <ul className={s.regionList}>
           <li className={s.regionItem}>
             <img
@@ -161,6 +182,7 @@ const Gallery = () => {
             />
             <p className={s.regionText}>{t("gallery.region-text-1")}</p>
           </li>
+
           <li className={s.regionItem}>
             <img
               src="https://kiyavia.com/files/travel-provider/zakarpattya/mesta/Ozero_Synevir_1200.jpg"
@@ -171,6 +193,7 @@ const Gallery = () => {
             />
             <p className={s.regionText}>{t("gallery.region-text-2")}</p>
           </li>
+
           <li className={s.regionItem}>
             <img
               src="https://kiyavia.com/files/travel-provider/zakarpattya/mesta/Selo_Kolochava_1200.jpg"
@@ -181,6 +204,7 @@ const Gallery = () => {
             />
             <p className={s.regionText}>{t("gallery.region-text-3")}</p>
           </li>
+
           <li className={s.regionItem}>
             <img
               src="https://kiyavia.com/files/travel-provider/zakarpattya/mesta/Zamok_Shernborna_1200.jpg"
@@ -191,6 +215,7 @@ const Gallery = () => {
             />
             <p className={s.regionText}>{t("gallery.region-text-4")}</p>
           </li>
+
           <li className={s.regionItem}>
             <img
               src="https://kiyavia.com/files/travel-provider/zakarpattya/mesta/Zamok_Sent_Mikloch_1200.jpg"
@@ -201,6 +226,7 @@ const Gallery = () => {
             />
             <p className={s.regionText}>{t("gallery.region-text-5")}</p>
           </li>
+
           <li className={s.regionItem}>
             <img
               src="https://kiyavia.com/files/travel-provider/zakarpattya/mesta/Ferma_oleney_1200.jpg"
@@ -211,6 +237,7 @@ const Gallery = () => {
             />
             <p className={s.regionText}>{t("gallery.region-text-6")}</p>
           </li>
+
           <li className={s.regionItem}>
             <img
               src="https://kiyavia.com/files/travel-provider/zakarpattya/mesta/Zamok_Palanok_1200.jpg"
@@ -221,6 +248,7 @@ const Gallery = () => {
             />
             <p className={s.regionText}>{t("gallery.region-text-7")}</p>
           </li>
+
           <li className={s.regionItem}>
             <img
               src="https://kiyavia.com/files/travel-provider/zakarpattya/mesta/Lozopletenie_Zakarpatie_1200.jpg"
@@ -231,6 +259,7 @@ const Gallery = () => {
             />
             <p className={s.regionText}>{t("gallery.region-text-8")}</p>
           </li>
+
           <li className={s.regionItem}>
             <img
               src="https://kiyavia.com/files/travel-provider/zakarpattya/mesta/Syrovarnya_Zakarpatie.jpg"
@@ -241,6 +270,7 @@ const Gallery = () => {
             />
             <p className={s.regionText}>{t("gallery.region-text-9")}</p>
           </li>
+
           <li className={s.regionItem}>
             <img
               src="https://kiyavia.com/files/travel-provider/zakarpattya/mesta/Ferma_strausov.jpg"
@@ -249,6 +279,7 @@ const Gallery = () => {
               loading="lazy"
               decoding="async"
             />
+
             <p className={s.regionText}>{t("gallery.region-text-10")}</p>
           </li>
           <li className={s.regionItem}>
@@ -261,6 +292,7 @@ const Gallery = () => {
             />
             <p className={s.regionText}>{t("gallery.region-text-11")}</p>
           </li>
+
           <li className={s.regionItem}>
             <img
               src="https://kiyavia.com/files/travel-provider/zakarpattya/mesta/Termalnie_basseyny.jpg"
@@ -271,6 +303,7 @@ const Gallery = () => {
             />
             <p className={s.regionText}>{t("gallery.region-text-12")}</p>
           </li>
+
           <li className={s.regionItem}>
             <img
               src="https://kiyavia.com/files/travel-provider/zakarpattya/mesta/Zamok_Ujgorod_1200.jpg"

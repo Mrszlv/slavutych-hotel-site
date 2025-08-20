@@ -17,12 +17,15 @@ const Header = () => {
           loading="lazy"
           decoding="async"
         />
+
         <h2 className={s.title}>
           {t("title")}
           <span className={s.subtitle}>{t("subtitle")}</span>
         </h2>
       </div>
+
       <LanguageSwitcher />
+
       <Navigation />
     </header>
   );

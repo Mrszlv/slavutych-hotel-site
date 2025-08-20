@@ -74,15 +74,6 @@
   width: 0px;
 }
 
-/* @keyframes scrollText {
-  from {
-    transform: translateX(100%);
-  }
-  to {
-    transform: translateX(-100%);
-  }
-} */
-
 @media screen and (min-width: 768px) {
   .container {
     padding: 16px 32px;

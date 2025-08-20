@@ -65,6 +65,7 @@
   .navMobile {
     display: none;
   }
+
   .openBtn {
     display: none;
   }
@@ -73,6 +74,7 @@
     display: flex;
     gap: 10px;
   }
+
   .linkDesk {
     text-decoration: none;
     color: inherit;
@@ -80,9 +82,11 @@
     font-weight: 600;
     transition: color 0.5s ease;
   }
+
   .linkDesk:hover {
     color: goldenrod;
   }
+
   .active {
     color: goldenrod;
     text-decoration: overline;
@@ -93,6 +97,7 @@
   .navDesktop {
     gap: 30px;
   }
+
   .linkDesk {
     font-size: 20px;
   }

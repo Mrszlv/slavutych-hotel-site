@@ -29,15 +29,19 @@ const Navigation = () => {
         <NavLink className={buildLinkClass} to="/">
           {t("nav.home")}
         </NavLink>
+
         <NavLink className={buildLinkClass} to="/rooms">
           {t("nav.rooms")}
         </NavLink>
+
         <NavLink className={buildLinkClass} to="/gallery">
           {t("nav.gallery")}
         </NavLink>
+
         <NavLink className={buildLinkClass} to="/reviews">
           {t("nav.reviews")}
         </NavLink>
+
         <NavLink className={buildLinkClass} to="/contact">
           {t("nav.contact")}
         </NavLink>
@@ -53,6 +57,7 @@ const Navigation = () => {
       >
         <IoIosMenu />
       </button>
+
       <nav
         id="navMenu"
         className={`${s.navMobile} ${menuOpen ? s.navMobileOpen : ""}`}
@@ -65,18 +70,23 @@ const Navigation = () => {
         >
           <IoMdClose className={s.ioClose} />
         </button>
+
         <NavLink className={s.linkMob} onClick={handleOpenMenu} to="/">
           {t("nav.home")}
         </NavLink>
+
         <NavLink className={s.linkMob} onClick={handleOpenMenu} to="/rooms">
           {t("nav.rooms")}
         </NavLink>
+
         <NavLink className={s.linkMob} onClick={handleOpenMenu} to="/gallery">
           {t("nav.gallery")}
         </NavLink>
+
         <NavLink className={s.linkMob} onClick={handleOpenMenu} to="/reviews">
           {t("nav.reviews")}
         </NavLink>
+
         <NavLink className={s.linkMob} onClick={handleOpenMenu} to="/contact">
           {t("nav.contact")}
         </NavLink>
