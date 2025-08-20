@@ -2,34 +2,64 @@
 <html lang="uk">
   <head>
     <meta charset="UTF-8" />
+
+    <!-- Favicon -->
     <link
       rel="icon"
       type="image/x-icon"
       href="https://res.cloudinary.com/ddqtzq55a/image/upload/v1738248462/My%20Brand/Preview_jomntt.jpg"
     />
-    <!-- preconnect: прискорює з'єднання -->
+
+    <!-- Resource Hints -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Герой та інші зображення з Cloudinary -->
+    <link rel="preconnect" href="https://res.cloudinary.com" crossorigin />
 
-    <!-- preload: підвантажує CSS раніше -->
+    <!-- Google Fonts: один запит, без дублювань.
+         Прелоадимо як style і після завантаження міняємо на stylesheet,
+         щоб не блокувати рендер. Є фолбек для no-JS. -->
     <link
       rel="preload"
       as="style"
       href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=IBM+Plex+Serif:ital,wght@0,100..700;1,100..700&display=swap"
+      onload="this.onload=null;this.rel='stylesheet'"
     />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=IBM+Plex+Serif:ital,wght@0,100..700;1,100..700&display=swap"
+      />
+    </noscript>
 
-    <!-- основне підключення (але не блокує малювання) -->
+    <!-- (Необов'язково) Прелоад LCP-зображення героя.
+         Якщо у тебе є responsive-версії — додай imagesrcset/imagesizes. -->
+    <!--
     <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=IBM+Plex+Serif:ital,wght@0,100..700;1,100..700&display=swap"
-      media="all"
+      rel="preload"
+      as="image"
+      href="/images/hero-768.avif"
+      imagesrcset="/images/hero-480.avif 480w, /images/hero-768.avif 768w, /images/hero-1280.avif 1280w"
+      imagesizes="(max-width: 480px) 100vw, (max-width: 768px) 100vw, 1280px"
+      type="image/avif"
     />
+    -->
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Slavutych-Zakarpattia</title>
+
+    <!-- (Опційно) Критичні стилі для першого екрану (Hero/Header), щоб ще швидше прибрати CLS.
+         Тримай це дуже компактним або додай пізніше.
+    <style>
+      body{margin:0}
+      /* .hero {min-height:432px} ... */
+    </style>
+    -->
   </head>
+
   <body>
     <div id="root"></div>
+    <!-- type="module" уже бере defer за замовчуванням -->
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
