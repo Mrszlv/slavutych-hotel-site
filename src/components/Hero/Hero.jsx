@@ -59,6 +59,10 @@ const Hero = () => {
         <span className={s.subtitle}>{t("hero.subtitle")}</span>
       </h1>
 
+      <h2 className={s.title2}>{t("hero.title-2")}</h2>
+
+      <h2 className={s.title3}>{t("hero.title-3")}</h2>
+
       <div className={s.imgCont}>
         <img
           className={s.imgOne}

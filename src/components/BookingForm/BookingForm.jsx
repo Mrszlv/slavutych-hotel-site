@@ -49,7 +49,7 @@ export default function BookingForm() {
         <img
           className={s.img}
           src="https://res.cloudinary.com/ddqtzq55a/image/upload/v1753534599/20250726_155304_1_azlbul.jpg"
-          alt={t("bookingForm.imageAlt", { defaultValue: "Форма бронювання" })}
+          alt={t("bookingForm.imageAlt")}
           loading="lazy"
           decoding="async"
           width="600"
