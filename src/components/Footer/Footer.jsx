@@ -105,6 +105,7 @@ const Footer = () => {
 
       <div className={s.footerLinksCont}>
         <a
+          aria-label="Facebook Славутич Закарпаття"
           rel="noopener noreferrer"
           target="_blank"
           className={s.footerLink}
@@ -114,6 +115,7 @@ const Footer = () => {
         </a>
 
         <a
+          aria-label="Славутич Закарпаття на Booking"
           rel="noopener noreferrer"
           target="_blank"
           className={s.footerLink}
