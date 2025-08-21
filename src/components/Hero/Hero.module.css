@@ -34,7 +34,7 @@
 .title {
   position: absolute;
   z-index: 2;
-  top: 30px;
+  top: 60px;
   font-size: 30px;
   font-weight: 900;
   text-align: center;
@@ -45,7 +45,7 @@
   position: absolute;
   z-index: 2;
   left: 10px;
-  bottom: 10px;
+  top: 10px;
   font-size: 16px;
   color: goldenrod;
 }
