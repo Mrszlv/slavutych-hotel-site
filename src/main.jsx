@@ -3,6 +3,7 @@ import ReactDOM from "react-dom/client";
 
 import "./i18n/a-index.js";
 
+import "modern-normalize/modern-normalize.css";
 import "./index.css";
 
 import App from "./App.jsx";
