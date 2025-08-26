@@ -25,7 +25,7 @@ const Navigation = () => {
   const { t } = useTranslation();
   return (
     <>
-      <nav className={s.navDesktop}>
+      <nav className={s.navDesktop} data-aos="fade-left">
         <NavLink className={buildLinkClass} to="/">
           {t("nav.home")}
         </NavLink>
@@ -48,6 +48,7 @@ const Navigation = () => {
       </nav>
 
       <button
+        data-aos="fade-left"
         type="button"
         onClick={handleOpenMenu}
         className={s.openBtn}

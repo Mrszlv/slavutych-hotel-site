@@ -54,17 +54,23 @@ const Hero = () => {
 
       <div className={s.overlay} aria-hidden="true" />
 
-      <h1 className={s.title}>
+      <h1 className={s.title} data-aos="fade-up" data-aos-delay="0">
         {t("hero.title")} <br />
         <span className={s.subtitle}>{t("hero.subtitle")}</span>
       </h1>
 
-      <h2 className={s.title2}>{t("hero.title-2")}</h2>
+      <h2 className={s.title2} data-aos="fade-right" data-aos-delay="300">
+        {t("hero.title-2")}
+      </h2>
 
-      <h2 className={s.title3}>{t("hero.title-3")}</h2>
+      <h2 className={s.title3} data-aos="fade-left" data-aos-delay="300">
+        {t("hero.title-3")}
+      </h2>
 
       <div className={s.imgCont}>
         <img
+          data-aos="fade-up"
+          data-aos-delay="200"
           className={s.imgOne}
           src={cldT(URL1, "f_auto,q_auto,dpr_auto,w_600,c_fill,g_auto")}
           srcSet={srcset(URL1, WIDTHS)}
@@ -77,6 +83,8 @@ const Hero = () => {
         />
 
         <img
+          data-aos="fade-up"
+          data-aos-delay="500"
           className={s.imgTwo}
           src={cldT(URL2, "f_auto,q_auto,dpr_auto,w_600,c_fill,g_auto")}
           srcSet={srcset(URL2, WIDTHS)}
@@ -89,6 +97,8 @@ const Hero = () => {
         />
 
         <img
+          data-aos="fade-up"
+          data-aos-delay="800"
           className={s.imgThree}
           src={cldT(URL3, "f_auto,q_auto,dpr_auto,w_600,c_fill,g_auto")}
           srcSet={srcset(URL3, WIDTHS)}

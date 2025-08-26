@@ -137,12 +137,18 @@ const Gallery = () => {
 
   return (
     <div className={s.container}>
-      <h2 className={s.title}>{t("gallery.title")}</h2>
-      <p className={s.text}>{t("gallery.description")}</p>
+      <h2 className={s.title} data-aos="fade-up" data-aos-delay="0">
+        {t("gallery.title")}
+      </h2>
+      <p className={s.text} data-aos="fade-up" data-aos-delay="100">
+        {t("gallery.description")}
+      </p>
 
       <div className={s.contImg}>
         {images.map((img, idx) => (
           <img
+            data-aos="zoom-in"
+            data-aos-delay={60 + (idx % 6) * 60}
             key={idx}
             src={img.poster || img.src}
             alt={t("gallery.alt")}
@@ -166,13 +172,13 @@ const Gallery = () => {
       />
 
       <div className={s.regionCont}>
-        <h2 className={s.regionTitle}>
+        <h2 className={s.regionTitle} data-aos="fade-up" data-aos-delay="0">
           {t("gallery.title-2")}
           <span className={s.regionSubtitle}>{t("gallery.subtitle-2")}</span>
         </h2>
 
         <ul className={s.regionList}>
-          <li className={s.regionItem}>
+          <li className={s.regionItem} data-aos="fade-up" data-aos-delay="100">
             <img
               src="https://kiyavia.com/files/travel-provider/zakarpattya/mesta/Vodopad_Shypit_1200.jpg"
               alt={t("gallery.shypit")}
@@ -183,7 +189,7 @@ const Gallery = () => {
             <p className={s.regionText}>{t("gallery.region-text-1")}</p>
           </li>
 
-          <li className={s.regionItem}>
+          <li className={s.regionItem} data-aos="fade-up" data-aos-delay="100">
             <img
               src="https://kiyavia.com/files/travel-provider/zakarpattya/mesta/Ozero_Synevir_1200.jpg"
               alt={t("gallery.sinevir")}
@@ -194,7 +200,7 @@ const Gallery = () => {
             <p className={s.regionText}>{t("gallery.region-text-2")}</p>
           </li>
 
-          <li className={s.regionItem}>
+          <li className={s.regionItem} data-aos="fade-up" data-aos-delay="100">
             <img
               src="https://kiyavia.com/files/travel-provider/zakarpattya/mesta/Selo_Kolochava_1200.jpg"
               alt={t("gallery.kolochava")}
@@ -205,7 +211,7 @@ const Gallery = () => {
             <p className={s.regionText}>{t("gallery.region-text-3")}</p>
           </li>
 
-          <li className={s.regionItem}>
+          <li className={s.regionItem} data-aos="fade-up" data-aos-delay="100">
             <img
               src="https://kiyavia.com/files/travel-provider/zakarpattya/mesta/Zamok_Shernborna_1200.jpg"
               alt={t("gallery.kastle")}
@@ -216,7 +222,7 @@ const Gallery = () => {
             <p className={s.regionText}>{t("gallery.region-text-4")}</p>
           </li>
 
-          <li className={s.regionItem}>
+          <li className={s.regionItem} data-aos="fade-up" data-aos-delay="100">
             <img
               src="https://kiyavia.com/files/travel-provider/zakarpattya/mesta/Zamok_Sent_Mikloch_1200.jpg"
               alt={t("gallery.miklosh")}
@@ -227,7 +233,7 @@ const Gallery = () => {
             <p className={s.regionText}>{t("gallery.region-text-5")}</p>
           </li>
 
-          <li className={s.regionItem}>
+          <li className={s.regionItem} data-aos="fade-up" data-aos-delay="100">
             <img
               src="https://kiyavia.com/files/travel-provider/zakarpattya/mesta/Ferma_oleney_1200.jpg"
               alt={t("gallery.farm")}
@@ -238,7 +244,7 @@ const Gallery = () => {
             <p className={s.regionText}>{t("gallery.region-text-6")}</p>
           </li>
 
-          <li className={s.regionItem}>
+          <li className={s.regionItem} data-aos="fade-up" data-aos-delay="100">
             <img
               src="https://kiyavia.com/files/travel-provider/zakarpattya/mesta/Zamok_Palanok_1200.jpg"
               alt={t("gallery.palanok")}
@@ -249,7 +255,7 @@ const Gallery = () => {
             <p className={s.regionText}>{t("gallery.region-text-7")}</p>
           </li>
 
-          <li className={s.regionItem}>
+          <li className={s.regionItem} data-aos="fade-up" data-aos-delay="100">
             <img
               src="https://kiyavia.com/files/travel-provider/zakarpattya/mesta/Lozopletenie_Zakarpatie_1200.jpg"
               alt={t("gallery.iza")}
@@ -260,7 +266,7 @@ const Gallery = () => {
             <p className={s.regionText}>{t("gallery.region-text-8")}</p>
           </li>
 
-          <li className={s.regionItem}>
+          <li className={s.regionItem} data-aos="fade-up" data-aos-delay="100">
             <img
               src="https://kiyavia.com/files/travel-provider/zakarpattya/mesta/Syrovarnya_Zakarpatie.jpg"
               alt="Селиська сироварня в Карпатах"
@@ -271,7 +277,7 @@ const Gallery = () => {
             <p className={s.regionText}>{t("gallery.region-text-9")}</p>
           </li>
 
-          <li className={s.regionItem}>
+          <li className={s.regionItem} data-aos="fade-up" data-aos-delay="100">
             <img
               src="https://kiyavia.com/files/travel-provider/zakarpattya/mesta/Ferma_strausov.jpg"
               alt="Страусина ферма в Карпатах"
@@ -282,7 +288,7 @@ const Gallery = () => {
 
             <p className={s.regionText}>{t("gallery.region-text-10")}</p>
           </li>
-          <li className={s.regionItem}>
+          <li className={s.regionItem} data-aos="fade-up" data-aos-delay="100">
             <img
               src="https://kiyavia.com/files/travel-provider/zakarpattya/mesta/Dolina_narcyssov_1200.jpg"
               alt="Долина нарцисів у Карпатах"
@@ -293,7 +299,7 @@ const Gallery = () => {
             <p className={s.regionText}>{t("gallery.region-text-11")}</p>
           </li>
 
-          <li className={s.regionItem}>
+          <li className={s.regionItem} data-aos="fade-up" data-aos-delay="100">
             <img
               src="https://kiyavia.com/files/travel-provider/zakarpattya/mesta/Termalnie_basseyny.jpg"
               alt="Термальні басейни Закарпаття"
@@ -304,7 +310,7 @@ const Gallery = () => {
             <p className={s.regionText}>{t("gallery.region-text-12")}</p>
           </li>
 
-          <li className={s.regionItem}>
+          <li className={s.regionItem} data-aos="fade-up" data-aos-delay="100">
             <img
               src="https://kiyavia.com/files/travel-provider/zakarpattya/mesta/Zamok_Ujgorod_1200.jpg"
               alt="Ужгородський замок"

@@ -25,24 +25,39 @@ const Reviews = () => {
 
   return (
     <div className={s.container}>
-      <h2 className={s.title}>{t("nav.reviews")}</h2>
+      <h2 className={s.title} data-aos="fade-up" data-aos-delay="0">
+        {t("nav.reviews")}
+      </h2>
 
       <form className={s.form} onSubmit={handleSubmit}>
         <textarea
+          data-aos="flip-left"
+          data-aos-delay="100"
           className={s.textarea}
           value={text}
           onChange={(e) => setText(e.target.value)}
           placeholder={t("reviews.placeholder")}
+          required
         />
 
-        <button className={s.btn} type="submit">
+        <button
+          className={s.btn}
+          type="submit"
+          data-aos="fade-left"
+          data-aos-delay="100"
+        >
           {t("submit")}
         </button>
       </form>
 
       <ul className={s.list}>
         {reviews.map((review) => (
-          <li className={s.item} key={review.id}>
+          <li
+            className={s.item}
+            key={review.id}
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
             {review.text}
           </li>
         ))}

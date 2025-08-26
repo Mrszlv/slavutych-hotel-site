@@ -1,5 +1,13 @@
 @import "modern-normalize";
 
+@media (prefers-reduced-motion: reduce) {
+  [data-aos] {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;

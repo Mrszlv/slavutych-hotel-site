@@ -19,7 +19,7 @@ const LanguageSwitcher = () => {
 
   return (
     <>
-      <div className={s.containerDesk}>
+      <div className={s.containerDesk} data-aos="fade-right">
         <button
           type="button"
           className={clsx(s.btnDesk, i18n.language === "ua" && s.active)}
@@ -46,7 +46,7 @@ const LanguageSwitcher = () => {
         </button>
       </div>
 
-      <div className={s.modalMenu}>
+      <div className={s.modalMenu} data-aos="fade-right">
         <button
           onClick={handleOpenMenu}
           className={s.openBtn}

@@ -40,13 +40,15 @@ export default function BookingForm() {
 
   return (
     <div className={s.container}>
-      <h3 className={s.title}>
+      <h3 className={s.title} data-aos="fade-up" data-aos-delay="0">
         {t("bookingForm.title")}
         <span className={s.subtitle}>{t("bookingForm.subtitle")}</span>
       </h3>
 
       <div className={s.bookingFormCont}>
         <img
+          data-aos="flip-right"
+          data-aos-delay="300"
           className={s.img}
           src="https://res.cloudinary.com/ddqtzq55a/image/upload/v1753534599/20250726_155304_1_azlbul.jpg"
           alt={t("bookingForm.imageAlt")}
@@ -57,6 +59,8 @@ export default function BookingForm() {
         />
 
         <form
+          data-aos="flip-left"
+          data-aos-delay="500"
           id="booking-form"
           ref={form}
           className={s.form}

@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "images":"node tools/build-images.mjs",
+    "images": "node tools/build-images.mjs",
     "build": "npm run images && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
@@ -16,6 +16,7 @@
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
+    "aos": "^2.3.4",
     "axios": "^1.9.0",
     "clsx": "^2.1.1",
     "emailjs-com": "^3.2.0",

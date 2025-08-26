@@ -8,7 +8,7 @@ const NotFoundPage = () => {
   const { t } = useTranslation();
 
   return (
-    <div className={s.notCont}>
+    <div className={s.notCont} data-aos="zoom-in" data-aos-delay="100">
       <img
         className={s.img}
         src="https://www.dpmarketingcommunications.com/wp-content/uploads/2016/11/404-Page-Featured-Image.png"

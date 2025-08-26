@@ -17,14 +17,16 @@ const Services = () => {
 
   return (
     <div className={s.container}>
-      <h2 className={s.title}>
+      <h2 className={s.title} data-aos="fade-up" data-aos-delay="0">
         {t("services.title")}{" "}
         <span className={s.subtitle}>{t("services.subtitle")} </span>
       </h2>
 
-      <p className={s.text}>{t("services.text")}</p>
+      <p className={s.text} data-aos="fade-up" data-aos-delay="300">
+        {t("services.text")}{" "}
+      </p>
 
-      <ul className={s.list}>
+      <ul className={s.list} data-aos="fade-up" data-aos-delay="500">
         <li className={s.item}>
           <IoWifi className={s.itemIcon} />{" "}
           <p className={s.itemText}>{t("services.wifi")} </p>

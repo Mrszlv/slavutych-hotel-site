@@ -107,13 +107,13 @@ const Rooms = () => {
 
   return (
     <div className={s.container}>
-      <h2 className={s.title}>
+      <h2 className={s.title} data-aos="fade-up" data-aos-delay="0">
         {t("rooms.title")}{" "}
         <span className={s.subtitle}>{t("rooms.subtitle")}</span>
       </h2>
 
       <ul className={s.list}>
-        <li className={s.item}>
+        <li className={s.item} data-aos="fade-up" data-aos-delay="100">
           <h4 className={s.itemTitle}>{t("rooms.luxe-2-1")}</h4>
           <h5 className={s.priceTitle}>{t("rooms.price")}</h5>
 
@@ -160,7 +160,7 @@ const Rooms = () => {
             </table>
           </div>
 
-          <div className={s.contImg}>
+          <div className={s.contImg} data-aos="fade-up" data-aos-delay="70">
             <Swiper
               modules={[Navigation, Pagination]}
               spaceBetween={10}
@@ -194,7 +194,7 @@ const Rooms = () => {
           </div>
         </li>
 
-        <li className={s.item}>
+        <li className={s.item} data-aos="fade-up" data-aos-delay="100">
           <h4 className={s.itemTitle}>{t("rooms.junior-suite-1")}</h4>
           <h5 className={s.priceTitle}>{t("rooms.price")}</h5>
 
@@ -277,7 +277,7 @@ const Rooms = () => {
           </div>
         </li>
 
-        <li className={s.item}>
+        <li className={s.item} data-aos="fade-up" data-aos-delay="100">
           <h4 className={s.itemTitle}>{t("rooms.standart-1-1")}</h4>
           <h5 className={s.priceTitle}>{t("rooms.price")}</h5>
 
@@ -357,7 +357,7 @@ const Rooms = () => {
           </div>
         </li>
 
-        <li className={s.item}>
+        <li className={s.item} data-aos="fade-up" data-aos-delay="100">
           <h4 className={s.itemTitle}>{t("rooms.economy-1-1")}</h4>
           <h5 className={s.priceTitle}>{t("rooms.price")}</h5>
 
@@ -438,7 +438,7 @@ const Rooms = () => {
           </div>
         </li>
 
-        <li className={s.item}>
+        <li className={s.item} data-aos="fade-up" data-aos-delay="100">
           <h4 className={s.itemTitle}>{t("rooms.luxe-3-9")}</h4>
           <h5 className={s.priceTitle}>{t("rooms.price")}</h5>
 
@@ -519,7 +519,7 @@ const Rooms = () => {
           </div>
         </li>
 
-        <li className={s.item}>
+        <li className={s.item} data-aos="fade-up" data-aos-delay="100">
           <h4 className={s.itemTitle}>{t("rooms.luxe-2-9")}</h4>
           <h5 className={s.priceTitle}>{t("rooms.price")}</h5>
 
@@ -600,7 +600,7 @@ const Rooms = () => {
           </div>
         </li>
 
-        <li className={s.item}>
+        <li className={s.item} data-aos="fade-up" data-aos-delay="100">
           <h4 className={s.itemTitle}>{t("rooms.junior-suite-9")}</h4>
           <h5 className={s.priceTitle}>{t("rooms.price")}</h5>
           <div className={s.tableContainer}>
@@ -682,7 +682,7 @@ const Rooms = () => {
           </div>
         </li>
 
-        <li className={s.item}>
+        <li className={s.item} data-aos="fade-up" data-aos-delay="100">
           <h4 className={s.itemTitle}>{t("rooms.economy-9")}</h4>
           <h5 className={s.priceTitle}>{t("rooms.price")}</h5>
 
@@ -763,7 +763,7 @@ const Rooms = () => {
           </div>
         </li>
 
-        <li className={s.item}>
+        <li className={s.item} data-aos="fade-up" data-aos-delay="100">
           <h4 className={s.itemTitle}>{t("rooms.standart-9-a")}</h4>
           <h5 className={s.priceTitle}>{t("rooms.price")}</h5>
 
@@ -844,7 +844,7 @@ const Rooms = () => {
           </div>
         </li>
 
-        <li className={s.item}>
+        <li className={s.item} data-aos="fade-up" data-aos-delay="100">
           <h4 className={s.itemTitle}>{t("rooms.economy-9-a")}</h4>
           <h5 className={s.priceTitle}>{t("rooms.price")}</h5>
 
@@ -925,7 +925,7 @@ const Rooms = () => {
           </div>
         </li>
 
-        <li className={s.item}>
+        <li className={s.item} data-aos="fade-up" data-aos-delay="100">
           <h4 className={s.itemTitle}>{t("rooms.dining")}</h4>
           <h5 className={s.priceTitle}>
             {t("rooms.price-dining")}{" "}
