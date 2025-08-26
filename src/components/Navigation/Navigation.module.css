@@ -2,28 +2,44 @@
   display: none;
 }
 
+.backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.2);
+  z-index: 2;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.backdropOpen {
+  opacity: 1;
+  pointer-events: auto;
+}
+
 .navMobile {
   position: fixed;
-  top: 0;
+  top: 80px;
+  bottom: 80px;
   right: 0;
-  width: 80%;
-  height: 100%;
+  width: 70%;
+  height: 70%;
   z-index: 3;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 30px;
+  gap: 20px;
   -webkit-backdrop-filter: blur(20px);
   backdrop-filter: blur(20px);
   padding: 15px;
-  border-radius: 10px 0 0 10px;
+  border-radius: 10px;
   transform: translateX(100%);
   transition: transform 0.5s ease-in-out;
 }
 
 .navMobileOpen {
-  transform: translateX(0);
+  transform: translateX(-20%);
 }
 
 .closeBtn {
@@ -63,6 +79,10 @@
 
 @media screen and (min-width: 768px) {
   .navMobile {
+    display: none;
+  }
+
+  .backdrop {
     display: none;
   }
 

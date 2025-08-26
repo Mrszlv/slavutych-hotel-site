@@ -1,21 +1,55 @@
 import { useTranslation } from "react-i18next";
-
-import { useState } from "react";
-
+import { useEffect, useRef, useState } from "react";
 import { IoLanguage } from "react-icons/io5";
-
+import clsx from "clsx";
 import s from "./LanguageSwitcher.module.css";
 
-import clsx from "clsx";
+const STORAGE_KEY = "i18nextLng";
 
 const LanguageSwitcher = () => {
+  const { i18n } = useTranslation();
   const [menuOpen, setMenuOpen] = useState(false);
+  const menuRef = useRef(null);
+  const buttonRef = useRef(null);
 
-  const handleOpenMenu = () => {
-    setMenuOpen(!menuOpen);
+  useEffect(() => {
+    const saved = localStorage.getItem(STORAGE_KEY);
+    if (saved && saved !== i18n.language) {
+      i18n.changeLanguage(saved);
+    }
+  }, [i18n]);
+
+  const setLang = (lang) => {
+    i18n.changeLanguage(lang);
+    localStorage.setItem(STORAGE_KEY, lang);
   };
 
-  const { i18n } = useTranslation();
+  useEffect(() => {
+    if (!menuOpen) return;
+
+    const onDocClick = (e) => {
+      if (!menuRef.current) return;
+      if (
+        !menuRef.current.contains(e.target) &&
+        !buttonRef.current?.contains(e.target)
+      ) {
+        setMenuOpen(false);
+      }
+    };
+
+    const onEsc = (e) => {
+      if (e.key === "Escape") setMenuOpen(false);
+    };
+
+    document.addEventListener("click", onDocClick);
+    document.addEventListener("keydown", onEsc);
+    return () => {
+      document.removeEventListener("click", onDocClick);
+      document.removeEventListener("keydown", onEsc);
+    };
+  }, [menuOpen]);
+
+  const handleOpenMenu = () => setMenuOpen((v) => !v);
 
   return (
     <>
@@ -23,24 +57,26 @@ const LanguageSwitcher = () => {
         <button
           type="button"
           className={clsx(s.btnDesk, i18n.language === "ua" && s.active)}
-          onClick={() => i18n.changeLanguage("ua")}
-          aria-label="language selection ua"
+          onClick={() => setLang("ua")}
+          aria-label="Вибір мови українська"
         >
           UA
         </button>
 
         <button
+          type="button"
           className={clsx(s.btnDesk, i18n.language === "ru" && s.active)}
-          onClick={() => i18n.changeLanguage("ru")}
-          aria-label="language selection ru"
+          onClick={() => setLang("ru")}
+          aria-label="Вибір мови російська"
         >
           RU
         </button>
 
         <button
+          type="button"
           className={clsx(s.btnDesk, i18n.language === "en" && s.active)}
-          onClick={() => i18n.changeLanguage("en")}
-          aria-label="language selection en"
+          onClick={() => setLang("en")}
+          aria-label="Вибір мови англійська"
         >
           EN
         </button>
@@ -48,47 +84,63 @@ const LanguageSwitcher = () => {
 
       <div className={s.modalMenu} data-aos="fade-right">
         <button
+          type="button"
+          ref={buttonRef}
           onClick={handleOpenMenu}
           className={s.openBtn}
-          aria-label="language selection"
+          aria-label="Вибір мови"
           aria-controls="langMenu"
-          aria-expanded={handleOpenMenu}
+          aria-expanded={menuOpen}
         >
           <IoLanguage className={s.icon} />
         </button>
 
         <div
           id="langMenu"
-          className={`${s.containerMob} ${menuOpen ? s.open : ""}`}
+          ref={menuRef}
+          role="menu"
+          className={clsx(s.containerMob, menuOpen && s.open)}
         >
           <button
-            aria-label="language selection ua"
-            className={s.btn}
+            type="button"
+            role="menuitemradio"
+            aria-checked={i18n.language === "ua"}
+            aria-label="Українська"
+            className={clsx(s.btn, i18n.language === "ua" && s.active)}
             onClick={() => {
-              i18n.changeLanguage("ua");
+              setLang("ua");
               setMenuOpen(false);
+              buttonRef.current?.focus();
             }}
           >
             UA
           </button>
 
           <button
-            aria-label="language selection ru"
-            className={s.btn}
+            type="button"
+            role="menuitemradio"
+            aria-checked={i18n.language === "ru"}
+            aria-label="Російська"
+            className={clsx(s.btn, i18n.language === "ru" && s.active)}
             onClick={() => {
-              i18n.changeLanguage("ru");
+              setLang("ru");
               setMenuOpen(false);
+              buttonRef.current?.focus();
             }}
           >
             RU
           </button>
 
           <button
-            aria-label="language selection en"
-            className={s.btn}
+            type="button"
+            role="menuitemradio"
+            aria-checked={i18n.language === "en"}
+            aria-label="Англійська"
+            className={clsx(s.btn, i18n.language === "en" && s.active)}
             onClick={() => {
-              i18n.changeLanguage("en");
+              setLang("en");
               setMenuOpen(false);
+              buttonRef.current?.focus();
             }}
           >
             EN
