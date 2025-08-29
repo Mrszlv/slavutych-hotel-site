@@ -14,6 +14,7 @@ import { useAOS } from "./aos-init";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
+import RouteTracker from "./components/RouteTracker/RouteTracker";
 
 // lazy pages
 const HomePage = lazy(() => import("./pages/HomePage/HomePage"));
@@ -60,6 +61,7 @@ export default function App() {
       <Header />
       <main>
         <ScrollToTop />
+        <RouteTracker />
         <RouteAOSRefresher />
 
         <Suspense fallback={<Fallback />}>

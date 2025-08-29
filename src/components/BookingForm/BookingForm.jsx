@@ -4,6 +4,8 @@ import emailjs from "@emailjs/browser";
 
 import { useRef } from "react";
 
+import { trackConversion } from "../../lib/gtag";
+
 import s from "./BookingForm.module.css";
 
 export default function BookingForm() {
@@ -24,6 +26,7 @@ export default function BookingForm() {
             message: t("footer.iziToastSuccessMessage"),
             position: "topCenter",
           });
+          trackConversion("AW-17497459822/urE0CNyN9oobEO6YuJdB", 1.0, "UAH");
           form.current?.reset();
         },
 
