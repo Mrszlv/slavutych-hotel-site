@@ -23,8 +23,11 @@
   border-color: goldenrod;
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.22), 0 2px 2px rgba(0, 0, 0, 0.34),
-    0 4px 4px rgba(0, 0, 0, 0.28), 0 8px 8px rgba(0, 0, 0, 0.22);
+  box-shadow:
+    0 1px 1px rgba(0, 0, 0, 0.22),
+    0 2px 2px rgba(0, 0, 0, 0.34),
+    0 4px 4px rgba(0, 0, 0, 0.28),
+    0 8px 8px rgba(0, 0, 0, 0.22);
 }
 
 .itemTitle {
@@ -45,8 +48,11 @@
   margin-bottom: 15px;
   overflow-x: auto;
   border-radius: 10px;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.22), 0 2px 2px rgba(0, 0, 0, 0.34),
-    0 4px 4px rgba(0, 0, 0, 0.28), 0 8px 8px rgba(0, 0, 0, 0.22);
+  box-shadow:
+    0 1px 1px rgba(0, 0, 0, 0.22),
+    0 2px 2px rgba(0, 0, 0, 0.34),
+    0 4px 4px rgba(0, 0, 0, 0.28),
+    0 8px 8px rgba(0, 0, 0, 0.22);
 }
 
 .table {
@@ -75,8 +81,11 @@
   object-fit: cover;
   border-radius: 10px;
   margin-bottom: 10px;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.22), 0 2px 2px rgba(0, 0, 0, 0.34),
-    0 4px 4px rgba(0, 0, 0, 0.28), 0 8px 8px rgba(0, 0, 0, 0.22);
+  box-shadow:
+    0 1px 1px rgba(0, 0, 0, 0.22),
+    0 2px 2px rgba(0, 0, 0, 0.34),
+    0 4px 4px rgba(0, 0, 0, 0.28),
+    0 8px 8px rgba(0, 0, 0, 0.22);
 }
 
 .itemText {
@@ -98,12 +107,16 @@
   font-size: 16px;
   background-color: goldenrod;
   cursor: pointer;
-  transition: background-color 0.5s ease, color, transform 0.5s ease;
+  transition:
+    background-color 0.5s ease,
+    color,
+    transform 0.5s ease;
 }
 
 .link:hover {
   background-color: darkgoldenrod;
   transform: scale(1.1);
+  color: #fff;
 }
 
 .link:active {
