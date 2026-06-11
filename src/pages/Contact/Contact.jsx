@@ -25,14 +25,14 @@ const Contact = () => {
       >
         <ul className={s.contactsList}>
           <li className={s.contactsItem}>
-            <a href="tel:+380958065331" className={s.contactLink}>
-              +380 (95) 806-53-31
+            <a href="tel:+380951379410" className={s.contactLink}>
+              +380 (95) 137-94-10
             </a>
           </li>
 
           <li className={s.contactsItem}>
-            <a href="tel:+380954728246" className={s.contactLink}>
-              +380 (95) 472-82-46
+            <a href="tel:+380506815436" className={s.contactLink}>
+              +380 (50) 681-54-36
             </a>
           </li>
 
